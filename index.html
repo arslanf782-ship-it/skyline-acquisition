@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Skyline Acquisition Group — Live Transfer Leads for Insurance</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --navy:#0b1f3a;
+  --navy2:#0d2647;
+  --navy3:#102d52;
+  --blue:#1a5fb4;
+  --blue2:#2070cc;
+  --blue-light:#3d8fe0;
+  --blue-pale:#e8f1fc;
+  --white:#ffffff;
+  --off-white:#f4f7fb;
+  --light-gray:#eaf0f8;
+  --border:#ccdaf0;
+  --text-muted:#5a7a9e;
+  --gold:#f0a500;
+  --green:#16a34a;
+  --sky:#0ea5e9;
+}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'DM Sans',sans-serif;
+  background:var(--navy);
+  color:var(--white);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+  font-optical-sizing:auto;
+}
+h1,h2,h3,h4{
+  font-family:'Fraunces',serif;
+  letter-spacing:-0.025em;
+  line-height:1.05;
+  font-optical-sizing:auto;
+  font-variation-settings:"opsz" 144;
+}
+h1 em,h2 em{
+  font-style:italic;
+  font-weight:500;
+  font-variation-settings:"opsz" 144;
+}
+a{color:inherit;text-decoration:none;cursor:pointer;}
+button{font-family:inherit;cursor:pointer;border:none;}
+img{max-width:100%;display:block;}
+
+/* ===== PAGE SWITCHING ===== */
+.page{display:none;}
+.page.active{display:block;}
+
+/* ===== TOP NAV ===== */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:1rem 3rem;
+  background:rgba(11,31,58,0.85);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(14,165,233,0.12);
+}
+.nav-logo{
+  display:flex;align-items:center;gap:10px;
+  font-family:'Fraunces',serif;font-weight:700;font-size:1.15rem;
+}
+.nav-logo .fl-icon{
+  width:34px;height:34px;border-radius:8px;
+  background:linear-gradient(135deg,var(--blue),var(--sky));
+  display:flex;align-items:center;justify-content:center;font-size:1rem;
+}
+.nav-logo span{color:var(--sky);}
+.nav-links{display:flex;gap:2rem;align-items:center;}
+.nav-links a{
+  font-size:0.88rem;color:rgba(255,255,255,0.7);
+  transition:color 0.2s;
+}
+.nav-links a:hover{color:var(--sky);}
+.nav-cta{
+  background:linear-gradient(135deg,var(--blue),var(--sky));
+  color:white;padding:0.6rem 1.3rem;border-radius:8px;
+  font-size:0.85rem;font-weight:700;
+  transition:transform 0.2s,box-shadow 0.2s;
+}
+.nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(14,165,233,0.35);}
+@media(max-width:768px){
+  .nav{padding:1rem 1.5rem;}
+  .nav-links{display:none;}
+}
+
+/* ===== HOME HERO ===== */
+.hero{
+  position:relative;
+  padding:9rem 3rem 5rem;
+  text-align:center;
+  background:
+    radial-gradient(ellipse at top right,rgba(14,165,233,0.18),transparent 60%),
+    radial-gradient(ellipse at bottom left,rgba(26,95,180,0.22),transparent 55%),
+    var(--navy);
+  overflow:hidden;
+}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(14,165,233,0.05) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(14,165,233,0.05) 1px,transparent 1px);
+  background-size:60px 60px;
+  mask:radial-gradient(ellipse at center,black 30%,transparent 75%);
+  pointer-events:none;
+}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:0.5rem 1rem;border-radius:999px;
+  background:rgba(14,165,233,0.1);
+  border:1px solid rgba(14,165,233,0.3);
+  font-size:0.78rem;font-weight:600;color:var(--sky);
+  letter-spacing:0.1em;text-transform:uppercase;
+  margin-bottom:1.8rem;position:relative;
+}
+.hero-tag::before{
+  content:"";width:8px;height:8px;border-radius:50%;
+  background:var(--sky);box-shadow:0 0 12px var(--sky);
+  animation:pulse 2s infinite;
+}
+@keyframes pulse{
+  0%,100%{opacity:1;}
+  50%{opacity:0.4;}
+}
+.hero h1{
+  font-size:clamp(2.4rem,5.5vw,4.6rem);
+  font-weight:600;margin-bottom:1.5rem;position:relative;
+  max-width:1000px;margin-left:auto;margin-right:auto;
+}
+.hero h1 em{
+  font-style:normal;
+  background:linear-gradient(135deg,var(--sky),var(--blue-light));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero p{
+  font-size:clamp(1rem,1.5vw,1.2rem);
+  color:rgba(255,255,255,0.65);
+  max-width:680px;margin:0 auto 2.5rem;position:relative;
+}
+.hero-btns{
+  display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;
+  position:relative;
+}
+.btn-primary{
+  background:linear-gradient(135deg,var(--blue),var(--sky));
+  color:white;padding:1rem 2rem;border-radius:10px;
+  font-size:0.95rem;font-weight:700;
+  transition:transform 0.2s,box-shadow 0.2s;
+  box-shadow:0 8px 24px rgba(14,165,233,0.25);
+}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(14,165,233,0.45);}
+.btn-secondary{
+  background:transparent;color:white;padding:1rem 2rem;border-radius:10px;
+  font-size:0.95rem;font-weight:600;
+  border:1px solid rgba(255,255,255,0.25);
+  transition:background 0.2s,border-color 0.2s;
+}
+.btn-secondary:hover{background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.45);}
+
+/* ===== TICK STRIP ===== */
+.tick-strip{
+  background:linear-gradient(90deg,var(--navy2),var(--navy3),var(--navy2));
+  border-top:1px solid rgba(14,165,233,0.15);
+  border-bottom:1px solid rgba(14,165,233,0.15);
+  padding:1rem 0;overflow:hidden;
+  display:flex;gap:2.5rem;flex-wrap:wrap;justify-content:center;
+}
+.tick-item{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:0.82rem;color:rgba(255,255,255,0.75);
+  font-weight:500;white-space:nowrap;
+}
+.tick-dot{
+  width:5px;height:5px;border-radius:50%;background:var(--sky);
+  box-shadow:0 0 8px var(--sky);
+}
+
+/* ===== SECTIONS (shared) ===== */
+.section{
+  padding:6rem 3rem;
+  max-width:1280px;margin:0 auto;
+}
+.section-tag{
+  display:inline-block;
+  font-size:0.72rem;font-weight:700;letter-spacing:0.14em;
+  text-transform:uppercase;color:var(--sky);
+  margin-bottom:1rem;
+}
+.section-title{
+  font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:600;
+  margin-bottom:1rem;max-width:780px;
+}
+.section-sub{
+  font-size:1.05rem;color:rgba(255,255,255,0.55);
+  max-width:680px;margin-bottom:3.5rem;
+}
+
+/* ===== STEPS ===== */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem;}
+.step{
+  background:rgba(14,165,233,0.04);
+  border:1px solid rgba(14,165,233,0.15);
+  border-radius:14px;padding:2rem;
+  position:relative;transition:transform 0.3s,border-color 0.3s;
+}
+.step:hover{transform:translateY(-4px);border-color:rgba(14,165,233,0.4);}
+.step-num{
+  font-family:'Fraunces',serif;font-size:0.78rem;font-weight:700;
+  color:var(--sky);letter-spacing:0.12em;margin-bottom:1rem;
+}
+.step-icon{
+  font-size:1.8rem;margin-bottom:1rem;
+  display:inline-flex;width:48px;height:48px;border-radius:10px;
+  background:rgba(14,165,233,0.1);align-items:center;justify-content:center;
+}
+.step h3{font-size:1.1rem;font-weight:700;margin-bottom:0.6rem;}
+.step p{font-size:0.9rem;color:rgba(255,255,255,0.6);line-height:1.6;}
+
+/* ===== WHY (features) ===== */
+.why{
+  padding:6rem 3rem;
+  background:linear-gradient(180deg,var(--navy),var(--navy2));
+  border-top:1px solid rgba(14,165,233,0.1);
+  border-bottom:1px solid rgba(14,165,233,0.1);
+}
+.why .section-tag,
+.why .section-title,
+.why .section-sub{max-width:1280px;margin-left:auto;margin-right:auto;}
+.why .section-title,.why .section-sub{display:block;}
+.features{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1.2rem;max-width:1280px;margin:0 auto;
+}
+.feature-card{
+  background:rgba(255,255,255,0.025);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:14px;padding:2rem;
+  transition:transform 0.3s,border-color 0.3s,background 0.3s;
+}
+.feature-card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(14,165,233,0.4);
+  background:rgba(14,165,233,0.05);
+}
+.feature-icon{
+  font-size:2rem;margin-bottom:1.2rem;
+  display:inline-flex;width:54px;height:54px;border-radius:12px;
+  background:linear-gradient(135deg,rgba(26,95,180,0.2),rgba(14,165,233,0.2));
+  align-items:center;justify-content:center;
+}
+.feature-card h3{font-size:1.15rem;font-weight:700;margin-bottom:0.6rem;}
+.feature-card p{
+  font-size:0.9rem;color:rgba(255,255,255,0.6);
+  line-height:1.6;margin-bottom:1.2rem;
+}
+.feature-pill{
+  display:inline-block;font-size:0.72rem;font-weight:700;
+  padding:0.35rem 0.8rem;border-radius:999px;
+  background:rgba(14,165,233,0.12);color:var(--sky);
+  letter-spacing:0.06em;
+}
+
+/* ===== RESULTS ===== */
+.results{padding:6rem 3rem;max-width:1280px;margin:0 auto;}
+.results-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1.2rem;
+}
+.result-card{
+  background:rgba(14,165,233,0.04);
+  border:1px solid rgba(14,165,233,0.15);
+  border-radius:14px;padding:2rem;
+  transition:transform 0.3s,border-color 0.3s;
+}
+.result-card:hover{transform:translateY(-4px);border-color:rgba(14,165,233,0.4);}
+.result-card.featured{
+  grid-column:span 2;
+  background:linear-gradient(135deg,rgba(26,95,180,0.12),rgba(14,165,233,0.08));
+  border-color:rgba(14,165,233,0.35);
+}
+@media(max-width:720px){.result-card.featured{grid-column:span 1;}}
+.result-metric{color:var(--gold);font-size:1.05rem;letter-spacing:0.1em;margin-bottom:1rem;}
+.result-quote{
+  font-size:1rem;color:rgba(255,255,255,0.85);
+  line-height:1.65;margin-bottom:1.5rem;font-style:italic;
+}
+.result-author{display:flex;align-items:center;gap:12px;}
+.result-avatar{
+  width:42px;height:42px;border-radius:50%;
+  background:linear-gradient(135deg,var(--blue),var(--sky));
+  display:flex;align-items:center;justify-content:center;
+  font-weight:700;font-size:0.85rem;color:white;
+}
+.result-name{font-weight:700;font-size:0.92rem;}
+.result-role{font-size:0.78rem;color:rgba(255,255,255,0.5);}
+
+/* ===== PRICING ===== */
+.pricing{
+  padding:6rem 3rem;
+  background:linear-gradient(180deg,var(--navy2),var(--navy));
+  border-top:1px solid rgba(14,165,233,0.1);
+}
+.pricing .section-tag,
+.pricing .section-title,
+.pricing .section-sub{max-width:1280px;margin-left:auto;margin-right:auto;display:block;}
+.plans{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:1.2rem;max-width:1100px;margin:0 auto;
+}
+.plan{
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:16px;padding:2.2rem;
+  position:relative;
+  transition:transform 0.3s,border-color 0.3s;
+}
+.plan:hover{transform:translateY(-4px);border-color:rgba(14,165,233,0.4);}
+.plan.popular{
+  border-color:var(--sky);
+  background:linear-gradient(180deg,rgba(14,165,233,0.08),rgba(26,95,180,0.04));
+  box-shadow:0 12px 40px rgba(14,165,233,0.18);
+}
+.popular-badge{
+  position:absolute;top:-12px;left:50%;transform:translateX(-50%);
+  background:linear-gradient(135deg,var(--blue),var(--sky));
+  padding:0.35rem 1rem;border-radius:999px;
+  font-size:0.72rem;font-weight:700;letter-spacing:0.08em;
+  text-transform:uppercase;color:white;
+}
+.plan-name{
+  font-family:'Fraunces',serif;font-weight:700;
+  font-size:1rem;letter-spacing:0.06em;text-transform:uppercase;
+  color:var(--sky);margin-bottom:1rem;
+}
+.plan-price{
+  font-family:'Fraunces',serif;font-size:3.4rem;font-weight:600;
+  line-height:1;display:flex;align-items:flex-start;gap:4px;
+}
+.plan-price .currency{
+  font-size:1.4rem;font-weight:600;color:rgba(255,255,255,0.55);
+  margin-top:0.4rem;
+}
+.plan-per{
+  font-size:0.85rem;color:rgba(255,255,255,0.5);
+  margin-bottom:1.8rem;margin-top:0.4rem;
+}
+.plan-features{list-style:none;margin-bottom:2rem;display:flex;flex-direction:column;gap:0.7rem;}
+.plan-features li{font-size:0.9rem;color:rgba(255,255,255,0.75);display:flex;gap:10px;align-items:flex-start;}
+.check{color:var(--sky);font-weight:700;}
+.plan-btn{
+  width:100%;padding:0.95rem;border-radius:10px;
+  background:rgba(255,255,255,0.05);
+  color:white;font-weight:700;font-size:0.92rem;
+  border:1px solid rgba(255,255,255,0.15);
+  transition:background 0.2s,border-color 0.2s;
+}
+.plan.popular .plan-btn{
+  background:linear-gradient(135deg,var(--blue),var(--sky));
+  border:none;
+}
+.plan-btn:hover{background:rgba(14,165,233,0.15);border-color:var(--sky);}
+.plan.popular .plan-btn:hover{transform:translateY(-1px);box-shadow:0 8px 20px rgba(14,165,233,0.4);}
+
+/* ===== ABOUT ===== */
+.about{
+  padding:6rem 3rem;max-width:1280px;margin:0 auto;
+  display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;
+}
+@media(max-width:880px){.about{grid-template-columns:1fr;gap:2.5rem;}}
+.about-label{
+  font-size:0.72rem;font-weight:700;letter-spacing:0.14em;
+  text-transform:uppercase;color:var(--sky);margin-bottom:1rem;
+}
+.about h2{font-size:clamp(1.6rem,3vw,2.4rem);font-weight:600;margin-bottom:1.5rem;}
+.about p{
+  font-size:0.98rem;color:rgba(255,255,255,0.65);
+  line-height:1.75;margin-bottom:1.2rem;
+}
+.about-card{
+  background:linear-gradient(135deg,rgba(26,95,180,0.08),rgba(14,165,233,0.04));
+  border:1px solid rgba(14,165,233,0.2);
+  border-radius:16px;padding:2.2rem;
+}
+.about-name{
+  font-family:'Fraunces',serif;font-size:1.3rem;font-weight:700;
+  margin-bottom:0.4rem;
+}
+.about-title{
+  font-size:0.85rem;color:var(--sky);
+  margin-bottom:1.8rem;letter-spacing:0.04em;
+}
+.about-items{display:flex;flex-direction:column;gap:1.2rem;}
+.about-item{display:flex;gap:14px;align-items:flex-start;}
+.about-item-icon{
+  width:38px;height:38px;border-radius:10px;flex-shrink:0;
+  background:rgba(14,165,233,0.12);
+  display:flex;align-items:center;justify-content:center;font-size:1.1rem;
+}
+.about-item-text{
+  font-size:0.9rem;color:rgba(255,255,255,0.7);line-height:1.6;
+}
+
+/* ===== CTA SECTION ===== */
+.cta-section{
+  padding:6rem 3rem;text-align:center;
+  background:
+    radial-gradient(ellipse at center,rgba(14,165,233,0.18),transparent 60%),
+    var(--navy3);
+  border-top:1px solid rgba(14,165,233,0.15);
+  border-bottom:1px solid rgba(14,165,233,0.15);
+}
+.cta-section h2{
+  font-size:clamp(2rem,4vw,3.2rem);font-weight:600;
+  margin-bottom:1.2rem;
+}
+.cta-section p{
+  font-size:1.05rem;color:rgba(255,255,255,0.6);
+  max-width:600px;margin:0 auto 2.5rem;
+}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+.btn-white{
+  background:white;color:var(--navy);padding:1rem 2rem;border-radius:10px;
+  font-size:0.95rem;font-weight:700;
+  transition:transform 0.2s,box-shadow 0.2s;
+}
+.btn-white:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(255,255,255,0.25);}
+.btn-outline-white{
+  background:transparent;color:white;padding:1rem 2rem;border-radius:10px;
+  font-size:0.95rem;font-weight:600;
+  border:1px solid rgba(255,255,255,0.3);
+  transition:background 0.2s;
+}
+.btn-outline-white:hover{background:rgba(255,255,255,0.08);}
+
+/* ===== CONTACT ===== */
+.contact{
+  padding:6rem 3rem;max-width:1280px;margin:0 auto;
+  display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;
+}
+@media(max-width:880px){.contact{grid-template-columns:1fr;gap:2.5rem;}}
+.contact h2{font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:600;margin-bottom:1rem;}
+.contact > div > p{font-size:1rem;color:rgba(255,255,255,0.6);margin-bottom:2.2rem;line-height:1.7;}
+.contact-info{display:flex;flex-direction:column;gap:1.2rem;}
+.contact-item{display:flex;gap:14px;align-items:flex-start;}
+.contact-icon{
+  width:42px;height:42px;border-radius:10px;flex-shrink:0;
+  background:rgba(14,165,233,0.12);
+  display:flex;align-items:center;justify-content:center;font-size:1.15rem;
+}
+.contact-text{font-size:0.92rem;color:rgba(255,255,255,0.75);}
+.contact-text strong{display:block;color:white;font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:2px;color:var(--sky);}
+
+/* Form */
+.form{
+  background:rgba(14,165,233,0.04);
+  border:1px solid rgba(14,165,233,0.18);
+  border-radius:16px;padding:2.2rem;
+  display:flex;flex-direction:column;gap:1rem;
+}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+@media(max-width:520px){.form-row{grid-template-columns:1fr;}}
+.form input,.form select,.form textarea{
+  width:100%;padding:0.85rem 1rem;
+  background:rgba(0,0,0,0.2);
+  border:1px solid rgba(255,255,255,0.12);
+  border-radius:8px;color:white;font-family:inherit;font-size:0.92rem;
+  transition:border-color 0.2s,background 0.2s;
+}
+.form input::placeholder,.form textarea::placeholder{color:rgba(255,255,255,0.4);}
+.form input:focus,.form select:focus,.form textarea:focus{
+  outline:none;border-color:var(--sky);
+  background:rgba(0,0,0,0.32);
+}
+.form select{cursor:pointer;}
+.form select option{background:var(--navy);color:white;}
+.form textarea{resize:vertical;min-height:100px;}
+.form-submit{
+  background:linear-gradient(135deg,var(--blue),var(--sky));
+  color:white;padding:1rem;border-radius:10px;
+  font-size:0.95rem;font-weight:700;margin-top:0.4rem;
+  transition:transform 0.2s,box-shadow 0.2s;
+}
+.form-submit:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(14,165,233,0.4);}
+
+/* ===== FOOTER ===== */
+footer{
+  padding:2.5rem 3rem;
+  background:rgba(8,24,40,0.98);
+  border-top:1px solid rgba(14,165,233,0.1);
+  display:flex;justify-content:space-between;align-items:center;
+  flex-wrap:wrap;gap:1.4rem;
+}
+.footer-logo{
+  display:flex;align-items:center;gap:10px;
+  font-family:'Fraunces',serif;font-weight:700;font-size:1.05rem;cursor:pointer;
+}
+.fl-icon{
+  width:32px;height:32px;border-radius:8px;
+  background:linear-gradient(135deg,var(--blue),var(--sky));
+  display:flex;align-items:center;justify-content:center;font-size:0.95rem;
+}
+.footer-logo span{color:var(--sky);}
+.footer-copy{font-size:0.82rem;color:rgba(255,255,255,0.4);}
+.footer-links{display:flex;gap:1.6rem;}
+.footer-links a{
+  font-size:0.85rem;color:rgba(255,255,255,0.55);
+  transition:color 0.2s;cursor:pointer;
+}
+.footer-links a:hover{color:var(--sky);}
+
+/* ===== LANDING PAGE ===== */
+.lp-hero{
+  position:relative;
+  padding:8rem 3rem 5rem;
+  display:grid;grid-template-columns:1.05fr 1fr;gap:3.5rem;align-items:start;
+  max-width:1380px;margin:0 auto;
+}
+@media(max-width:980px){.lp-hero{grid-template-columns:1fr;gap:2.5rem;padding-top:6rem;}}
+.lp-hero-bg{
+  position:absolute;inset:0;z-index:-2;
+  background:
+    radial-gradient(ellipse at 80% 20%,rgba(14,165,233,0.2),transparent 55%),
+    radial-gradient(ellipse at 20% 80%,rgba(26,95,180,0.18),transparent 55%);
+}
+.lp-hero-grid{
+  position:absolute;inset:0;z-index:-1;
+  background-image:
+    linear-gradient(rgba(14,165,233,0.05) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(14,165,233,0.05) 1px,transparent 1px);
+  background-size:50px 50px;
+  mask:radial-gradient(ellipse at center,black 30%,transparent 70%);
+}
+.lp-urgency{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:0.5rem 1rem;border-radius:999px;
+  background:rgba(240,165,0,0.12);border:1px solid rgba(240,165,0,0.4);
+  font-size:0.78rem;font-weight:700;color:var(--gold);
+  letter-spacing:0.06em;margin-bottom:1.5rem;
+}
+.lp-left h1{
+  font-size:clamp(2.2rem,4.5vw,3.6rem);font-weight:600;
+  margin-bottom:1.4rem;
+}
+.lp-left h1 em{
+  font-style:normal;
+  background:linear-gradient(135deg,var(--sky),var(--blue-light));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.lp-left > p{
+  font-size:1.05rem;color:rgba(255,255,255,0.65);
+  margin-bottom:1.8rem;line-height:1.7;
+}
+.lp-bullets{
+  list-style:none;display:flex;flex-direction:column;
+  gap:0.85rem;margin-bottom:2rem;
+}
+.lp-bullets li{
+  display:flex;gap:12px;align-items:flex-start;
+  font-size:0.95rem;color:rgba(255,255,255,0.82);
+}
+.lp-check{
+  width:22px;height:22px;border-radius:50%;flex-shrink:0;
+  background:linear-gradient(135deg,var(--blue),var(--sky));
+  display:flex;align-items:center;justify-content:center;
+  font-size:0.78rem;font-weight:700;color:white;
+}
+.lp-social-proof{
+  display:flex;align-items:center;gap:14px;
+  padding:1rem 1.2rem;border-radius:12px;
+  background:rgba(14,165,233,0.05);
+  border:1px solid rgba(14,165,233,0.18);
+}
+.lp-avatars{display:flex;}
+.lp-avatar{
+  width:36px;height:36px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:0.8rem;font-weight:700;color:white;
+  border:2px solid var(--navy);
+  margin-left:-8px;
+}
+.lp-avatar:first-child{margin-left:0;}
+.lp-stars{color:var(--gold);font-size:0.95rem;letter-spacing:0.08em;}
+.lp-proof-text{font-size:0.85rem;color:rgba(255,255,255,0.7);margin-top:2px;}
+
+.lp-form-card{
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(14,165,233,0.25);
+  border-radius:18px;padding:2.2rem;
+  backdrop-filter:blur(16px);
+  box-shadow:0 18px 50px rgba(0,0,0,0.4);
+}
+.lp-form-title{
+  font-family:'Fraunces',serif;font-size:1.5rem;font-weight:700;
+  margin-bottom:0.4rem;
+}
+.lp-form-sub{
+  font-size:0.9rem;color:rgba(255,255,255,0.6);
+  line-height:1.6;margin-bottom:1.6rem;
+}
+.lp-form-sub span{color:var(--sky);font-weight:600;}
+.lp-field{display:flex;flex-direction:column;gap:6px;margin-bottom:0.85rem;}
+.lp-field label{
+  font-size:0.78rem;font-weight:600;
+  color:rgba(255,255,255,0.85);letter-spacing:0.02em;
+}
+.lp-field input,.lp-field select{
+  width:100%;padding:0.78rem 0.9rem;
+  background:rgba(0,0,0,0.25);
+  border:1px solid rgba(255,255,255,0.12);
+  border-radius:8px;color:white;
+  font-family:inherit;font-size:0.92rem;
+  transition:border-color 0.2s,background 0.2s;
+}
+.lp-field input::placeholder{color:rgba(255,255,255,0.35);}
+.lp-field input:focus,.lp-field select:focus{
+  outline:none;border-color:var(--sky);
+  background:rgba(0,0,0,0.35);
+}
+.lp-field select{cursor:pointer;}
+.lp-field select option{background:var(--navy);color:white;}
+.lp-field-row{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin-bottom:0.85rem;}
+.lp-field-row .lp-field{margin-bottom:0;}
+.lp-submit{
+  width:100%;padding:1rem;
+  background:linear-gradient(135deg,var(--blue),var(--sky));
+  color:white;font-size:0.98rem;font-weight:700;
+  border-radius:10px;margin-top:0.6rem;
+  transition:transform 0.2s,box-shadow 0.2s;
+}
+.lp-submit:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(14,165,233,0.5);}
+.lp-submit-sub{
+  text-align:center;font-size:0.75rem;
+  color:rgba(255,255,255,0.5);margin-top:0.9rem;
+}
+.lp-submit-sub span{color:rgba(255,255,255,0.7);}
+.lp-form-guarantee{
+  margin-top:1.4rem;padding:1rem;border-radius:10px;
+  background:rgba(22,163,74,0.08);border:1px solid rgba(22,163,74,0.25);
+  display:flex;gap:12px;align-items:flex-start;
+}
+.lp-form-guarantee p{
+  font-size:0.82rem;color:rgba(255,255,255,0.7);line-height:1.55;
+}
+.lp-form-guarantee strong{color:var(--green);}
+
+/* ===== LP STRIP ===== */
+.lp-strip{
+  padding:2.5rem 3rem;
+  background:linear-gradient(90deg,var(--navy2),var(--navy3),var(--navy2));
+  border-top:1px solid rgba(14,165,233,0.15);
+  border-bottom:1px solid rgba(14,165,233,0.15);
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:1.5rem;text-align:center;
+}
+.lp-strip-num{
+  font-family:'Fraunces',serif;font-size:2.4rem;font-weight:600;
+  background:linear-gradient(135deg,var(--sky),var(--blue-light));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  margin-bottom:0.3rem;
+}
+.lp-strip-num span{font-size:1.2rem;color:rgba(255,255,255,0.5);-webkit-text-fill-color:rgba(255,255,255,0.5);}
+.lp-strip-label{
+  font-size:0.82rem;color:rgba(255,255,255,0.55);
+  letter-spacing:0.04em;
+}
+
+/* ===== LP HOW ===== */
+.lp-how{padding:5rem 3rem;max-width:1280px;margin:0 auto;text-align:center;}
+.lp-how-title{
+  font-family:'Fraunces',serif;font-size:clamp(1.8rem,3.4vw,2.6rem);
+  font-weight:600;margin-bottom:0.8rem;
+}
+.lp-how-sub{
+  font-size:1rem;color:rgba(255,255,255,0.55);
+  max-width:580px;margin:0 auto 3rem;
+}
+.lp-steps{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:1.4rem;text-align:left;
+}
+.lp-step{
+  background:rgba(14,165,233,0.04);
+  border:1px solid rgba(14,165,233,0.15);
+  border-radius:14px;padding:2rem;
+  transition:transform 0.3s,border-color 0.3s;
+}
+.lp-step:hover{transform:translateY(-4px);border-color:rgba(14,165,233,0.4);}
+.lp-step-num{
+  font-family:'Fraunces',serif;font-size:0.78rem;font-weight:700;
+  color:var(--sky);letter-spacing:0.12em;margin-bottom:0.8rem;
+}
+.lp-step-icon{
+  font-size:1.8rem;margin-bottom:1rem;
+  display:inline-flex;width:48px;height:48px;border-radius:10px;
+  background:rgba(14,165,233,0.12);align-items:center;justify-content:center;
+}
+.lp-step h3{font-size:1.1rem;font-weight:700;margin-bottom:0.5rem;}
+.lp-step p{font-size:0.9rem;color:rgba(255,255,255,0.6);line-height:1.6;}
+
+/* ===== LP TESTIMONIALS ===== */
+.lp-testimonials{
+  padding:5rem 3rem;
+  background:linear-gradient(180deg,var(--navy),var(--navy2));
+  border-top:1px solid rgba(14,165,233,0.1);
+  border-bottom:1px solid rgba(14,165,233,0.1);
+}
+.lp-test-title{
+  font-family:'Fraunces',serif;font-size:clamp(1.8rem,3.4vw,2.6rem);
+  font-weight:600;margin-bottom:2.5rem;text-align:center;
+}
+.lp-test-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1.4rem;max-width:1200px;margin:0 auto;
+}
+.lp-test-card{
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:14px;padding:2rem;
+  transition:transform 0.3s,border-color 0.3s;
+}
+.lp-test-card:hover{transform:translateY(-4px);border-color:rgba(14,165,233,0.4);}
+.lp-test-stars{color:var(--gold);letter-spacing:0.08em;margin-bottom:1rem;font-size:1rem;}
+.lp-test-quote{
+  font-size:0.95rem;color:rgba(255,255,255,0.85);
+  line-height:1.65;margin-bottom:1.4rem;font-style:italic;
+}
+.lp-test-name{font-weight:700;font-size:0.92rem;}
+.lp-test-role{font-size:0.78rem;color:rgba(255,255,255,0.5);}
+
+/* ===== LP FINAL ===== */
+.lp-final{
+  padding:6rem 3rem;text-align:center;
+  background:
+    radial-gradient(ellipse at center,rgba(14,165,233,0.2),transparent 60%),
+    var(--navy3);
+}
+.lp-final h2{
+  font-size:clamp(2rem,4vw,3.2rem);font-weight:600;
+  margin-bottom:1.2rem;
+}
+.lp-final p{
+  font-size:1.05rem;color:rgba(255,255,255,0.65);
+  max-width:580px;margin:0 auto 2.5rem;
+}
+.lp-final-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+
+/* ===== FORM STATUS (success / error) ===== */
+.form-status{margin-top:0.6rem;}
+.form-status.success{
+  padding:1.4rem 1.2rem;border-radius:10px;
+  background:rgba(22,163,74,0.1);
+  border:1px solid rgba(22,163,74,0.4);
+  color:var(--green);font-size:0.95rem;font-weight:600;
+  text-align:center;
+}
+.form-status.success strong{display:block;font-size:1.05rem;margin-bottom:0.3rem;}
+.form-status.error{
+  padding:0.9rem 1rem;border-radius:8px;
+  background:rgba(239,68,68,0.1);
+  border:1px solid rgba(239,68,68,0.35);
+  color:#fca5a5;font-size:0.88rem;text-align:center;
+}
+.form-submit:disabled,.lp-submit:disabled{
+  opacity:0.6;cursor:not-allowed;
+}
+
+/* responsive helpers */
+@media(max-width:768px){
+  .hero{padding:8rem 1.5rem 4rem;}
+  .section,.results,.about,.contact,.lp-how{padding-left:1.5rem;padding-right:1.5rem;}
+  .why,.pricing,.lp-testimonials,.cta-section,.lp-final,.lp-strip{padding-left:1.5rem;padding-right:1.5rem;}
+  .lp-hero{padding-left:1.5rem;padding-right:1.5rem;}
+  footer{padding:2rem 1.5rem;}
+}
+</style>
+</head>
+<body>
+
+<!-- ======================== TOP NAV ======================== -->
+<nav class="nav">
+  <div class="nav-logo" onclick="showPage('home')">
+    <div class="fl-icon">🏙️</div>
+    <span>Skyline</span>&nbsp;Acquisition Group
+  </div>
+  <div class="nav-links">
+    <a onclick="showPage('home');go('how')">How It Works</a>
+    <a onclick="showPage('home');go('why')">Why Us</a>
+    <a onclick="showPage('home');go('pricing')">Pricing</a>
+    <a onclick="showPage('home');go('contact')">Contact</a>
+  </div>
+  <button class="nav-cta" onclick="showPage('landing')">Get Free Trial →</button>
+</nav>
+
+<!-- ======================== HOME PAGE ======================== -->
+<div id="page-home" class="page active">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-tag">Live Insurance Transfers</div>
+  <h1>Stop chasing leads.<br>Start closing <em>warm live transfers</em>.</h1>
+  <p>Skyline Acquisition Group delivers triple pre-screened insurance prospects directly to your phone — ready to quote, ready to buy. Every transfer is warm, intent-verified, and matched to your license.</p>
+  <div class="hero-btns">
+    <button class="btn-primary" onclick="showPage('landing')">Claim Free Trial Transfers →</button>
+    <button class="btn-secondary" onclick="go('how')">See How It Works</button>
+  </div>
+</section>
+
+<!-- TICK STRIP -->
+<div class="tick-strip">
+  <span class="tick-item"><span class="tick-dot"></span>🇺🇸 USA-Based Call Center</span>
+  <span class="tick-item"><span class="tick-dot"></span>🔒 Fully Compliant Transfers</span>
+  <span class="tick-item"><span class="tick-dot"></span>✅ Triple Pre-Screened Prospects</span>
+  <span class="tick-item"><span class="tick-dot"></span>🔁 Replacement Guarantee</span>
+  <span class="tick-item"><span class="tick-dot"></span>📞 Warm Handoff Every Time</span>
+  <span class="tick-item"><span class="tick-dot"></span>⚡ Real-Time Live Transfers</span>
+  <span class="tick-item"><span class="tick-dot"></span>🎯 High-Intent Prospects Only</span>
+  <span class="tick-item"><span class="tick-dot"></span>🏙️ Skyline Acquisition Group</span>
+</div>
+
+<!-- HOW IT WORKS -->
+<section class="section" id="how">
+  <div class="section-tag">The Process</div>
+  <h2 class="section-title">From stranger to your phone in 4 steps</h2>
+  <p class="section-sub">Every transfer goes through our proven qualification process before it ever reaches you.</p>
+  <div class="steps">
+    <div class="step"><div class="step-num">01</div><div class="step-icon">📞</div><h3>We Contact Shoppers</h3><p>Our team reaches consumers actively searching for better rates and coverage right now.</p></div>
+    <div class="step"><div class="step-num">02</div><div class="step-icon">✅</div><h3>We Pre-Screen Them</h3><p>We verify active need and genuine buying intent, and genuine intent to get a quote today.</p></div>
+    <div class="step"><div class="step-num">03</div><div class="step-icon">🔄</div><h3>Warm Live Transfer</h3><p>Our agent introduces you by name and hands the live call directly to you — no cold drops ever.</p></div>
+    <div class="step"><div class="step-num">04</div><div class="step-icon">🏆</div><h3>You Close the Deal</h3><p>You speak with a ready, warm prospect. Quote them, bind the policy, earn the commission.</p></div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why" id="why">
+  <div class="section-tag">Why Skyline</div>
+  <h2 class="section-title">Built for agents tired of cold leads</h2>
+  <p class="section-sub">We built Skyline Acquisition Group because agents deserve better than chasing unresponsive form fills.</p>
+  <div class="features">
+    <div class="feature-card"><div class="feature-icon">🎯</div><h3>Triple-Verified Prospects</h3><p>Every consumer verified for active need and genuine buying intent, and real-time intent before transfer.</p><span class="feature-pill">Zero Cold Drops</span></div>
+    <div class="feature-card"><div class="feature-icon">🔁</div><h3>Replacement Guarantee</h3><p>If any transfer doesn't meet our agreed criteria, we replace it — no questions, no delays.</p><span class="feature-pill">Risk-Free</span></div>
+    <div class="feature-card"><div class="feature-icon">🎙️</div><h3>Full Call Recordings</h3><p>Every pre-screen call is recorded. Review exactly how we qualified your prospect.</p><span class="feature-pill">Full Transparency</span></div>
+    <div class="feature-card"><div class="feature-icon">📍</div><h3>State-Matched Transfers</h3><p>We only send prospects in states you're licensed in. No wasted calls, no compliance headaches.</p><span class="feature-pill">All 50 States</span></div>
+    <div class="feature-card"><div class="feature-icon">⚡</div><h3>High Volume Capacity</h3><p>Whether you need 10 or 500 transfers a month, we scale with your team seamlessly.</p><span class="feature-pill">Scalable</span></div>
+    <div class="feature-card"><div class="feature-icon">🤝</div><h3>Low-Risk Trial First</h3><p>We earn your trust before asking for commitment. Start with a small trial batch.</p><span class="feature-pill">Try Before You Buy</span></div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="results" id="results">
+  <div class="section-tag">Client Results</div>
+  <h2 class="section-title">Agents love what happens when leads are actually warm</h2>
+  <div class="results-grid">
+    <div class="result-card featured"><div class="result-metric">★★★★★</div><p class="result-quote">"Skyline Acquisition Group changed how I run my agency. Every transfer that comes in, the person already knows why they're talking to me. My close rate went up dramatically in the first month."</p><div class="result-author"><div class="result-avatar">JM</div><div><div class="result-name">James Mitchell</div><div class="result-role">Independent Agent — Texas</div></div></div></div>
+    <div class="result-card"><div class="result-metric">★★★★★</div><p class="result-quote">"I was skeptical after getting burned by other vendors. The team personally walked me through the trial and the quality spoke for itself. We're now on a high-volume plan."</p><div class="result-author"><div class="result-avatar">SR</div><div><div class="result-name">Sandra Rivera</div><div class="result-role">Agency Owner — Florida</div></div></div></div>
+    <div class="result-card"><div class="result-metric">★★★★★</div><p class="result-quote">"The warm handoff is the difference maker. The consumer is already relaxed and ready. It's the closest thing to a referral you can get from a lead vendor."</p><div class="result-author"><div class="result-avatar">DK</div><div><div class="result-name">David Kim</div><div class="result-role">Licensed Agent — Georgia</div></div></div></div>
+    <div class="result-card"><div class="result-metric">★★★★★</div><p class="result-quote">"The replacement guarantee alone sold me. No other vendor offers that. Skyline actually stands behind their product and it shows in every call we receive."</p><div class="result-author"><div class="result-avatar">AL</div><div><div class="result-name">Amanda Lewis</div><div class="result-role">Team Lead — Ohio</div></div></div></div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+  <div class="section-tag">Pricing</div>
+  <h2 class="section-title">Simple, transparent pricing</h2>
+  <p class="section-sub">Contract-based plans built for serious agents. Transparent pricing, scalable volume, and guaranteed quality — every transfer, every time.</p>
+  <div class="plans">
+    <div class="plan">
+      <div class="plan-name">Starter</div>
+      <div class="plan-price"><span class="currency">$</span>20</div>
+      <div class="plan-per">per live transfer</div>
+      <ul class="plan-features">
+        <li><span class="check">✓</span> 10–30 transfers/month</li>
+        <li><span class="check">✓</span> Triple pre-screening</li>
+        <li><span class="check">✓</span> Call recordings included</li>
+        <li><span class="check">✓</span> Replacement guarantee</li>
+        <li><span class="check">✓</span> 1–3 states</li>
+      </ul>
+      <button class="plan-btn" onclick="showPage('landing')">Get Started</button>
+    </div>
+    <div class="plan popular">
+      <div class="popular-badge">Most Popular</div>
+      <div class="plan-name">Growth</div>
+      <div class="plan-price"><span class="currency">$</span>30</div>
+      <div class="plan-per">per live transfer</div>
+      <ul class="plan-features">
+        <li><span class="check">✓</span> 30–100 transfers/month</li>
+        <li><span class="check">✓</span> Triple pre-screening</li>
+        <li><span class="check">✓</span> Call recordings included</li>
+        <li><span class="check">✓</span> Replacement guarantee</li>
+        <li><span class="check">✓</span> Up to 10 states</li>
+        <li><span class="check">✓</span> Dedicated account manager</li>
+      </ul>
+      <button class="plan-btn" onclick="showPage('landing')">Start Trial</button>
+    </div>
+    <div class="plan">
+      <div class="plan-name">Enterprise</div>
+      <div class="plan-price"><span class="currency">$</span>45</div>
+      <div class="plan-per">per live transfer</div>
+      <ul class="plan-features">
+        <li><span class="check">✓</span> 100+ transfers/month</li>
+        <li><span class="check">✓</span> Triple pre-screening</li>
+        <li><span class="check">✓</span> Call recordings included</li>
+        <li><span class="check">✓</span> Replacement guarantee</li>
+        <li><span class="check">✓</span> All 50 states</li>
+        <li><span class="check">✓</span> Priority support 24/7</li>
+        <li><span class="check">✓</span> Custom criteria filters</li>
+      </ul>
+      <button class="plan-btn" onclick="showPage('landing')">Contact Us</button>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div>
+    <div class="about-label">About Us</div>
+    <h2>Skyline Acquisition Group — Built for Agents Who Want Results</h2>
+    <p>Skyline Acquisition Group was built out of frustration. We watched agents waste thousands of dollars on leads that went nowhere — cold lists, form fills from people who had no idea why they were being called, and vendors who disappeared when quality complaints came in.</p>
+    <p>So we built something different. A call center focused entirely on one thing: getting warm, real, ready-to-quote prospects on the phone with agents who can actually help them.</p>
+    <p>Every transfer that leaves Skyline Acquisition Group has our reputation behind it. That's not a slogan — it's how we run this business.</p>
+  </div>
+  <div class="about-card">
+    <div class="about-name">Skyline Acquisition Group</div>
+    <div class="about-title">Live Transfer Specialists — USA Insurance</div>
+    <div class="about-items">
+      <div class="about-item"><div class="about-item-icon">🇺🇸</div><div class="about-item-text"><strong>USA-based call center</strong> operating across all 50 states with trained pre-screen agents</div></div>
+      <div class="about-item"><div class="about-item-icon">📋</div><div class="about-item-text"><strong>Insurance specialists</strong> — we don't spread thin across verticals, we perfect one</div></div>
+      <div class="about-item"><div class="about-item-icon">🤝</div><div class="about-item-text"><strong>Agent-first philosophy</strong> — your success is our success, every single transfer</div></div>
+      <div class="about-item"><div class="about-item-icon">📞</div><div class="about-item-text"><strong>Direct access to our team</strong> — not a support ticket, a real conversation every time</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2>Ready to talk to buyers,<br>not just leads?</h2>
+  <p>Start with a low-risk trial. Flexible contract options with no large upfront commitment — just quality transfers you can evaluate yourself.</p>
+  <div class="cta-btns">
+    <button class="btn-white" onclick="showPage('landing')">Claim Your Free Trial</button>
+    <button class="btn-outline-white" onclick="go('pricing')">View Pricing</button>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div>
+    <h2>Let's talk about your pipeline</h2>
+    <p>Fill out the form and our team will personally reach out within a few hours to discuss your states, volume, and how Skyline Acquisition Group can fit your agency.</p>
+    <div class="contact-info">
+      <div class="contact-item"><div class="contact-icon">📧</div><div class="contact-text"><strong>Email</strong>Info@SkylineacquisitionGroup.com</div></div>
+      <div class="contact-item"><div class="contact-icon">📞</div><div class="contact-text"><strong>Phone</strong>+1 (307) 622-4901</div></div>
+      <div class="contact-item"><div class="contact-icon">⏰</div><div class="contact-text"><strong>Hours</strong>Mon–Sat, 9am–6pm PST</div></div>
+      <div class="contact-item"><div class="contact-icon">📍</div><div class="contact-text"><strong>Based in</strong>USA — serving all 50 states</div></div>
+    </div>
+  </div>
+  <div>
+    <form class="form" id="contactForm" onsubmit="submitForm(event,'contactForm')">
+      <input type="hidden" name="access_key" value="d6c3bd4d-2a56-466a-8656-3f338b03e91c"/>
+      <input type="hidden" name="subject" value="New Contact Form — Skyline Website"/>
+      <input type="hidden" name="from_name" value="Skyline Website Contact"/>
+      <input type="checkbox" name="botcheck" style="display:none;"/>
+      <div class="form-row"><input type="text" name="Name" placeholder="Your name" required/><input type="text" name="Agency" placeholder="Agency name" required/></div>
+      <div class="form-row"><input type="email" name="Email" placeholder="Email address" required/><input type="tel" name="Phone" placeholder="Phone number" required/></div>
+      <select name="States Licensed" required><option value="" disabled selected>States you're licensed in</option><option>Texas</option><option>Florida</option><option>Georgia</option><option>California</option><option>New York</option><option>Ohio</option><option>Multiple states</option><option>All 50 states</option></select>
+      <select name="Transfers Per Month" required><option value="" disabled selected>Transfers needed per month</option><option>5–10 (Trial)</option><option>10–30 (Starter)</option><option>30–100 (Growth)</option><option>100+ (Enterprise)</option></select>
+      <textarea name="Message" placeholder="Anything else you'd like our team to know before the call?"></textarea>
+      <button type="submit" class="form-submit">Send Message — Let's Talk</button>
+      <div class="form-status"></div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo" onclick="showPage('home')">
+    <div class="fl-icon">🏙️</div>
+    <span>Skyline</span>&nbsp;Acquisition Group
+  </div>
+  <div class="footer-copy">© 2026 Skyline Acquisition Group. All rights reserved.</div>
+  <div class="footer-links">
+    <a onclick="go('how')">How It Works</a>
+    <a onclick="go('pricing')">Pricing</a>
+    <a onclick="showPage('landing')">Get Leads</a>
+    <a onclick="showPage('privacy')">Privacy</a>
+    <a onclick="showPage('terms')">Terms</a>
+  </div>
+</footer>
+
+</div><!-- /home -->
+
+<!-- ======================== LANDING PAGE ======================== -->
+<div id="page-landing" class="page">
+
+<section class="lp-hero">
+  <div class="lp-hero-bg"></div>
+  <div class="lp-hero-grid"></div>
+  <div class="lp-left">
+    <div class="lp-urgency">⚡ Limited Trial Spots Available This Month</div>
+    <h1>Get <em>Warm, Live</em> Insurance Transfers Sent Directly to You</h1>
+    <p>Stop chasing cold leads. Skyline Acquisition Group pre-screens every consumer for active buying intent and genuine need — then transfers them live to your phone. You just quote and close.</p>
+    <ul class="lp-bullets">
+      <li><div class="lp-check">✓</div> Pre-screened for active buying intent</li>
+      <li><div class="lp-check">✓</div> Actively shopping for insurance right now</li>
+      <li><div class="lp-check">✓</div> Warm handoff — they know your name before you speak</li>
+      <li><div class="lp-check">✓</div> Replacement guarantee on every transfer</li>
+      <li><div class="lp-check">✓</div> Available in all 50 states — matched to your license</li>
+      <li><div class="lp-check">✓</div> Flexible contract plans — trial, growth, and enterprise options</li>
+    </ul>
+    <div class="lp-social-proof">
+      <div class="lp-avatars">
+        <div class="lp-avatar" style="background:#1a5fb4;">JM</div>
+        <div class="lp-avatar" style="background:#0ea5e9;">SR</div>
+        <div class="lp-avatar" style="background:#2070cc;">DK</div>
+        <div class="lp-avatar" style="background:#1a5fb4;">AL</div>
+      </div>
+      <div>
+        <div class="lp-stars">★★★★★</div>
+        <div class="lp-proof-text"><strong>50+ licensed agents</strong> trust Skyline for live transfers</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lp-right">
+    <form class="lp-form-card" id="trialForm" onsubmit="submitForm(event,'trialForm')">
+      <input type="hidden" name="access_key" value="d6c3bd4d-2a56-466a-8656-3f338b03e91c"/>
+      <input type="hidden" name="subject" value="New Trial Request — Skyline Landing Page"/>
+      <input type="hidden" name="from_name" value="Skyline Trial Request"/>
+      <input type="checkbox" name="botcheck" style="display:none;"/>
+      <div class="lp-form-title">Claim Your Free Trial</div>
+      <div class="lp-form-sub">Fill out the form and our team will call you personally within a few hours. <span>Flexible contracts. Zero risk.</span></div>
+      <div class="lp-field-row">
+        <div class="lp-field"><label>First Name</label><input type="text" name="First Name" placeholder="First name" required/></div>
+        <div class="lp-field"><label>Last Name</label><input type="text" name="Last Name" placeholder="Last name" required/></div>
+      </div>
+      <div class="lp-field"><label>Agency Name</label><input type="text" name="Agency Name" placeholder="Your agency name" required/></div>
+      <div class="lp-field"><label>Phone Number</label><input type="tel" name="Phone" placeholder="+1 (555) 000-0000" required/></div>
+      <div class="lp-field"><label>Email Address</label><input type="email" name="Email" placeholder="you@agency.com" required/></div>
+      <div class="lp-field">
+        <label>States Licensed In</label>
+        <select name="States Licensed" required><option value="" disabled selected>Select your states</option><option>Texas</option><option>Florida</option><option>Georgia</option><option>California</option><option>New York</option><option>Ohio</option><option>Multiple states</option><option>All 50 states</option></select>
+      </div>
+      <div class="lp-field">
+        <label>Transfers Needed / Month</label>
+        <select name="Transfers Per Month" required><option value="" disabled selected>Select volume</option><option>5–10 (Trial)</option><option>10–30 (Starter)</option><option>30–100 (Growth)</option><option>100+ (Enterprise)</option></select>
+      </div>
+      <button type="submit" class="lp-submit">Get My Free Trial Transfers →</button>
+      <div class="form-status"></div>
+      <div class="lp-submit-sub"><span>✓ Contract-based plans</span> &nbsp;·&nbsp; <span>✓ Replacement guarantee</span> &nbsp;·&nbsp; <span>✓ Cancel anytime</span></div>
+      <div class="lp-form-guarantee">
+        <div style="font-size:1.4rem;">🔒</div>
+        <p><strong>Our guarantee:</strong> If your trial transfers don't meet our screening criteria, we replace them free — no questions asked.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<div class="lp-strip">
+  <div class="lp-strip-item"><div class="lp-strip-num">98<span>%</span></div><div class="lp-strip-label">Transfer quality rate</div></div>
+  <div class="lp-strip-item"><div class="lp-strip-num">3<span>min</span></div><div class="lp-strip-label">Avg. pre-screen time</div></div>
+  <div class="lp-strip-item"><div class="lp-strip-num">50<span>+</span></div><div class="lp-strip-label">States covered</div></div>
+  <div class="lp-strip-item"><div class="lp-strip-num">24<span>/7</span></div><div class="lp-strip-label">Live transfer hours</div></div>
+</div>
+
+<div class="lp-how">
+  <div class="lp-how-title">How Skyline Acquisition Group Works</div>
+  <div class="lp-how-sub">Three simple steps from signup to receiving your first warm live transfer</div>
+  <div class="lp-steps">
+    <div class="lp-step"><div class="lp-step-num">STEP 01</div><div class="lp-step-icon">📋</div><h3>You Sign Up & Tell Us Your States</h3><p>Tell us what states you're licensed in, your daily call capacity, and any custom screening criteria you need.</p></div>
+    <div class="lp-step"><div class="lp-step-num">STEP 02</div><div class="lp-step-icon">🔍</div><h3>We Find, Call & Screen Consumers</h3><p>Our team contacts consumers actively shopping for insurance and triple-verifies them before any transfer.</p></div>
+    <div class="lp-step"><div class="lp-step-num">STEP 03</div><div class="lp-step-icon">📞</div><h3>You Receive the Warm Live Call</h3><p>Our agent introduces you by name and hands the qualified consumer directly to your line — ready to get a quote.</p></div>
+  </div>
+</div>
+
+<div class="lp-testimonials">
+  <div class="lp-test-title">What Agents Say About Skyline</div>
+  <div class="lp-test-grid">
+    <div class="lp-test-card"><div class="lp-test-stars">★★★★★</div><div class="lp-test-quote">"Skyline changed how I run my agency. Every transfer that comes in, the person already knows why they're talking to me. My close rate went up dramatically."</div><div class="lp-test-name">James Mitchell</div><div class="lp-test-role">Independent Agent — Texas</div></div>
+    <div class="lp-test-card"><div class="lp-test-stars">★★★★★</div><div class="lp-test-quote">"The team personally walked me through the trial. The quality spoke for itself. I've tried five lead vendors — Skyline is the only one where people actually pick up ready to talk."</div><div class="lp-test-name">Sandra Rivera</div><div class="lp-test-role">Agency Owner — Florida</div></div>
+    <div class="lp-test-card"><div class="lp-test-stars">★★★★★</div><div class="lp-test-quote">"The replacement guarantee alone sold me. No other vendor offers that. Skyline Acquisition Group stands behind every transfer — and the warm handoff makes closing so much easier."</div><div class="lp-test-name">Amanda Lewis</div><div class="lp-test-role">Team Lead — Ohio</div></div>
+  </div>
+</div>
+
+<div class="lp-final">
+  <h2>Start Receiving Warm<br>Live Transfers Today</h2>
+  <p>Join licensed agents across the USA who trust Skyline Acquisition Group to fill their pipeline with ready-to-quote prospects.</p>
+  <div class="lp-final-btns">
+    <button class="btn-white" onclick="window.scrollTo({top:0,behavior:'smooth'})">Claim My Free Trial →</button>
+    <button class="btn-outline-white" onclick="showPage('home');go('contact')">Talk to Our Team First</button>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo" onclick="showPage('home')">
+    <div class="fl-icon">🏙️</div>
+    <span>Skyline</span>&nbsp;Acquisition Group
+  </div>
+  <div class="footer-copy">© 2026 Skyline Acquisition Group. All rights reserved.</div>
+  <div class="footer-links">
+    <a onclick="showPage('home')">Home</a>
+    <a onclick="showPage('home');go('pricing')">Pricing</a>
+    <a onclick="showPage('home');go('contact')">Contact</a>
+    <a onclick="showPage('privacy')">Privacy Policy</a>
+    <a onclick="showPage('terms')">Terms</a>
+  </div>
+</footer>
+
+</div><!-- /landing -->
+
+<!-- ======================== PRIVACY PAGE ======================== -->
+<div id="page-privacy" class="page">
+<div style="padding:8rem 3rem 5rem;max-width:860px;margin:0 auto;min-height:100vh;">
+  <div style="font-size:0.72rem;font-weight:700;color:var(--sky);letter-spacing:0.14em;text-transform:uppercase;margin-bottom:1rem;display:flex;align-items:center;gap:8px;"><span style="width:20px;height:2px;background:var(--sky);border-radius:2px;display:inline-block;"></span>Legal</div>
+  <h1 style="font-family:'Fraunces',serif;font-size:clamp(2rem,4vw,3rem);font-weight:600;letter-spacing:-0.015em;margin-bottom:0.5rem;">Privacy Policy</h1>
+  <p style="color:rgba(255,255,255,0.38);font-size:0.82rem;margin-bottom:3rem;">Last updated: January 1, 2025 &nbsp;·&nbsp; Effective immediately</p>
+
+  <div style="display:flex;flex-direction:column;gap:2.5rem;">
+    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
+      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">1. Introduction</h2>
+      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;">Skyline Acquisition Group ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services. Please read this policy carefully. If you disagree with its terms, please discontinue use of our site.</p>
+    </div>
+
+    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
+      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">2. Information We Collect</h2>
+      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;margin-bottom:1rem;"><strong style="color:var(--white);">Personal Information You Provide:</strong> When you fill out our contact or trial request forms, we may collect your name, agency name, email address, phone number, and business details.</p>
+      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;margin-bottom:1rem;"><strong style="color:var(--white);">Automatically Collected Information:</strong> We may automatically collect device information, browser type, IP address, pages visited, and time spent on our website through cookies and similar tracking technologies.</p>
+      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;"><strong style="color:var(--white);">Call Recording Data:</strong> All pre-screen calls conducted as part of our lead generation service are recorded for quality assurance and compliance purposes.</p>
+    </div>
+
+    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
+      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">3. How We Use Your Information</h2>
+      <ul style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;padding-left:1.2rem;display:flex;flex-direction:column;gap:0.5rem;">
+        <li>To provide, operate, and improve our lead generation and live transfer services</li>
+        <li>To contact you regarding your inquiry, contract, or account</li>
+        <li>To send service-related communications and updates</li>
+        <li>To comply with legal obligations and regulatory requirements</li>
+        <li>To analyze website usage and improve user experience</li>
+        <li>To prevent fraudulent or unauthorized activity</li>
+      </ul>
+    </div>
+
+    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
+      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">4. Information Sharing & Disclosure</h2>
+      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;margin-bottom:1rem;">We do not sell, trade, or rent your personal information to third parties. We may share information in the following limited circumstances:</p>
+      <ul style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;padding-left:1.2rem;display:flex;flex-direction:column;gap:0.5rem;">
+        <li><strong style="color:var(--white);">Service Providers:</strong> Trusted third-party vendors who assist in operating our website and services, subject to confidentiality agreements</li>
+        <li><strong style="color:var(--white);">Legal Requirements:</strong> When required by law, court order, or governmental authority</li>
+        <li><strong style="color:var(--white);">Business Transfers:</strong> In connection with a merger, acquisition, or sale of assets, with prior notice to affected users</li>
+        <li><strong style="color:var(--white);">Protection of Rights:</strong> To protect the rights, property, or safety of Skyline Acquisition Group, our clients, or others</li>
+      </ul>
+    </div>
+
+    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
+      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">5. Cookies & Tracking Technologies</h2>
+      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;margin-bottom:1rem;">We use cookies and similar tracking technologies to enhance your browsing experience and analyze website traffic. Types of cookies we use:</p>
+      <ul style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;padding-left:1.2rem;display:flex;flex-direction:column;gap:0.5rem;">
+        <li><strong style="color:var(--white);">Essential Cookies:</strong> Necessary for the website to function properly</li>
+        <li><strong style="color:var(--white);">Analytics Cookies:</strong> Help us understand how visitors interact with our website (e.g., Google Analytics)</li>
+        <li><strong style="color:var(--white);">Marketing Cookies:</strong> Used to track visitors across websites for advertising purposes</li>
+      </ul>
+      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;margin-top:1rem;">You may disable cookies through your browser settings, though this may affect website functionality.</p>
+    </div>
+
+    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
+      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">6. Data Security</h2>
+      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;">We implement appropriate technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the Internet or electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
+    </div>
+
+    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
+      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">7. Your Rights</h2>
+      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;margin-bottom:1rem;">Depending on your location, you may have the following rights regarding your personal data:</p>
+      <ul style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;padding-left:1.2rem;display:flex;flex-direction:column;gap:0.5rem;">
+        <li><strong style="color:var(--white);">Access:</strong> Request a copy of the personal data we hold about you</li>
+        <li><strong style="color:var(--white);">Correction:</strong> Request correction of inaccurate or incomplete data</li>
+        <li><strong style="color:var(--white);">Deletion:</strong> Request deletion of your personal data ("right to be forgotten")</li>
+        <li><strong style="color:var(--white);">Opt-Out:</strong> Opt out of marketing communications at any time</li>
+        <li><strong style="color:var(--white);">Data Portability:</strong> Request your data in a structured, machine-readable format</li>
+      </ul>
+      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;margin-top:1rem;">To exercise any of these rights, contact us at <a href="mailto:Info@SkylineacquisitionGroup.com" style="color:var(--sky);">Info@SkylineacquisitionGroup.com</a>.</p>
+    </div>
+
+    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
+      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">8. TCPA Compliance</h2>
+      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;">Skyline Acquisition Group complies with the Telephone Consumer Protection Act (TCPA). All prospects in our live transfer pipeline have provided prior express written consent to be contacted by insurance agents. We maintain records of all consent documentation as required by applicable law.</p>
+    </div>
+
+    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
+      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">9. Children's Privacy</h2>
+      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;">Our services are not directed to individuals under the age of 18. We do not knowingly collect personal information from children. If you believe we have inadvertently collected such information, please contact us immediately at <a href="mailto:Info@SkylineacquisitionGroup.com" style="color:var(--sky);">Info@SkylineacquisitionGroup.com</a>.</p>
+    </div>
+
+    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
+      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">10. Changes to This Policy</h2>
+      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;">We may update this Privacy Policy from time to time. We will notify you of any significant changes by updating the "Last updated" date at the top of this page. Your continued use of our website after changes are posted constitutes your acceptance of the updated policy.</p>
+    </div>
+
+    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
+      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">11. Contact Us</h2>
+      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;margin-bottom:1rem;">If you have any questions about this Privacy Policy or our data practices, please contact us:</p>
+      <div style="display:flex;flex-direction:column;gap:0.6rem;">
+        <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;">📧 <a href="mailto:Info@SkylineacquisitionGroup.com" style="color:var(--sky);">Info@SkylineacquisitionGroup.com</a></p>
+        <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;">📞 +1 (307) 622-4901</p>
+        <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;">🌐 Skyline Acquisition Group — United States</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(14,165,233,0.15);display:flex;gap:1rem;flex-wrap:wrap;">
+    <button onclick="showPage('home')" style="background:linear-gradient(135deg,#1a5fb4,#0ea5e9);color:white;border:none;padding:0.8rem 2rem;border-radius:8px;font-family:inherit;font-size:0.9rem;font-weight:600;cursor:pointer;">← Back to Home</button>
+    <button onclick="showPage('terms')" style="background:transparent;color:rgba(255,255,255,0.6);border:1px solid rgba(255,255,255,0.2);padding:0.8rem 2rem;border-radius:8px;font-family:inherit;font-size:0.9rem;cursor:pointer;">Terms of Service →</button>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo" onclick="showPage('home')"><div class="fl-icon">🏙️</div><span>Skyline</span>&nbsp;Acquisition Group</div>
+  <div class="footer-copy">© 2026 Skyline Acquisition Group. All rights reserved.</div>
+  <div class="footer-links">
+    <a onclick="showPage('home')">Home</a>
+    <a onclick="showPage('privacy')">Privacy Policy</a>
+    <a onclick="showPage('terms')">Terms of Service</a>
+  </div>
+</footer>
+</div>
+
+<!-- ======================== TERMS PAGE ======================== -->
+<div id="page-terms" class="page">
+<div style="padding:8rem 3rem 5rem;max-width:860px;margin:0 auto;min-height:100vh;">
+  <div style="font-size:0.72rem;font-weight:700;color:var(--sky);letter-spacing:0.14em;text-transform:uppercase;margin-bottom:1rem;display:flex;align-items:center;gap:8px;"><span style="width:20px;height:2px;background:var(--sky);border-radius:2px;display:inline-block;"></span>Legal</div>
+  <h1 style="font-family:'Fraunces',serif;font-size:clamp(2rem,4vw,3rem);font-weight:600;letter-spacing:-0.015em;margin-bottom:0.5rem;">Terms of Service</h1>
+  <p style="color:rgba(255,255,255,0.38);font-size:0.82rem;margin-bottom:3rem;">Last updated: January 1, 2025 &nbsp;·&nbsp; Effective immediately</p>
+
+  <div style="display:flex;flex-direction:column;gap:2.5rem;">
+    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
+      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">1. Acceptance of Terms</h2>
+      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;">By accessing or using the services of Skyline Acquisition Group ("Company," "we," "us"), you agree to be bound by these Terms of Service. If you do not agree to these terms, you may not use our services.</p>
+    </div>
+
+    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
+      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">2. Services Description</h2>
+      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;">Skyline Acquisition Group provides live transfer lead generation services to licensed insurance agents and agencies. Our services include prospect pre-screening, live call transfers, call recording, and account management as specified in your contract plan.</p>
+    </div>
+
+    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
+      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">3. Contract Plans & Payment</h2>
+      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;">All services are provided on a contract basis as outlined in your signed service agreement. Payment terms, transfer volumes, pricing, and contract duration are specified in your individual contract. Payments are due as specified in your agreement. Late payments may result in service suspension.</p>
+    </div>
+
+    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
+      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">4. Replacement Guarantee</h2>
+      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;">If a live transfer does not meet the mutually agreed screening criteria as defined in your contract, Skyline Acquisition Group will provide a replacement transfer at no additional charge. Replacement requests must be submitted within 24 hours of the transfer with documented justification.</p>
+    </div>
+
+    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
+      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">5. Client Responsibilities</h2>
+      <ul style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;padding-left:1.2rem;display:flex;flex-direction:column;gap:0.5rem;">
+        <li>Maintain all required professional licenses and regulatory compliance in states where you receive transfers</li>
+        <li>Ensure agents are available to receive transfers during agreed hours</li>
+        <li>Handle all transferred prospects in compliance with applicable laws and regulations</li>
+        <li>Not record or share call recordings without proper consent as required by law</li>
+        <li>Keep contract terms and pricing confidential</li>
+      </ul>
+    </div>
+
+    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
+      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">6. TCPA & Regulatory Compliance</h2>
+      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;">Skyline Acquisition Group operates in compliance with the Telephone Consumer Protection Act (TCPA), CAN-SPAM Act, and all applicable federal and state regulations. Clients are responsible for their own compliance with regulations governing the solicitation and sale of insurance products in their licensed states.</p>
+    </div>
+
+    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
+      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">7. Limitation of Liability</h2>
+      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;">Skyline Acquisition Group shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of our services. Our total liability shall not exceed the amount paid by you for services in the 30 days preceding the claim. We do not guarantee specific conversion rates or sales outcomes from live transfers.</p>
+    </div>
+
+    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
+      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">8. Termination</h2>
+      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;">Either party may terminate services as specified in your signed contract agreement. Skyline Acquisition Group reserves the right to immediately suspend services for violation of these terms, non-payment, or any activity that jeopardizes regulatory compliance.</p>
+    </div>
+
+    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
+      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">9. Governing Law</h2>
+      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;">These Terms of Service shall be governed by and construed in accordance with the laws of the United States and the State of Wyoming, without regard to conflict of law provisions. Any disputes shall be resolved through binding arbitration in Wyoming.</p>
+    </div>
+
+    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
+      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">10. Contact</h2>
+      <div style="display:flex;flex-direction:column;gap:0.6rem;">
+        <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;">📧 <a href="mailto:Info@SkylineacquisitionGroup.com" style="color:var(--sky);">Info@SkylineacquisitionGroup.com</a></p>
+        <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;">📞 +1 (307) 622-4901</p>
+        <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;">🌐 Skyline Acquisition Group — United States</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(14,165,233,0.15);display:flex;gap:1rem;flex-wrap:wrap;">
+    <button onclick="showPage('home')" style="background:linear-gradient(135deg,#1a5fb4,#0ea5e9);color:white;border:none;padding:0.8rem 2rem;border-radius:8px;font-family:inherit;font-size:0.9rem;font-weight:600;cursor:pointer;">← Back to Home</button>
+    <button onclick="showPage('privacy')" style="background:transparent;color:rgba(255,255,255,0.6);border:1px solid rgba(255,255,255,0.2);padding:0.8rem 2rem;border-radius:8px;font-family:inherit;font-size:0.9rem;cursor:pointer;">Privacy Policy →</button>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo" onclick="showPage('home')"><div class="fl-icon">🏙️</div><span>Skyline</span>&nbsp;Acquisition Group</div>
+  <div class="footer-copy">© 2026 Skyline Acquisition Group. All rights reserved.</div>
+  <div class="footer-links">
+    <a onclick="showPage('home')">Home</a>
+    <a onclick="showPage('privacy')">Privacy Policy</a>
+    <a onclick="showPage('terms')">Terms of Service</a>
+  </div>
+</footer>
+</div>
+
+<!-- ======================== COOKIE CONSENT BANNER ======================== -->
+<div id="cookie-banner" style="position:fixed;bottom:0;left:0;right:0;z-index:9999;background:rgba(8,24,40,0.97);backdrop-filter:blur(16px);border-top:1px solid rgba(14,165,233,0.2);padding:1.2rem 3rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;">
+  <div style="display:flex;align-items:center;gap:12px;flex:1;min-width:260px;">
+    <span style="font-size:1.3rem;">🍪</span>
+    <p style="font-size:0.82rem;color:rgba(255,255,255,0.65);line-height:1.5;">We use cookies to improve your experience and analyze site traffic. By continuing, you agree to our <a onclick="showPage('privacy')" style="color:#0ea5e9;cursor:pointer;text-decoration:underline;">Privacy Policy</a>.</p>
+  </div>
+  <div style="display:flex;gap:0.75rem;flex-shrink:0;">
+    <button onclick="acceptCookies()" style="background:linear-gradient(135deg,#1a5fb4,#0ea5e9);color:white;border:none;padding:0.6rem 1.4rem;border-radius:6px;font-family:inherit;font-size:0.82rem;font-weight:700;cursor:pointer;">Accept All</button>
+    <button onclick="declineCookies()" style="background:transparent;color:rgba(255,255,255,0.5);border:1px solid rgba(255,255,255,0.18);padding:0.6rem 1.4rem;border-radius:6px;font-family:inherit;font-size:0.82rem;cursor:pointer;">Decline</button>
+  </div>
+</div>
+
+<script>
+async function submitForm(event,formId){
+  event.preventDefault();
+  var form=document.getElementById(formId);
+  var btn=form.querySelector('button[type="submit"]');
+  var status=form.querySelector('.form-status');
+  var originalText=btn.textContent;
+  btn.disabled=true;
+  btn.textContent='Sending...';
+  status.className='form-status';
+  status.innerHTML='';
+  try{
+    var formData=new FormData(form);
+    var response=await fetch('https://api.web3forms.com/submit',{
+      method:'POST',
+      body:formData
+    });
+    var result=await response.json();
+    if(result.success){
+      // Hide all form children except the status, then show success
+      Array.prototype.forEach.call(form.children,function(child){
+        if(!child.classList.contains('form-status')){
+          child.style.display='none';
+        }
+      });
+      status.className='form-status success';
+      status.innerHTML='<strong>✓ Thank you!</strong>The Skyline Acquisition Group team will reach out within a few hours.';
+    }else{
+      throw new Error(result.message||'Submission failed');
+    }
+  }catch(err){
+    btn.disabled=false;
+    btn.textContent=originalText;
+    status.className='form-status error';
+    status.innerHTML='Something went wrong. Please try again or email Info@SkylineacquisitionGroup.com directly.';
+  }
+}
+function showPage(n){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  var target=document.getElementById('page-'+n);
+  if(target)target.classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function acceptCookies(){
+  try{localStorage.setItem('cookies','accepted');}catch(e){}
+  document.getElementById('cookie-banner').style.display='none';
+}
+function declineCookies(){
+  try{localStorage.setItem('cookies','declined');}catch(e){}
+  document.getElementById('cookie-banner').style.display='none';
+}
+window.addEventListener('load',function(){
+  try{
+    if(localStorage.getItem('cookies')){
+      document.getElementById('cookie-banner').style.display='none';
+    }
+  }catch(e){}
+});
+function go(id){
+  setTimeout(function(){
+    var el=document.getElementById(id);
+    if(el)el.scrollIntoView({behavior:'smooth'});
+  },80);
+}
+// scroll reveal
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){
+      e.target.style.opacity='1';
+      e.target.style.transform='translateY(0)';
+    }
+  });
+},{threshold:0.1});
+document.querySelectorAll('.step,.feature-card,.result-card,.plan,.lp-test-card,.lp-step,.about-item,.contact-item').forEach(function(el){
+  el.style.opacity='0';
+  el.style.transform='translateY(18px)';
+  el.style.transition='opacity 0.5s ease, transform 0.5s ease';
+  obs.observe(el);
+});
+</script>
+
+</body>
+</html>
