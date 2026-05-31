@@ -1,1413 +1,1773 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Skyline Acquisition Group — Live Transfer Leads for Insurance</title>
-<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAInklEQVRYhaWXe4xcVR3HP+dx587M7s6+2m5LS6GvtRTSQqlIxZZHQWoLaoBqSxSNRkhMhGCiaIJQTDTRKEaNCQWJxGCrCDZYEStF2pVYMSWFAqEtVeiy2+223ffsztzHOT//mJndbWu1jWdyk3NPbn7f7/n9vr/HKM5htW86MmXMsAxNu9N6utPS5AGnzaBT/qi16kAuyO3pvqXQd7Y21dl8NG9T17Ueub3c+eaK+OCeprTnvXoZPhH6ctmAQJh1qqk1ysyaX6xffOVA06LFHfnAbt69pnnX/0VgwaNdl6ZJ+d7R3dtWlV/f1SblohUA5wCpfiUTW61RgM43pFNXfLR3zpp1OwqFpoefWRnuO0cCoto3dd8x+mbHt4odT8/25WIgaVIFEsCgAoOIRnuFBClEKd6n46SUNmQaW+JFt332/fbr1vx49vbwZxs3Kv8/Ccz/yTuhzuYfGty5+Y7SnhdmiEtBBEwOsgWsKyKS4NEQpyAOb0HZepQqYPwxkqQEiQcUOrC0r1pz9JovfeWJCxqzG+9eoKLJePbUm+uga+OJp394Z/LuG83i0ooRm0WMQZWOkDo17n6Rqu9jQeJ+RPrxug6TyUAY4EeG8XHMwT9vmx73H7vrxvu+bRH5OkrVgoaZDN/+2F13Drz4y3vjt1+ZKi4BHaDzUyHpR5KYGt44cC34MnkfIYlDnMKEWZSL8c4x1NOdK44U56yeunRw78+/s7eGqWubBY92XTr62kv3lff+Zbq4BJTC1M+AsW68qwCISBW8+giV8Iy/1wTpwZVwpRFMEKKUwrmU/dufnXFgx5++cWtHtPg0AmlSurf48jOzKjFX6LpW/NB7eK/OAXjye2UfJ1lsIQci+Djm7V8/esHgYN/XEFHjBOZt6rp2dPe2Vb44mEE0qqEVXTyBPwOw0hplw5OBtQKlqMVJqj9cH3GpQJCreCYaGgwOP/eba5c/P7hynIBHbi/vfalNfApK8NEYqXf/8cbKWFSQx9S1omwGTAAi6GwTOtc8ATzJC0RHcGYGRoO4hGN/fW7aaOzWA9j2TUemjBzeu0LKRSsiqLAZkxzFoU8WV5WIyjWj8IjNoMICShxkGxFTyWilLeKSUwTq8aOj2FwAxQg3PBwMvrX36llPDbXoUsDl0f49Td4LEKIyHnGKU2OsdICqawUbINqgggBsgDcWlc2jtEVpiym0gVasXb+BhVd+ZMKGLyHkUEoQJQy/1tEy5svLrGj9AddzqB5JQVkoDyEmgDSeuDwCxqDCOjAGcQrJhJCUUalAJguulqKGaefNIkFT6vrnuCawKT4q472AT4kPH6iziW/XKTLTDfWFiEBQQPkyuaYWKjVqkqqVQmVzSBAggUEyIRJYCDIQZhETICYgU9fAytXXs+t3v+VwZ3dFN9ZCvglvCtiwUshk4HiovJ+pvaZOopIBQbkhfAJjx3tAkklCAtEGyeYhDCvCy2QgyDB9xlS+/Jm1XLH0EggyrLvtRnb+/jmicmm8dvgkRoZ6odRDmpiKzfKoVYmv1xWd1ZQeo5vbIBOenk5ak21u4qKFcyCwkM0ze/ZMbl29gs0drxNkLPd87uMc7D5G34kTp9UOlcljWtpO9qpz2FTrUbKhoxhZ8eD6e0GqoDVywAevuIz5ly+ju7uHz3/yBoYxFHTKE1tfoJhr5OXOd/n7vv2ohia8n9Suq5kkMVAeAPGVszCbqtQVrVPSrQtTIj8yZHEphK2YBvD9/XiXAsJNn1pH56FDbP3pw5TGSvzNWtrOa6P/eD9jY6NVnkI8gXhSCitjCdsuJD2+H1xSOWucGpGmXdZadYAL2otRz7t14h0qHSQtt6Jx47m/fetWXOoqNxNIkoSuw++PA3MG4IlhJSTqfwep9hSUQbfNK6rEHdS5ILenfsnygQnBeRjpRWwzxlYUm8SVjkYlGcbFdTb9QekMKgOUSqjqmSjBLFg2kBblVdt9S6FvybPHOwbrG+anwwNWZDpr159PkswkGOulrz+ibupMrppeoNS7h50jjrr8XKZMmUZdbze0NtKiBhjoN6SzptCYODqPjXF+GFFobKIYneCQyzJXHWLLr16jD4GwPrEzFu7q++bF/RYgH9jN01asWdvz/JaZknby/NNH8HEKSoNpxJhXeDFKq3oUYN8ZXF1zcT0q0Gg9git5BEGZAHEejCVYvKpXO7UFqs1o95rmXXNv3rAjbGqNEfBxgslYkBRJTpDGIQSN6IxCYVAIdbMuxBSaUflGmmfPrVbLOlTQgA5iSIdJS64CbjNIGlfSMdcQB5et2XH8/sUd4wQAGgpND1/06S906qBSAV0cY4KgYtgXkWgIHzlE5VBhA6WjPUgUo1zEQN8IJt+ClgiSIVxUxjs/3kMkjSp2dEDmwxs6AxM8XMMdJ/DMynDfwuvWfm/hjZ84qo1FxJMmMcZmJqYcBNwwvjSMT0pIPIovj8JIL260D+cifE2MUmnd4mPwAkpjF1/fk2lf/t3eB5a9cRoBgMevzD5+zZ13/+LCyz80oI0F73FJhA4s2gQnTz14pJoZp84AytgKeJqA92AMZs6l/dmrNjx5/MGlT0zGPIkASsnsxvxDqx/8wSOLblrXo4MKqI9jvItRNqg8xgJqAhhAW6gBu3Qi5jrAXnLd0ezH7tnURv5+mJiI4Ux/TETUF/9RvmP/9j/c/9aWR2Ynw4MZn0aTao2MT0IVKx7S9OTM0BpV1xxnrlr/ftC+4vsnHljy2KngZyZQXbfuKC4eKY989V/PPrmq96VtbenoYCBQAWMS2PhcaCoWsw1JsOSG3mDpzS8EWv9ocszPiUBtLf/jwNXF2G8YenPPyqFXd7bEhw/WyeDRkHLRgkAmn6rCtEhPnzdq26/otzMX7dJObaml2n9bZ0WgtmY9NdQy5svL0sS3K+fOI/WNpB6duiHS9IhK3YG0KK8Ob7y4/2xt/hsbuNhFN6wQuAAAAABJRU5ErkJggg=="/>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHIiB4MT0iMCIgeTE9IjAiIHgyPSIwLjUiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzBkMjY0NyIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwODE0MjgiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InJHIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzZDhmZTAiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIzMCUiIHN0b3AtY29sb3I9IiMwZWE1ZTkiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiM3ZGQzZmMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI3MCUiIHN0b3AtY29sb3I9IiMwZWE1ZTkiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMWE1ZmI0Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJhRyIgeDE9IjAiIHkxPSIxIiB4Mj0iMSIgeTI9IjAiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjYmFlNmZkIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzdkZDNmYyIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ic0ciIHgxPSIwIiB5MT0iMSIgeDI9IjAiIHkyPSIwIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzBlYTVlOSIgc3RvcC1vcGFjaXR5PSIwLjUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMWE1ZmI0IiBzdG9wLW9wYWNpdHk9IjAuMiIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxmaWx0ZXIgaWQ9ImdsIj48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIyIiByZXN1bHQ9ImIiLz48ZmVNZXJnZT48ZmVNZXJnZU5vZGUgaW49ImIiLz48ZmVNZXJnZU5vZGUgaW49IlNvdXJjZUdyYXBoaWMiLz48L2ZlTWVyZ2U+PC9maWx0ZXI+CiAgPC9kZWZzPgoKICA8IS0tIFJpbmdzIC0tPgogIDxjaXJjbGUgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMjUyIiBmaWxsPSJ1cmwoI3JHKSIgb3BhY2l0eT0iMC44Ii8+CiAgPGNpcmNsZSBjeD0iMjU2IiBjeT0iMjU2IiByPSIyNDAiIGZpbGw9InVybCgjYmdHKSIvPgogIDxjaXJjbGUgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMjMwIiBmaWxsPSJub25lIiBzdHJva2U9InVybCgjckcpIiBzdHJva2Utd2lkdGg9IjEiIG9wYWNpdHk9IjAuMyIvPgogIDxjaXJjbGUgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMTk1IiBmaWxsPSJub25lIiBzdHJva2U9InVybCgjckcpIiBzdHJva2Utd2lkdGg9IjEuNSIgb3BhY2l0eT0iMC4zIi8+CgogIDwhLS0gVG9wIGFyYyAobGVmdC10by1yaWdodCwgdGV4dCByZWFkcyBub3JtYWxseSBvbiB0b3AgaGFsZikgLS0+CiAgPHBhdGggaWQ9InRBIiBkPSJNIDY4LDI1NiBBIDE4OCwxODggMCAwLDEgNDQ0LDI1NiIgZmlsbD0ibm9uZSIvPgogIDx0ZXh0IGZpbGw9InVybCgjckcpIiBmb250LWZhbWlseT0iQXJpYWwsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9IjcwMCIgbGV0dGVyLXNwYWNpbmc9IjUiIG9wYWNpdHk9IjAuNyI+CiAgICA8dGV4dFBhdGggaHJlZj0iI3RBIiBzdGFydE9mZnNldD0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5BQ1FVSVNJVElPTiDCtyBERVZFTE9QTUVOVCDCtyBHUk9XVEg8L3RleHRQYXRoPgogIDwvdGV4dD4KCiAgPCEtLSBCb3R0b20gYXJjIChyaWdodC10by1sZWZ0IHNvIHRleHQgcmVhZHMgbm9ybWFsbHkgb24gYm90dG9tIGhhbGYpIC0tPgogIDxwYXRoIGlkPSJiQSIgZD0iTSA0MzcsMjY4IEEgMTk1LDE5NSAwIDAsMSA3NSwyNjgiIGZpbGw9Im5vbmUiLz4KICA8dGV4dCBmaWxsPSJ1cmwoI3JHKSIgZm9udC1mYW1pbHk9IkFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQuNSIgZm9udC13ZWlnaHQ9IjcwMCIgbGV0dGVyLXNwYWNpbmc9IjQiIG9wYWNpdHk9IjAuNyI+CiAgICA8dGV4dFBhdGggaHJlZj0iI2JBIiBzdGFydE9mZnNldD0iNTAlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5HUk9XVEggwrcgUEVSRk9STUFOQ0UgwrcgUEFSVE5FUlNISVA8L3RleHRQYXRoPgogIDwvdGV4dD4KCiAgPCEtLSBTdGFycyBsZWZ0IC0tPgogIDxnIGZpbGw9InVybCgjckcpIiBvcGFjaXR5PSIwLjQ1Ij4KICAgIDxwb2x5Z29uIHBvaW50cz0iOTIsMjE4IDk1LDIyNCAxMDEsMjI0IDk2LDIyOCA5OCwyMzQgOTIsMjMwIDg2LDIzNCA4OCwyMjggODMsMjI0IDg5LDIyNCIvPgogICAgPHBvbHlnb24gcG9pbnRzPSI3OCwyNTYgODEsMjYyIDg3LDI2MiA4MiwyNjYgODQsMjcyIDc4LDI2OCA3MiwyNzIgNzQsMjY2IDY5LDI2MiA3NSwyNjIiLz4KICAgIDxwb2x5Z29uIHBvaW50cz0iOTIsMjk0IDk1LDMwMCAxMDEsMzAwIDk2LDMwNCA5OCwzMTAgOTIsMzA2IDg2LDMxMCA4OCwzMDQgODMsMzAwIDg5LDMwMCIvPgogIDwvZz4KICA8IS0tIFN0YXJzIHJpZ2h0IC0tPgogIDxnIGZpbGw9InVybCgjckcpIiBvcGFjaXR5PSIwLjQ1Ij4KICAgIDxwb2x5Z29uIHBvaW50cz0iNDIwLDIxOCA0MjMsMjI0IDQyOSwyMjQgNDI0LDIyOCA0MjYsMjM0IDQyMCwyMzAgNDE0LDIzNCA0MTYsMjI4IDQxMSwyMjQgNDE3LDIyNCIvPgogICAgPHBvbHlnb24gcG9pbnRzPSI0MzQsMjU2IDQzNywyNjIgNDQzLDI2MiA0MzgsMjY2IDQ0MCwyNzIgNDM0LDI2OCA0MjgsMjcyIDQzMCwyNjYgNDI1LDI2MiA0MzEsMjYyIi8+CiAgICA8cG9seWdvbiBwb2ludHM9IjQyMCwyOTQgNDIzLDMwMCA0MjksMzAwIDQyNCwzMDQgNDI2LDMxMCA0MjAsMzA2IDQxNCwzMTAgNDE2LDMwNCA0MTEsMzAwIDQxNywzMDAiLz4KICA8L2c+CgogIDwhLS0gU2t5bGluZSAtLT4KICA8ZyBmaWxsPSJ1cmwoI3NHKSI+CiAgICA8cmVjdCB4PSIxNzIiIHk9IjE5NSIgd2lkdGg9IjE4IiBoZWlnaHQ9IjkwIiByeD0iMiIvPgogICAgPHJlY3QgeD0iMTk2IiB5PSIxNzIiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxMTMiIHJ4PSIyIi8+CiAgICA8cmVjdCB4PSIyMTciIHk9IjE1NSIgd2lkdGg9IjIyIiBoZWlnaHQ9IjEzMCIgcng9IjIiLz4KICAgIDxyZWN0IHg9IjI0NSIgeT0iMTY4IiB3aWR0aD0iMjAiIGhlaWdodD0iMTE3IiByeD0iMiIvPgogICAgPHJlY3QgeD0iMjcxIiB5PSIxNzgiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxMDciIHJ4PSIyIi8+CiAgICA8cmVjdCB4PSIyOTMiIHk9IjE1OCIgd2lkdGg9IjIyIiBoZWlnaHQ9IjEyNyIgcng9IjIiLz4KICAgIDxyZWN0IHg9IjMyMSIgeT0iMTg4IiB3aWR0aD0iMTYiIGhlaWdodD0iOTciIHJ4PSIyIi8+CiAgPC9nPgogIDxsaW5lIHgxPSIyMjgiIHkxPSIxNTUiIHgyPSIyMjgiIHkyPSIxMzgiIHN0cm9rZT0idXJsKCNyRykiIHN0cm9rZS13aWR0aD0iMi41IiBvcGFjaXR5PSIwLjUiLz4KICA8bGluZSB4MT0iMzA0IiB5MT0iMTU4IiB4Mj0iMzA0IiB5Mj0iMTQwIiBzdHJva2U9InVybCgjckcpIiBzdHJva2Utd2lkdGg9IjIuNSIgb3BhY2l0eT0iMC41Ii8+CgogIDwhLS0gR3Jvd3RoIGFycm93IC0tPgogIDxwb2x5bGluZSBwb2ludHM9IjE0OCwzMDAgMTk1LDI3MCAyMzUsMjg4IDI3OCwyNDggMzE4LDI2NSAzNzAsMTk1IgogICAgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI2FHKSIgc3Ryb2tlLXdpZHRoPSI2LjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZmlsdGVyPSJ1cmwoI2dsKSIvPgogIDxwb2x5Z29uIHBvaW50cz0iMzcwLDE5NSAzNTgsMjEwIDM3NSwyMTQiIGZpbGw9InVybCgjYUcpIi8+CiAgPHBvbHlsaW5lIHBvaW50cz0iMTUzLDMxMCAyMDAsMjgwIDI0MCwyOTggMjgzLDI1OCAzMjMsMjc1IDM3MCwyMDgiCiAgICBmaWxsPSJub25lIiBzdHJva2U9InVybCgjYUcpIiBzdHJva2Utd2lkdGg9IjIuOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBvcGFjaXR5PSIwLjMiLz4KCiAgPCEtLSBEaXZpZGVycyAtLT4KICA8bGluZSB4MT0iMTQwIiB5MT0iMzI1IiB4Mj0iMzcyIiB5Mj0iMzI1IiBzdHJva2U9InVybCgjckcpIiBzdHJva2Utd2lkdGg9IjEuOCIgb3BhY2l0eT0iMC40Ii8+CiAgPGxpbmUgeDE9IjE1NSIgeTE9IjMyOSIgeDI9IjM1NyIgeTI9IjMyOSIgc3Ryb2tlPSJ1cmwoI3JHKSIgc3Ryb2tlLXdpZHRoPSIwLjYiIG9wYWNpdHk9IjAuMiIvPgoKICA8IS0tIE1haW4gdGV4dCAtLT4KICA8dGV4dCB4PSIyNTYiIHk9IjM1MiIgZm9udC1mYW1pbHk9IkFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI5MDAiIGZvbnQtc2l6ZT0iMjIiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iMiIgb3BhY2l0eT0iMC45NSI+U0tZTElORSBBQ1FVSVNJVElPTiBHUk9VUDwvdGV4dD4KCiAgPCEtLSBUaHJlZSBzdGFycyAtLT4KICA8ZyBmaWxsPSJ1cmwoI3JHKSIgb3BhY2l0eT0iMC41Ij4KICAgIDxwb2x5Z29uIHBvaW50cz0iMjM0LDM3MCAyMzcsMzc1IDI0MywzNzUgMjM4LDM3OSAyNDAsMzg0IDIzNCwzODAgMjI4LDM4NCAyMzAsMzc5IDIyNSwzNzUgMjMxLDM3NSIvPgogICAgPHBvbHlnb24gcG9pbnRzPSIyNTYsMzY3IDI1OSwzNzIgMjY1LDM3MiAyNjAsMzc2IDI2MiwzODEgMjU2LDM3NyAyNTAsMzgxIDI1MiwzNzYgMjQ3LDM3MiAyNTMsMzcyIi8+CiAgICA8cG9seWdvbiBwb2ludHM9IjI3OCwzNzAgMjgxLDM3NSAyODcsMzc1IDI4MiwzNzkgMjg0LDM4NCAyNzgsMzgwIDI3MiwzODQgMjc0LDM3OSAyNjksMzc1IDI3NSwzNzUiLz4KICA8L2c+Cjwvc3ZnPgo="/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Skyline Acquisition Group — U.S. Customer Acquisition & Live Transfer Infrastructure. Performance-driven lead generation systems connecting high-intent U.S. consumers with licensed agents across Auto Insurance, ACA, Medicare, Solar, and more.">
+<title>Skyline Acquisition Group — U.S. Customer Acquisition & Live Transfer Infrastructure</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;}
-:root{
-  --navy:#0b1f3a;
-  --navy2:#0d2647;
-  --navy3:#102d52;
-  --blue:#1a5fb4;
-  --blue2:#2070cc;
-  --blue-light:#3d8fe0;
-  --blue-pale:#e8f1fc;
-  --white:#ffffff;
-  --off-white:#f4f7fb;
-  --light-gray:#eaf0f8;
-  --border:#ccdaf0;
-  --text-muted:#5a7a9e;
-  --gold:#f0a500;
-  --green:#16a34a;
-  --sky:#0ea5e9;
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: #080D1A;
+  color: #E2E8F4;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
-html{scroll-behavior:smooth;}
-body{
-  font-family:'DM Sans',sans-serif;
-  background:var(--navy);
-  color:var(--white);
-  line-height:1.6;
-  -webkit-font-smoothing:antialiased;
-  overflow-x:hidden;
-  font-optical-sizing:auto;
+h1, h2, h3, h4, h5 {
+  font-family: 'Syne', sans-serif;
+  line-height: 1.12;
+  letter-spacing: -0.5px;
 }
-h1,h2,h3,h4{
-  font-family:'Fraunces',serif;
-  letter-spacing:-0.025em;
-  line-height:1.05;
-  font-optical-sizing:auto;
-  font-variation-settings:"opsz" 144;
-}
-h1 em,h2 em{
-  font-style:italic;
-  font-weight:500;
-  font-variation-settings:"opsz" 144;
-}
-a{color:inherit;text-decoration:none;cursor:pointer;}
-button{font-family:inherit;cursor:pointer;border:none;}
-img{max-width:100%;display:block;}
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+ul { list-style: none; }
 
-/* ===== PAGE SWITCHING ===== */
-.page{display:none;}
-.page.active{display:block;}
-
-/* ===== TOP NAV ===== */
-.nav{
-  position:fixed;top:0;left:0;right:0;z-index:100;
-  display:flex;justify-content:space-between;align-items:center;
-  padding:1rem 3rem;
-  background:rgba(11,31,58,0.85);
-  backdrop-filter:blur(14px);
-  border-bottom:1px solid rgba(14,165,233,0.12);
-}
-.nav-logo{
-  display:flex;align-items:center;gap:10px;
-  font-family:'Fraunces',serif;font-weight:700;font-size:1.15rem;
-}
-.nav-logo .fl-icon{
-  width:34px;height:34px;border-radius:8px;
-  background:linear-gradient(135deg,var(--blue),var(--sky));
-  display:flex;align-items:center;justify-content:center;font-size:1rem;
-}
-.nav-logo span{color:var(--sky);}
-.nav-links{display:flex;gap:2rem;align-items:center;}
-.nav-links a{
-  font-size:0.88rem;color:rgba(255,255,255,0.7);
-  transition:color 0.2s;
-}
-.nav-links a:hover{color:var(--sky);}
-.nav-cta{
-  background:linear-gradient(135deg,var(--blue),var(--sky));
-  color:white;padding:0.6rem 1.3rem;border-radius:8px;
-  font-size:0.85rem;font-weight:700;
-  transition:transform 0.2s,box-shadow 0.2s;
-}
-.nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(14,165,233,0.35);}
-@media(max-width:768px){
-  .nav{padding:1rem 1.5rem;}
-  .nav-links{display:none;}
+/* ============================================================
+   CSS VARIABLES
+   ============================================================ */
+:root {
+  --navy:     #080D1A;
+  --navy2:    #0D1525;
+  --navy3:    #111C30;
+  --navy4:    #162035;
+  --accent:   #1B6FFF;
+  --accent-h: #1560E8;
+  --teal:     #00C4A7;
+  --amber:    #F0B429;
+  --danger:   #E24B4A;
+  --muted:    #7B8799;
+  --border:   rgba(255,255,255,0.07);
+  --border2:  rgba(255,255,255,0.12);
+  --text:     #E2E8F4;
+  --text2:    #A8B4C8;
+  --text3:    #7B8799;
 }
 
-/* ===== HOME HERO ===== */
-.hero{
-  position:relative;
-  padding:9rem 3rem 5rem;
-  text-align:center;
-  background:
-    radial-gradient(ellipse at top right,rgba(14,165,233,0.18),transparent 60%),
-    radial-gradient(ellipse at bottom left,rgba(26,95,180,0.22),transparent 55%),
-    var(--navy);
-  overflow:hidden;
+/* ============================================================
+   UTILITY
+   ============================================================ */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 5%; }
+.section-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+  display: block;
 }
-.hero::before{
-  content:"";position:absolute;inset:0;
-  background-image:
-    linear-gradient(rgba(14,165,233,0.05) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(14,165,233,0.05) 1px,transparent 1px);
-  background-size:60px 60px;
-  mask:radial-gradient(ellipse at center,black 30%,transparent 75%);
-  pointer-events:none;
+.section-title {
+  font-size: clamp(26px, 3vw, 40px);
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 16px;
+  letter-spacing: -1px;
 }
-.hero-tag{
-  display:inline-flex;align-items:center;gap:8px;
-  padding:0.5rem 1rem;border-radius:999px;
-  background:rgba(14,165,233,0.1);
-  border:1px solid rgba(14,165,233,0.3);
-  font-size:0.78rem;font-weight:600;color:var(--sky);
-  letter-spacing:0.1em;text-transform:uppercase;
-  margin-bottom:1.8rem;position:relative;
+.section-sub {
+  font-size: 16px;
+  color: var(--text2);
+  max-width: 580px;
+  line-height: 1.78;
+  margin-bottom: 52px;
+  font-weight: 300;
 }
-.hero-tag::before{
-  content:"";width:8px;height:8px;border-radius:50%;
-  background:var(--sky);box-shadow:0 0 12px var(--sky);
-  animation:pulse 2s infinite;
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--accent);
+  color: #fff;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  padding: 14px 28px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
 }
-@keyframes pulse{
-  0%,100%{opacity:1;}
-  50%{opacity:0.4;}
+.btn-primary:hover { background: var(--accent-h); transform: translateY(-1px); }
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: var(--text);
+  font-family: 'Syne', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 13px 26px;
+  border-radius: 8px;
+  border: 1px solid var(--border2);
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s, transform 0.15s;
 }
-.hero h1{
-  font-size:clamp(2.4rem,5.5vw,4.6rem);
-  font-weight:600;margin-bottom:1.5rem;position:relative;
-  max-width:1000px;margin-left:auto;margin-right:auto;
+.btn-ghost:hover {
+  border-color: rgba(255,255,255,0.28);
+  background: rgba(255,255,255,0.04);
+  transform: translateY(-1px);
 }
-.hero h1 em{
-  font-style:normal;
-  background:linear-gradient(135deg,var(--sky),var(--blue-light));
-  -webkit-background-clip:text;background-clip:text;color:transparent;
-}
-.hero p{
-  font-size:clamp(1rem,1.5vw,1.2rem);
-  color:rgba(255,255,255,0.65);
-  max-width:680px;margin:0 auto 2.5rem;position:relative;
-}
-.hero-btns{
-  display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;
-  position:relative;
-}
-.btn-primary{
-  background:linear-gradient(135deg,var(--blue),var(--sky));
-  color:white;padding:1rem 2rem;border-radius:10px;
-  font-size:0.95rem;font-weight:700;
-  transition:transform 0.2s,box-shadow 0.2s;
-  box-shadow:0 8px 24px rgba(14,165,233,0.25);
-}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(14,165,233,0.45);}
-.btn-secondary{
-  background:transparent;color:white;padding:1rem 2rem;border-radius:10px;
-  font-size:0.95rem;font-weight:600;
-  border:1px solid rgba(255,255,255,0.25);
-  transition:background 0.2s,border-color 0.2s;
-}
-.btn-secondary:hover{background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.45);}
+.divider { height: 1px; background: var(--border); }
 
-/* ===== TICK STRIP ===== */
-.tick-strip{
-  background:linear-gradient(90deg,var(--navy2),var(--navy3),var(--navy2));
-  border-top:1px solid rgba(14,165,233,0.15);
-  border-bottom:1px solid rgba(14,165,233,0.15);
-  padding:1rem 0;overflow:hidden;
-  display:flex;gap:2.5rem;flex-wrap:wrap;justify-content:center;
+/* ============================================================
+   NAV
+   ============================================================ */
+#nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(8,13,26,0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
 }
-.tick-item{
-  display:inline-flex;align-items:center;gap:8px;
-  font-size:0.82rem;color:rgba(255,255,255,0.75);
-  font-weight:500;white-space:nowrap;
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
 }
-.tick-dot{
-  width:5px;height:5px;border-radius:50%;background:var(--sky);
-  box-shadow:0 0 8px var(--sky);
+.nav-logo {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: -0.2px;
+  color: #fff;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
+.nav-logo span { color: var(--teal); }
+.nav-links {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.nav-links a {
+  color: var(--text2);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 7px 13px;
+  border-radius: 7px;
+  transition: color 0.2s, background 0.2s;
+  white-space: nowrap;
+}
+.nav-links a:hover { color: #fff; background: rgba(255,255,255,0.05); }
+.nav-cta {
+  background: var(--accent);
+  color: #fff !important;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  padding: 9px 20px;
+  border-radius: 7px;
+  white-space: nowrap;
+  transition: background 0.2s !important;
+}
+.nav-cta:hover { background: var(--accent-h) !important; }
+.nav-mobile-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  color: var(--text2);
+  flex-direction: column;
+  gap: 5px;
+}
+.nav-mobile-btn span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 2px;
+  transition: transform 0.2s;
+}
+.nav-mobile-menu {
+  display: none;
+  flex-direction: column;
+  padding: 12px 5% 20px;
+  gap: 4px;
+  border-top: 1px solid var(--border);
+}
+.nav-mobile-menu a {
+  color: var(--text2);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 12px;
+  border-radius: 8px;
+  display: block;
+}
+.nav-mobile-menu a:hover { background: rgba(255,255,255,0.05); color: #fff; }
+.nav-mobile-menu .nav-cta { margin-top: 8px; text-align: center; display: block; }
 
-/* ===== SECTIONS (shared) ===== */
-.section{
-  padding:6rem 3rem;
-  max-width:1280px;margin:0 auto;
+/* ============================================================
+   HERO
+   ============================================================ */
+#hero {
+  padding: 100px 0 90px;
+  position: relative;
+  overflow: hidden;
 }
-.section-tag{
-  display:inline-block;
-  font-size:0.72rem;font-weight:700;letter-spacing:0.14em;
-  text-transform:uppercase;color:var(--sky);
-  margin-bottom:1rem;
+.hero-glow {
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(ellipse at center, rgba(27,111,255,0.10) 0%, transparent 65%);
+  pointer-events: none;
 }
-.section-title{
-  font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:600;
-  margin-bottom:1rem;max-width:780px;
+.hero-glow2 {
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(ellipse at center, rgba(0,196,167,0.06) 0%, transparent 70%);
+  pointer-events: none;
 }
-.section-sub{
-  font-size:1.05rem;color:rgba(255,255,255,0.55);
-  max-width:680px;margin-bottom:3.5rem;
+.hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
 }
-
-/* ===== STEPS ===== */
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem;}
-.step{
-  background:rgba(14,165,233,0.04);
-  border:1px solid rgba(14,165,233,0.15);
-  border-radius:14px;padding:2rem;
-  position:relative;transition:transform 0.3s,border-color 0.3s;
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  background: rgba(27,111,255,0.10);
+  border: 1px solid rgba(27,111,255,0.22);
+  color: #6EAAFF;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  padding: 7px 15px;
+  border-radius: 100px;
+  margin-bottom: 24px;
 }
-.step:hover{transform:translateY(-4px);border-color:rgba(14,165,233,0.4);}
-.step-num{
-  font-family:'Fraunces',serif;font-size:0.78rem;font-weight:700;
-  color:var(--sky);letter-spacing:0.12em;margin-bottom:1rem;
+.hero-dot {
+  width: 7px;
+  height: 7px;
+  background: var(--teal);
+  border-radius: 50%;
+  flex-shrink: 0;
+  animation: livepulse 2.2s infinite;
 }
-.step-icon{
-  font-size:1.8rem;margin-bottom:1rem;
-  display:inline-flex;width:48px;height:48px;border-radius:10px;
-  background:rgba(14,165,233,0.1);align-items:center;justify-content:center;
+@keyframes livepulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.45; transform: scale(0.75); }
 }
-.step h3{font-size:1.1rem;font-weight:700;margin-bottom:0.6rem;}
-.step p{font-size:0.9rem;color:rgba(255,255,255,0.6);line-height:1.6;}
-
-/* ===== WHY (features) ===== */
-.why{
-  padding:6rem 3rem;
-  background:linear-gradient(180deg,var(--navy),var(--navy2));
-  border-top:1px solid rgba(14,165,233,0.1);
-  border-bottom:1px solid rgba(14,165,233,0.1);
+#hero h1 {
+  font-size: clamp(32px, 4.2vw, 54px);
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 22px;
+  letter-spacing: -1.8px;
+  line-height: 1.07;
 }
-.why .section-tag,
-.why .section-title,
-.why .section-sub{max-width:1280px;margin-left:auto;margin-right:auto;}
-.why .section-title,.why .section-sub{display:block;}
-.features{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:1.2rem;max-width:1280px;margin:0 auto;
+#hero h1 em {
+  font-style: normal;
+  color: var(--teal);
 }
-.feature-card{
-  background:rgba(255,255,255,0.025);
-  border:1px solid rgba(255,255,255,0.08);
-  border-radius:14px;padding:2rem;
-  transition:transform 0.3s,border-color 0.3s,background 0.3s;
+.hero-sub {
+  font-size: 16px;
+  color: var(--text2);
+  font-weight: 300;
+  line-height: 1.78;
+  max-width: 500px;
+  margin-bottom: 36px;
 }
-.feature-card:hover{
-  transform:translateY(-4px);
-  border-color:rgba(14,165,233,0.4);
-  background:rgba(14,165,233,0.05);
+.hero-btns {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 44px;
 }
-.feature-icon{
-  font-size:2rem;margin-bottom:1.2rem;
-  display:inline-flex;width:54px;height:54px;border-radius:12px;
-  background:linear-gradient(135deg,rgba(26,95,180,0.2),rgba(14,165,233,0.2));
-  align-items:center;justify-content:center;
+.hero-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
 }
-.feature-card h3{font-size:1.15rem;font-weight:700;margin-bottom:0.6rem;}
-.feature-card p{
-  font-size:0.9rem;color:rgba(255,255,255,0.6);
-  line-height:1.6;margin-bottom:1.2rem;
+.trust-chip {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  color: var(--text3);
+  font-weight: 500;
 }
-.feature-pill{
-  display:inline-block;font-size:0.72rem;font-weight:700;
-  padding:0.35rem 0.8rem;border-radius:999px;
-  background:rgba(14,165,233,0.12);color:var(--sky);
-  letter-spacing:0.06em;
-}
-
-/* ===== RESULTS ===== */
-.results{padding:6rem 3rem;max-width:1280px;margin:0 auto;}
-.results-grid{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:1.2rem;
-}
-.result-card{
-  background:rgba(14,165,233,0.04);
-  border:1px solid rgba(14,165,233,0.15);
-  border-radius:14px;padding:2rem;
-  transition:transform 0.3s,border-color 0.3s;
-}
-.result-card:hover{transform:translateY(-4px);border-color:rgba(14,165,233,0.4);}
-.result-card.featured{
-  grid-column:span 2;
-  background:linear-gradient(135deg,rgba(26,95,180,0.12),rgba(14,165,233,0.08));
-  border-color:rgba(14,165,233,0.35);
-}
-@media(max-width:720px){.result-card.featured{grid-column:span 1;}}
-.result-metric{color:var(--gold);font-size:1.05rem;letter-spacing:0.1em;margin-bottom:1rem;}
-.result-quote{
-  font-size:1rem;color:rgba(255,255,255,0.85);
-  line-height:1.65;margin-bottom:1.5rem;font-style:italic;
-}
-.result-author{display:flex;align-items:center;gap:12px;}
-.result-avatar{
-  width:42px;height:42px;border-radius:50%;
-  background:linear-gradient(135deg,var(--blue),var(--sky));
-  display:flex;align-items:center;justify-content:center;
-  font-weight:700;font-size:0.85rem;color:white;
-}
-.result-name{font-weight:700;font-size:0.92rem;}
-.result-role{font-size:0.78rem;color:rgba(255,255,255,0.5);}
-
-/* ===== PRICING ===== */
-.pricing{
-  padding:6rem 3rem;
-  background:linear-gradient(180deg,var(--navy2),var(--navy));
-  border-top:1px solid rgba(14,165,233,0.1);
-}
-.pricing .section-tag,
-.pricing .section-title,
-.pricing .section-sub{max-width:1280px;margin-left:auto;margin-right:auto;display:block;}
-.plans{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:1.2rem;max-width:1100px;margin:0 auto;
-}
-.plan{
-  background:rgba(255,255,255,0.03);
-  border:1px solid rgba(255,255,255,0.1);
-  border-radius:16px;padding:2.2rem;
-  position:relative;
-  transition:transform 0.3s,border-color 0.3s;
-}
-.plan:hover{transform:translateY(-4px);border-color:rgba(14,165,233,0.4);}
-.plan.popular{
-  border-color:var(--sky);
-  background:linear-gradient(180deg,rgba(14,165,233,0.08),rgba(26,95,180,0.04));
-  box-shadow:0 12px 40px rgba(14,165,233,0.18);
-}
-.popular-badge{
-  position:absolute;top:-12px;left:50%;transform:translateX(-50%);
-  background:linear-gradient(135deg,var(--blue),var(--sky));
-  padding:0.35rem 1rem;border-radius:999px;
-  font-size:0.72rem;font-weight:700;letter-spacing:0.08em;
-  text-transform:uppercase;color:white;
-}
-.plan-name{
-  font-family:'Fraunces',serif;font-weight:700;
-  font-size:1rem;letter-spacing:0.06em;text-transform:uppercase;
-  color:var(--sky);margin-bottom:1rem;
-}
-.plan-price{
-  font-family:'Fraunces',serif;font-size:3.4rem;font-weight:600;
-  line-height:1;display:flex;align-items:flex-start;gap:4px;
-}
-.plan-price .currency{
-  font-size:1.4rem;font-weight:600;color:rgba(255,255,255,0.55);
-  margin-top:0.4rem;
-}
-.plan-per{
-  font-size:0.85rem;color:rgba(255,255,255,0.5);
-  margin-bottom:1.8rem;margin-top:0.4rem;
-}
-.plan-features{list-style:none;margin-bottom:2rem;display:flex;flex-direction:column;gap:0.7rem;}
-.plan-features li{font-size:0.9rem;color:rgba(255,255,255,0.75);display:flex;gap:10px;align-items:flex-start;}
-.check{color:var(--sky);font-weight:700;}
-.plan-btn{
-  width:100%;padding:0.95rem;border-radius:10px;
-  background:rgba(255,255,255,0.05);
-  color:white;font-weight:700;font-size:0.92rem;
-  border:1px solid rgba(255,255,255,0.15);
-  transition:background 0.2s,border-color 0.2s;
-}
-.plan.popular .plan-btn{
-  background:linear-gradient(135deg,var(--blue),var(--sky));
-  border:none;
-}
-.plan-btn:hover{background:rgba(14,165,233,0.15);border-color:var(--sky);}
-.plan.popular .plan-btn:hover{transform:translateY(-1px);box-shadow:0 8px 20px rgba(14,165,233,0.4);}
-
-/* ===== ABOUT ===== */
-.about{
-  padding:6rem 3rem;max-width:1280px;margin:0 auto;
-  display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;
-}
-@media(max-width:880px){.about{grid-template-columns:1fr;gap:2.5rem;}}
-.about-label{
-  font-size:0.72rem;font-weight:700;letter-spacing:0.14em;
-  text-transform:uppercase;color:var(--sky);margin-bottom:1rem;
-}
-.about h2{font-size:clamp(1.6rem,3vw,2.4rem);font-weight:600;margin-bottom:1.5rem;}
-.about p{
-  font-size:0.98rem;color:rgba(255,255,255,0.65);
-  line-height:1.75;margin-bottom:1.2rem;
-}
-.about-card{
-  background:linear-gradient(135deg,rgba(26,95,180,0.08),rgba(14,165,233,0.04));
-  border:1px solid rgba(14,165,233,0.2);
-  border-radius:16px;padding:2.2rem;
-}
-.about-name{
-  font-family:'Fraunces',serif;font-size:1.3rem;font-weight:700;
-  margin-bottom:0.4rem;
-}
-.about-title{
-  font-size:0.85rem;color:var(--sky);
-  margin-bottom:1.8rem;letter-spacing:0.04em;
-}
-.about-items{display:flex;flex-direction:column;gap:1.2rem;}
-.about-item{display:flex;gap:14px;align-items:flex-start;}
-.about-item-icon{
-  width:38px;height:38px;border-radius:10px;flex-shrink:0;
-  background:rgba(14,165,233,0.12);
-  display:flex;align-items:center;justify-content:center;font-size:1.1rem;
-}
-.about-item-text{
-  font-size:0.9rem;color:rgba(255,255,255,0.7);line-height:1.6;
+.trust-chip::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background: var(--teal);
+  border-radius: 50%;
+  flex-shrink: 0;
 }
 
-/* ===== CTA SECTION ===== */
-.cta-section{
-  padding:6rem 3rem;text-align:center;
-  background:
-    radial-gradient(ellipse at center,rgba(14,165,233,0.18),transparent 60%),
-    var(--navy3);
-  border-top:1px solid rgba(14,165,233,0.15);
-  border-bottom:1px solid rgba(14,165,233,0.15);
+/* HERO CARD */
+.hero-card {
+  background: var(--navy2);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 28px;
+  position: relative;
 }
-.cta-section h2{
-  font-size:clamp(2rem,4vw,3.2rem);font-weight:600;
-  margin-bottom:1.2rem;
+.hero-card::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(27,111,255,0.18), transparent 50%, rgba(0,196,167,0.1));
+  z-index: -1;
 }
-.cta-section p{
-  font-size:1.05rem;color:rgba(255,255,255,0.6);
-  max-width:600px;margin:0 auto 2.5rem;
+.hero-card-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--text3);
+  margin-bottom: 20px;
 }
-.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
-.btn-white{
-  background:white;color:var(--navy);padding:1rem 2rem;border-radius:10px;
-  font-size:0.95rem;font-weight:700;
-  transition:transform 0.2s,box-shadow 0.2s;
+.funnel-step {
+  background: var(--navy3);
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  padding: 13px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 6px;
 }
-.btn-white:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(255,255,255,0.25);}
-.btn-outline-white{
-  background:transparent;color:white;padding:1rem 2rem;border-radius:10px;
-  font-size:0.95rem;font-weight:600;
-  border:1px solid rgba(255,255,255,0.3);
-  transition:background 0.2s;
+.funnel-step.highlight {
+  border-color: rgba(0,196,167,0.3);
+  background: rgba(0,196,167,0.05);
 }
-.btn-outline-white:hover{background:rgba(255,255,255,0.08);}
-
-/* ===== CONTACT ===== */
-.contact{
-  padding:6rem 3rem;max-width:1280px;margin:0 auto;
-  display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;
+.funnel-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
 }
-@media(max-width:880px){.contact{grid-template-columns:1fr;gap:2.5rem;}}
-.contact h2{font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:600;margin-bottom:1rem;}
-.contact > div > p{font-size:1rem;color:rgba(255,255,255,0.6);margin-bottom:2.2rem;line-height:1.7;}
-.contact-info{display:flex;flex-direction:column;gap:1.2rem;}
-.contact-item{display:flex;gap:14px;align-items:flex-start;}
-.contact-icon{
-  width:42px;height:42px;border-radius:10px;flex-shrink:0;
-  background:rgba(14,165,233,0.12);
-  display:flex;align-items:center;justify-content:center;font-size:1.15rem;
+.fi-blue  { background: rgba(27,111,255,0.14); }
+.fi-teal  { background: rgba(0,196,167,0.14); }
+.fi-amber { background: rgba(240,180,41,0.14); }
+.fi-green { background: rgba(34,197,94,0.14); }
+.funnel-text { font-size: 13px; font-weight: 500; color: var(--text); }
+.funnel-sub  { font-size: 11px; color: var(--text3); margin-top: 1px; }
+.funnel-arrow {
+  text-align: center;
+  color: rgba(255,255,255,0.12);
+  font-size: 12px;
+  line-height: 1;
+  padding: 1px 0 3px;
 }
-.contact-text{font-size:0.92rem;color:rgba(255,255,255,0.75);}
-.contact-text strong{display:block;color:white;font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:2px;color:var(--sky);}
-
-/* Form */
-.form{
-  background:rgba(14,165,233,0.04);
-  border:1px solid rgba(14,165,233,0.18);
-  border-radius:16px;padding:2.2rem;
-  display:flex;flex-direction:column;gap:1rem;
+.hero-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin-top: 16px;
 }
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
-@media(max-width:520px){.form-row{grid-template-columns:1fr;}}
-.form input,.form select,.form textarea{
-  width:100%;padding:0.85rem 1rem;
-  background:rgba(0,0,0,0.2);
-  border:1px solid rgba(255,255,255,0.12);
-  border-radius:8px;color:white;font-family:inherit;font-size:0.92rem;
-  transition:border-color 0.2s,background 0.2s;
+.hstat {
+  background: var(--navy3);
+  border-radius: 10px;
+  padding: 14px 10px;
+  text-align: center;
 }
-.form input::placeholder,.form textarea::placeholder{color:rgba(255,255,255,0.4);}
-.form input:focus,.form select:focus,.form textarea:focus{
-  outline:none;border-color:var(--sky);
-  background:rgba(0,0,0,0.32);
+.hstat-val {
+  font-family: 'Syne', sans-serif;
+  font-size: 19px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.5px;
 }
-.form select{cursor:pointer;}
-.form select option{background:var(--navy);color:white;}
-.form textarea{resize:vertical;min-height:100px;}
-.form-submit{
-  background:linear-gradient(135deg,var(--blue),var(--sky));
-  color:white;padding:1rem;border-radius:10px;
-  font-size:0.95rem;font-weight:700;margin-top:0.4rem;
-  transition:transform 0.2s,box-shadow 0.2s;
-}
-.form-submit:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(14,165,233,0.4);}
-
-/* ===== FOOTER ===== */
-footer{
-  padding:2.5rem 3rem;
-  background:rgba(8,24,40,0.98);
-  border-top:1px solid rgba(14,165,233,0.1);
-  display:flex;justify-content:space-between;align-items:center;
-  flex-wrap:wrap;gap:1.4rem;
-}
-.footer-logo{
-  display:flex;align-items:center;gap:10px;
-  font-family:'Fraunces',serif;font-weight:700;font-size:1.05rem;cursor:pointer;
-}
-.fl-icon{
-  width:32px;height:32px;border-radius:8px;
-  background:linear-gradient(135deg,var(--blue),var(--sky));
-  display:flex;align-items:center;justify-content:center;font-size:0.95rem;
-}
-.footer-logo span{color:var(--sky);}
-.footer-copy{font-size:0.82rem;color:rgba(255,255,255,0.4);}
-.footer-links{display:flex;gap:1.6rem;}
-.footer-links a{
-  font-size:0.85rem;color:rgba(255,255,255,0.55);
-  transition:color 0.2s;cursor:pointer;
-}
-.footer-links a:hover{color:var(--sky);}
-
-/* ===== LANDING PAGE ===== */
-.lp-hero{
-  position:relative;
-  padding:8rem 3rem 5rem;
-  display:grid;grid-template-columns:1.05fr 1fr;gap:3.5rem;align-items:start;
-  max-width:1380px;margin:0 auto;
-}
-@media(max-width:980px){.lp-hero{grid-template-columns:1fr;gap:2.5rem;padding-top:6rem;}}
-.lp-hero-bg{
-  position:absolute;inset:0;z-index:-2;
-  background:
-    radial-gradient(ellipse at 80% 20%,rgba(14,165,233,0.2),transparent 55%),
-    radial-gradient(ellipse at 20% 80%,rgba(26,95,180,0.18),transparent 55%);
-}
-.lp-hero-grid{
-  position:absolute;inset:0;z-index:-1;
-  background-image:
-    linear-gradient(rgba(14,165,233,0.05) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(14,165,233,0.05) 1px,transparent 1px);
-  background-size:50px 50px;
-  mask:radial-gradient(ellipse at center,black 30%,transparent 70%);
-}
-.lp-urgency{
-  display:inline-flex;align-items:center;gap:8px;
-  padding:0.5rem 1rem;border-radius:999px;
-  background:rgba(240,165,0,0.12);border:1px solid rgba(240,165,0,0.4);
-  font-size:0.78rem;font-weight:700;color:var(--gold);
-  letter-spacing:0.06em;margin-bottom:1.5rem;
-}
-.lp-left h1{
-  font-size:clamp(2.2rem,4.5vw,3.6rem);font-weight:600;
-  margin-bottom:1.4rem;
-}
-.lp-left h1 em{
-  font-style:normal;
-  background:linear-gradient(135deg,var(--sky),var(--blue-light));
-  -webkit-background-clip:text;background-clip:text;color:transparent;
-}
-.lp-left > p{
-  font-size:1.05rem;color:rgba(255,255,255,0.65);
-  margin-bottom:1.8rem;line-height:1.7;
-}
-.lp-bullets{
-  list-style:none;display:flex;flex-direction:column;
-  gap:0.85rem;margin-bottom:2rem;
-}
-.lp-bullets li{
-  display:flex;gap:12px;align-items:flex-start;
-  font-size:0.95rem;color:rgba(255,255,255,0.82);
-}
-.lp-check{
-  width:22px;height:22px;border-radius:50%;flex-shrink:0;
-  background:linear-gradient(135deg,var(--blue),var(--sky));
-  display:flex;align-items:center;justify-content:center;
-  font-size:0.78rem;font-weight:700;color:white;
-}
-.lp-social-proof{
-  display:flex;align-items:center;gap:14px;
-  padding:1rem 1.2rem;border-radius:12px;
-  background:rgba(14,165,233,0.05);
-  border:1px solid rgba(14,165,233,0.18);
-}
-.lp-avatars{display:flex;}
-.lp-avatar{
-  width:36px;height:36px;border-radius:50%;
-  display:flex;align-items:center;justify-content:center;
-  font-size:0.8rem;font-weight:700;color:white;
-  border:2px solid var(--navy);
-  margin-left:-8px;
-}
-.lp-avatar:first-child{margin-left:0;}
-.lp-stars{color:var(--gold);font-size:0.95rem;letter-spacing:0.08em;}
-.lp-proof-text{font-size:0.85rem;color:rgba(255,255,255,0.7);margin-top:2px;}
-
-.lp-form-card{
-  background:rgba(255,255,255,0.04);
-  border:1px solid rgba(14,165,233,0.25);
-  border-radius:18px;padding:2.2rem;
-  backdrop-filter:blur(16px);
-  box-shadow:0 18px 50px rgba(0,0,0,0.4);
-}
-.lp-form-title{
-  font-family:'Fraunces',serif;font-size:1.5rem;font-weight:700;
-  margin-bottom:0.4rem;
-}
-.lp-form-sub{
-  font-size:0.9rem;color:rgba(255,255,255,0.6);
-  line-height:1.6;margin-bottom:1.6rem;
-}
-.lp-form-sub span{color:var(--sky);font-weight:600;}
-.lp-field{display:flex;flex-direction:column;gap:6px;margin-bottom:0.85rem;}
-.lp-field label{
-  font-size:0.78rem;font-weight:600;
-  color:rgba(255,255,255,0.85);letter-spacing:0.02em;
-}
-.lp-field input,.lp-field select{
-  width:100%;padding:0.78rem 0.9rem;
-  background:rgba(0,0,0,0.25);
-  border:1px solid rgba(255,255,255,0.12);
-  border-radius:8px;color:white;
-  font-family:inherit;font-size:0.92rem;
-  transition:border-color 0.2s,background 0.2s;
-}
-.lp-field input::placeholder{color:rgba(255,255,255,0.35);}
-.lp-field input:focus,.lp-field select:focus{
-  outline:none;border-color:var(--sky);
-  background:rgba(0,0,0,0.35);
-}
-.lp-field select{cursor:pointer;}
-.lp-field select option{background:var(--navy);color:white;}
-.lp-field-row{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin-bottom:0.85rem;}
-.lp-field-row .lp-field{margin-bottom:0;}
-.lp-submit{
-  width:100%;padding:1rem;
-  background:linear-gradient(135deg,var(--blue),var(--sky));
-  color:white;font-size:0.98rem;font-weight:700;
-  border-radius:10px;margin-top:0.6rem;
-  transition:transform 0.2s,box-shadow 0.2s;
-}
-.lp-submit:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(14,165,233,0.5);}
-.lp-submit-sub{
-  text-align:center;font-size:0.75rem;
-  color:rgba(255,255,255,0.5);margin-top:0.9rem;
-}
-.lp-submit-sub span{color:rgba(255,255,255,0.7);}
-.lp-form-guarantee{
-  margin-top:1.4rem;padding:1rem;border-radius:10px;
-  background:rgba(22,163,74,0.08);border:1px solid rgba(22,163,74,0.25);
-  display:flex;gap:12px;align-items:flex-start;
-}
-.lp-form-guarantee p{
-  font-size:0.82rem;color:rgba(255,255,255,0.7);line-height:1.55;
-}
-.lp-form-guarantee strong{color:var(--green);}
-
-/* ===== LP STRIP ===== */
-.lp-strip{
-  padding:2.5rem 3rem;
-  background:linear-gradient(90deg,var(--navy2),var(--navy3),var(--navy2));
-  border-top:1px solid rgba(14,165,233,0.15);
-  border-bottom:1px solid rgba(14,165,233,0.15);
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-  gap:1.5rem;text-align:center;
-}
-.lp-strip-num{
-  font-family:'Fraunces',serif;font-size:2.4rem;font-weight:600;
-  background:linear-gradient(135deg,var(--sky),var(--blue-light));
-  -webkit-background-clip:text;background-clip:text;color:transparent;
-  margin-bottom:0.3rem;
-}
-.lp-strip-num span{font-size:1.2rem;color:rgba(255,255,255,0.5);-webkit-text-fill-color:rgba(255,255,255,0.5);}
-.lp-strip-label{
-  font-size:0.82rem;color:rgba(255,255,255,0.55);
-  letter-spacing:0.04em;
+.hstat-lbl {
+  font-size: 10px;
+  color: var(--text3);
+  margin-top: 4px;
+  font-weight: 500;
+  line-height: 1.4;
 }
 
-/* ===== LP HOW ===== */
-.lp-how{padding:5rem 3rem;max-width:1280px;margin:0 auto;text-align:center;}
-.lp-how-title{
-  font-family:'Fraunces',serif;font-size:clamp(1.8rem,3.4vw,2.6rem);
-  font-weight:600;margin-bottom:0.8rem;
+/* ============================================================
+   IDENTITY STRIP
+   ============================================================ */
+#identity {
+  background: var(--navy2);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 20px 5%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
-.lp-how-sub{
-  font-size:1rem;color:rgba(255,255,255,0.55);
-  max-width:580px;margin:0 auto 3rem;
+.identity-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.lp-steps{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:1.4rem;text-align:left;
+.id-no {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: 1px solid rgba(226,75,74,0.18);
+  background: rgba(226,75,74,0.04);
+  border-radius: 100px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
-.lp-step{
-  background:rgba(14,165,233,0.04);
-  border:1px solid rgba(14,165,233,0.15);
-  border-radius:14px;padding:2rem;
-  transition:transform 0.3s,border-color 0.3s;
+.id-no-x { color: #E24B4A; font-size: 12px; font-weight: 700; }
+.id-no span { font-size: 12px; color: var(--text2); font-weight: 500; }
+.id-sep { width: 1px; height: 28px; background: var(--border); flex-shrink: 0; }
+.id-yes {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: 1px solid rgba(0,196,167,0.2);
+  background: rgba(0,196,167,0.05);
+  border-radius: 100px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
-.lp-step:hover{transform:translateY(-4px);border-color:rgba(14,165,233,0.4);}
-.lp-step-num{
-  font-family:'Fraunces',serif;font-size:0.78rem;font-weight:700;
-  color:var(--sky);letter-spacing:0.12em;margin-bottom:0.8rem;
-}
-.lp-step-icon{
-  font-size:1.8rem;margin-bottom:1rem;
-  display:inline-flex;width:48px;height:48px;border-radius:10px;
-  background:rgba(14,165,233,0.12);align-items:center;justify-content:center;
-}
-.lp-step h3{font-size:1.1rem;font-weight:700;margin-bottom:0.5rem;}
-.lp-step p{font-size:0.9rem;color:rgba(255,255,255,0.6);line-height:1.6;}
+.id-yes-check { color: var(--teal); font-size: 13px; font-weight: 700; }
+.id-yes span { font-size: 12px; color: var(--text); font-weight: 500; }
 
-/* ===== LP TESTIMONIALS ===== */
-.lp-testimonials{
-  padding:5rem 3rem;
-  background:linear-gradient(180deg,var(--navy),var(--navy2));
-  border-top:1px solid rgba(14,165,233,0.1);
-  border-bottom:1px solid rgba(14,165,233,0.1);
+/* ============================================================
+   VERTICALS
+   ============================================================ */
+#verticals { padding: 88px 0; }
+.verticals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 14px;
 }
-.lp-test-title{
-  font-family:'Fraunces',serif;font-size:clamp(1.8rem,3.4vw,2.6rem);
-  font-weight:600;margin-bottom:2.5rem;text-align:center;
+.vert-card {
+  background: var(--navy2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px 20px;
+  transition: border-color 0.2s, transform 0.2s, background 0.2s;
+  cursor: default;
 }
-.lp-test-grid{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:1.4rem;max-width:1200px;margin:0 auto;
+.vert-card:hover {
+  border-color: rgba(27,111,255,0.28);
+  background: rgba(27,111,255,0.04);
+  transform: translateY(-3px);
 }
-.lp-test-card{
-  background:rgba(255,255,255,0.03);
-  border:1px solid rgba(255,255,255,0.1);
-  border-radius:14px;padding:2rem;
-  transition:transform 0.3s,border-color 0.3s;
+.vert-icon {
+  font-size: 24px;
+  margin-bottom: 14px;
+  display: block;
 }
-.lp-test-card:hover{transform:translateY(-4px);border-color:rgba(14,165,233,0.4);}
-.lp-test-stars{color:var(--gold);letter-spacing:0.08em;margin-bottom:1rem;font-size:1rem;}
-.lp-test-quote{
-  font-size:0.95rem;color:rgba(255,255,255,0.85);
-  line-height:1.65;margin-bottom:1.4rem;font-style:italic;
+.vert-name {
+  font-family: 'Syne', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 7px;
 }
-.lp-test-name{font-weight:700;font-size:0.92rem;}
-.lp-test-role{font-size:0.78rem;color:rgba(255,255,255,0.5);}
+.vert-desc { font-size: 12px; color: var(--text3); line-height: 1.65; }
 
-/* ===== LP FINAL ===== */
-.lp-final{
-  padding:6rem 3rem;text-align:center;
-  background:
-    radial-gradient(ellipse at center,rgba(14,165,233,0.2),transparent 60%),
-    var(--navy3);
+/* ============================================================
+   HOW IT WORKS
+   ============================================================ */
+#how {
+  padding: 88px 0;
+  background: var(--navy2);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
-.lp-final h2{
-  font-size:clamp(2rem,4vw,3.2rem);font-weight:600;
-  margin-bottom:1.2rem;
+.how-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: start;
 }
-.lp-final p{
-  font-size:1.05rem;color:rgba(255,255,255,0.65);
-  max-width:580px;margin:0 auto 2.5rem;
+.how-steps { display: flex; flex-direction: column; gap: 24px; }
+.how-step { display: flex; gap: 18px; align-items: flex-start; }
+.how-num {
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  background: rgba(27,111,255,0.12);
+  border: 1px solid rgba(27,111,255,0.22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  color: #6EAAFF;
+  flex-shrink: 0;
 }
-.lp-final-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+.how-content h4 {
+  font-family: 'Syne', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+}
+.how-content p { font-size: 13px; color: var(--text2); line-height: 1.7; }
+.how-diagram {
+  background: var(--navy3);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 28px;
+}
+.diagram-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text3);
+  margin-bottom: 22px;
+}
+.df-node {
+  background: var(--navy2);
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+.df-node.accent-node {
+  border-color: rgba(0,196,167,0.3);
+  background: rgba(0,196,167,0.05);
+}
+.df-badge {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 100px;
+  flex-shrink: 0;
+}
+.db-blue  { background: rgba(27,111,255,0.14); color: #6EAAFF; }
+.db-amber { background: rgba(240,180,41,0.14); color: #F0B429; }
+.db-teal  { background: rgba(0,196,167,0.14); color: #00C4A7; }
+.df-text  { font-size: 13px; font-weight: 500; color: var(--text); }
+.df-sub   { font-size: 11px; color: var(--text3); margin-top: 2px; }
+.df-arrow {
+  text-align: center;
+  color: rgba(255,255,255,0.10);
+  font-size: 13px;
+  padding: 2px 0 4px;
+}
+.platform-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+.ptag {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text3);
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 5px 11px;
+}
 
-/* ===== FORM STATUS (success / error) ===== */
-.form-status{margin-top:0.6rem;}
-.form-status.success{
-  padding:1.4rem 1.2rem;border-radius:10px;
-  background:rgba(22,163,74,0.1);
-  border:1px solid rgba(22,163,74,0.4);
-  color:var(--green);font-size:0.95rem;font-weight:600;
-  text-align:center;
+/* ============================================================
+   METRICS
+   ============================================================ */
+#metrics { padding: 88px 0; }
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 14px;
+  margin-bottom: 14px;
 }
-.form-status.success strong{display:block;font-size:1.05rem;margin-bottom:0.3rem;}
-.form-status.error{
-  padding:0.9rem 1rem;border-radius:8px;
-  background:rgba(239,68,68,0.1);
-  border:1px solid rgba(239,68,68,0.35);
-  color:#fca5a5;font-size:0.88rem;text-align:center;
+.metric-card {
+  background: var(--navy2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px 20px;
+  position: relative;
+  overflow: hidden;
 }
-.form-submit:disabled,.lp-submit:disabled{
-  opacity:0.6;cursor:not-allowed;
+.metric-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--teal));
+}
+.metric-val {
+  font-family: 'Syne', sans-serif;
+  font-size: 34px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+.metric-val sup { font-size: 18px; color: var(--teal); vertical-align: super; }
+.metric-lbl { font-size: 12px; color: var(--text3); margin-top: 8px; font-weight: 500; line-height: 1.5; }
+.metric-disclaimer {
+  font-size: 11px;
+  color: var(--text3);
+  opacity: 0.65;
+  margin-top: 18px;
+  font-style: italic;
 }
 
-/* responsive helpers */
-@media(max-width:768px){
-  .hero{padding:8rem 1.5rem 4rem;}
-  .section,.results,.about,.contact,.lp-how{padding-left:1.5rem;padding-right:1.5rem;}
-  .why,.pricing,.lp-testimonials,.cta-section,.lp-final,.lp-strip{padding-left:1.5rem;padding-right:1.5rem;}
-  .lp-hero{padding-left:1.5rem;padding-right:1.5rem;}
-  footer{padding:2rem 1.5rem;}
+/* ============================================================
+   COMPLIANCE
+   ============================================================ */
+#compliance {
+  padding: 88px 0;
+  background: var(--navy2);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.compliance-header-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0,196,167,0.10);
+  border: 1px solid rgba(0,196,167,0.22);
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 7px 16px;
+  border-radius: 100px;
+  margin-bottom: 40px;
+}
+.compliance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+}
+.comp-card {
+  background: var(--navy3);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px 20px;
+  transition: border-color 0.2s;
+}
+.comp-card:hover { border-color: rgba(0,196,167,0.25); }
+.comp-icon {
+  width: 40px;
+  height: 40px;
+  background: rgba(0,196,167,0.10);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+.comp-card h4 {
+  font-family: 'Syne', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.comp-card p { font-size: 12px; color: var(--text3); line-height: 1.68; }
+
+/* ============================================================
+   TECH STACK
+   ============================================================ */
+#tech { padding: 88px 0; }
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 14px;
+}
+.tech-card {
+  background: var(--navy2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 18px;
+}
+.tech-category {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+.tech-pills { display: flex; flex-wrap: wrap; gap: 7px; }
+.tech-pill {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text2);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+/* ============================================================
+   PARTNERSHIP
+   ============================================================ */
+#partnership {
+  padding: 88px 0;
+  background: var(--navy2);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.partner-intro {
+  font-size: 16px;
+  color: var(--text2);
+  font-weight: 300;
+  max-width: 620px;
+  line-height: 1.78;
+  margin-bottom: 52px;
+}
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+.partner-card {
+  background: var(--navy3);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px 20px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.partner-card:hover {
+  border-color: rgba(27,111,255,0.28);
+  transform: translateY(-3px);
+}
+.partner-icon { font-size: 24px; margin-bottom: 14px; display: block; }
+.partner-card h4 {
+  font-family: 'Syne', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 7px;
+}
+.partner-card p { font-size: 12px; color: var(--text3); line-height: 1.65; }
+
+/* ============================================================
+   WHY US
+   ============================================================ */
+#why { padding: 88px 0; }
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+.why-card {
+  background: var(--navy2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 26px 22px;
+  position: relative;
+  overflow: hidden;
+}
+.why-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--teal));
+}
+.why-bg-num {
+  font-family: 'Syne', sans-serif;
+  font-size: 64px;
+  font-weight: 800;
+  color: rgba(255,255,255,0.03);
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+.why-card h4 {
+  font-family: 'Syne', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 9px;
+  margin-top: 4px;
+}
+.why-card p { font-size: 12px; color: var(--text3); line-height: 1.68; }
+
+/* ============================================================
+   CTA SECTION
+   ============================================================ */
+#cta {
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+#cta::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 400px;
+  background: radial-gradient(ellipse at center, rgba(27,111,255,0.09) 0%, transparent 65%);
+  pointer-events: none;
+}
+#cta h2 {
+  font-size: clamp(28px, 4vw, 46px);
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 18px;
+  letter-spacing: -1.2px;
+}
+#cta p {
+  font-size: 16px;
+  color: var(--text2);
+  max-width: 500px;
+  margin: 0 auto 40px;
+  font-weight: 300;
+  line-height: 1.75;
+}
+.cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.cta-trust {
+  margin-top: 36px;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cta-trust-item {
+  font-size: 12px;
+  color: var(--text3);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.cta-trust-item::before {
+  content: '✓';
+  color: var(--teal);
+  font-weight: 700;
+}
+
+/* ============================================================
+   CONTACT SECTION
+   ============================================================ */
+#contact {
+  padding: 88px 0;
+  background: var(--navy2);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+.contact-info h3 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 14px;
+  letter-spacing: -0.6px;
+}
+.contact-info p {
+  font-size: 14px;
+  color: var(--text2);
+  line-height: 1.75;
+  margin-bottom: 32px;
+  font-weight: 300;
+}
+.contact-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.contact-detail-icon {
+  width: 38px;
+  height: 38px;
+  background: rgba(27,111,255,0.12);
+  border: 1px solid rgba(27,111,255,0.2);
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+.contact-detail-label { font-size: 11px; font-weight: 600; color: var(--text3); margin-bottom: 3px; letter-spacing: 0.5px; text-transform: uppercase; }
+.contact-detail-val { font-size: 14px; font-weight: 500; color: var(--text); }
+.contact-form {
+  background: var(--navy3);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+}
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.form-group { margin-bottom: 16px; }
+.form-group label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text2);
+  margin-bottom: 7px;
+  letter-spacing: 0.3px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  background: var(--navy2);
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  padding: 11px 14px;
+  transition: border-color 0.2s;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: rgba(27,111,255,0.45);
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder { color: var(--text3); }
+.form-group select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237B8799' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px; }
+.form-group select option { background: var(--navy2); color: var(--text); }
+.form-group textarea { resize: vertical; min-height: 90px; }
+.form-submit { width: 100%; margin-top: 4px; justify-content: center; font-size: 14px; padding: 15px; }
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer {
+  background: var(--navy);
+  border-top: 1px solid var(--border);
+  padding: 40px 5% 36px;
+}
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer-logo {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  color: #fff;
+}
+.footer-logo span { color: var(--teal); }
+.footer-links { display: flex; gap: 6px; flex-wrap: wrap; }
+.footer-links a {
+  font-size: 13px;
+  color: var(--text3);
+  padding: 5px 10px;
+  border-radius: 6px;
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--text); }
+.footer-copy { font-size: 11px; color: var(--text3); }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 900px) {
+  .hero-inner { grid-template-columns: 1fr; gap: 48px; }
+  .hero-glow { display: none; }
+  .how-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  #hero { padding: 72px 0 64px; }
+  #hero h1 { font-size: clamp(28px, 7vw, 42px); }
+}
+@media (max-width: 640px) {
+  .nav-links { display: none; }
+  .nav-cta { display: none; }
+  .nav-mobile-btn { display: flex; }
+  .nav-mobile-menu.open { display: flex; }
+  .section-title { font-size: 26px; }
+  .hero-btns .btn-primary,
+  .hero-btns .btn-ghost { width: 100%; justify-content: center; }
+  .verticals-grid { grid-template-columns: 1fr 1fr; }
+  .metrics-grid { grid-template-columns: 1fr 1fr; }
+  .why-grid { grid-template-columns: 1fr 1fr; }
+  .cta-btns { flex-direction: column; align-items: center; }
+  .id-sep { display: none; }
+  .identity-inner { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 400px) {
+  .verticals-grid { grid-template-columns: 1fr; }
+  .metrics-grid { grid-template-columns: 1fr; }
+  .why-grid { grid-template-columns: 1fr; }
 }
 </style>
 </head>
 <body>
 
-<!-- ======================== TOP NAV ======================== -->
-<nav class="nav">
-  <div class="nav-logo" onclick="showPage('home')">
-    <div class="fl-icon">🏙️</div>
-    <span>Skyline</span>&nbsp;Acquisition Group
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<header id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">SKYLINE <span>ACQ</span> GROUP</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#verticals">Verticals</a></li>
+        <li><a href="#compliance">Compliance</a></li>
+        <li><a href="#partnership">Partners</a></li>
+        <li><a href="#contact" class="nav-cta">Request a Proposal</a></li>
+      </ul>
+    </nav>
+    <button class="nav-mobile-btn" id="mobileBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
-  <div class="nav-links">
-    <a onclick="showPage('home');go('how')">How It Works</a>
-    <a onclick="showPage('home');go('why')">Why Us</a>
-    <a onclick="showPage('home');go('pricing')">Pricing</a>
-    <a onclick="showPage('home');go('contact')">Contact</a>
+  <div class="nav-mobile-menu" id="mobileMenu">
+    <a href="#how" onclick="closeMobile()">How It Works</a>
+    <a href="#verticals" onclick="closeMobile()">Verticals</a>
+    <a href="#compliance" onclick="closeMobile()">Compliance</a>
+    <a href="#partnership" onclick="closeMobile()">Partners</a>
+    <a href="#contact" class="nav-cta" onclick="closeMobile()">Request a Proposal</a>
   </div>
-  <button class="nav-cta" onclick="showPage('landing')">Get Free Trial →</button>
-</nav>
+</header>
 
-<!-- ======================== HOME PAGE ======================== -->
-<div id="page-home" class="page active">
-
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-tag">Live Insurance Transfers</div>
-  <h1>Stop chasing leads.<br>Start closing <em>warm live transfers</em>.</h1>
-  <p>Skyline Acquisition Group delivers triple pre-screened insurance prospects directly to your phone — ready to quote, ready to buy. Every transfer is warm, intent-verified, and matched to your license.</p>
-  <div class="hero-btns">
-    <button class="btn-primary" onclick="showPage('landing')">Claim Free Trial Transfers →</button>
-    <button class="btn-secondary" onclick="go('how')">See How It Works</button>
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section id="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="hero-inner">
+    <!-- Left: Copy -->
+    <div>
+      <div class="hero-eyebrow">
+        <div class="hero-dot"></div>
+        U.S. Customer Acquisition Infrastructure
+      </div>
+      <h1>Performance-Driven <em>Acquisition Systems</em> for U.S. Markets</h1>
+      <p class="hero-sub">We build and operate end-to-end customer acquisition infrastructure — connecting high-intent U.S. consumers with licensed agents, brands, and service providers across multiple verticals.</p>
+      <div class="hero-btns">
+        <a href="#how" class="btn-primary">View Our System ↓</a>
+        <a href="#contact" class="btn-ghost">Partner With Us →</a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-chip">Multi-Vertical Infrastructure</div>
+        <div class="trust-chip">TCPA-Compliant Systems</div>
+        <div class="trust-chip">Real-Time Lead Routing</div>
+        <div class="trust-chip">White-Label Available</div>
+      </div>
+    </div>
+    <!-- Right: System preview card -->
+    <div>
+      <div class="hero-card">
+        <div class="hero-card-label">Acquisition System Overview</div>
+        <div class="funnel-step">
+          <div class="funnel-icon fi-blue">📡</div>
+          <div>
+            <div class="funnel-text">Paid Media Acquisition</div>
+            <div class="funnel-sub">Meta · Google · Native · Programmatic</div>
+          </div>
+        </div>
+        <div class="funnel-arrow">↓</div>
+        <div class="funnel-step">
+          <div class="funnel-icon fi-blue">🔽</div>
+          <div>
+            <div class="funnel-text">Landing Page Funnels</div>
+            <div class="funnel-sub">High-intent capture · Consent architecture</div>
+          </div>
+        </div>
+        <div class="funnel-arrow">↓</div>
+        <div class="funnel-step">
+          <div class="funnel-icon fi-amber">✅</div>
+          <div>
+            <div class="funnel-text">Real-Time Qualification</div>
+            <div class="funnel-sub">DNC filtering · Intent scoring · Consent log</div>
+          </div>
+        </div>
+        <div class="funnel-arrow">↓</div>
+        <div class="funnel-step highlight">
+          <div class="funnel-icon fi-teal">📞</div>
+          <div>
+            <div class="funnel-text">Live Transfer to Agent</div>
+            <div class="funnel-sub">CRM routing · QA recorded · Warm handoff</div>
+          </div>
+        </div>
+        <div class="hero-stats">
+          <div class="hstat">
+            <div class="hstat-val">25–40%</div>
+            <div class="hstat-lbl">Transfer Rate</div>
+          </div>
+          <div class="hstat">
+            <div class="hstat-val">90%+</div>
+            <div class="hstat-lbl">QA Pass Rate</div>
+          </div>
+          <div class="hstat">
+            <div class="hstat-val">2–4m</div>
+            <div class="hstat-lbl">Avg Duration</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- TICK STRIP -->
-<div class="tick-strip">
-  <span class="tick-item"><span class="tick-dot"></span>🇺🇸 USA-Based Call Center</span>
-  <span class="tick-item"><span class="tick-dot"></span>🔒 Fully Compliant Transfers</span>
-  <span class="tick-item"><span class="tick-dot"></span>✅ Triple Pre-Screened Prospects</span>
-  <span class="tick-item"><span class="tick-dot"></span>🔁 Replacement Guarantee</span>
-  <span class="tick-item"><span class="tick-dot"></span>📞 Warm Handoff Every Time</span>
-  <span class="tick-item"><span class="tick-dot"></span>⚡ Real-Time Live Transfers</span>
-  <span class="tick-item"><span class="tick-dot"></span>🎯 High-Intent Prospects Only</span>
-  <span class="tick-item"><span class="tick-dot"></span>🏙️ Skyline Acquisition Group</span>
+<!-- ============================================================
+     IDENTITY STRIP
+     ============================================================ -->
+<div id="identity">
+  <div class="identity-inner">
+    <div class="id-no"><span class="id-no-x">✕</span><span>Not a call center</span></div>
+    <div class="id-no"><span class="id-no-x">✕</span><span>Not a lead vendor</span></div>
+    <div class="id-no"><span class="id-no-x">✕</span><span>Not a marketing agency</span></div>
+    <div class="id-sep"></div>
+    <div class="id-yes"><span class="id-yes-check">✓</span><span>Scalable acquisition infrastructure</span></div>
+    <div class="id-yes"><span class="id-yes-check">✓</span><span>Performance marketing partner</span></div>
+    <div class="id-yes"><span class="id-yes-check">✓</span><span>Enterprise acquisition systems</span></div>
+  </div>
 </div>
 
-<!-- HOW IT WORKS -->
-<section class="section" id="how">
-  <div class="section-tag">The Process</div>
-  <h2 class="section-title">From stranger to your phone in 4 steps</h2>
-  <p class="section-sub">Every transfer goes through our proven qualification process before it ever reaches you.</p>
-  <div class="steps">
-    <div class="step"><div class="step-num">01</div><div class="step-icon">📞</div><h3>We Contact Shoppers</h3><p>Our team reaches consumers actively searching for better rates and coverage right now.</p></div>
-    <div class="step"><div class="step-num">02</div><div class="step-icon">✅</div><h3>We Pre-Screen Them</h3><p>We verify active need and genuine buying intent, and genuine intent to get a quote today.</p></div>
-    <div class="step"><div class="step-num">03</div><div class="step-icon">🔄</div><h3>Warm Live Transfer</h3><p>Our agent introduces you by name and hands the live call directly to you — no cold drops ever.</p></div>
-    <div class="step"><div class="step-num">04</div><div class="step-icon">🏆</div><h3>You Close the Deal</h3><p>You speak with a ready, warm prospect. Quote them, bind the policy, earn the commission.</p></div>
-  </div>
-</section>
-
-<!-- WHY -->
-<section class="why" id="why">
-  <div class="section-tag">Why Skyline</div>
-  <h2 class="section-title">Built for agents tired of cold leads</h2>
-  <p class="section-sub">We built Skyline Acquisition Group because agents deserve better than chasing unresponsive form fills.</p>
-  <div class="features">
-    <div class="feature-card"><div class="feature-icon">🎯</div><h3>Triple-Verified Prospects</h3><p>Every consumer verified for active need and genuine buying intent, and real-time intent before transfer.</p><span class="feature-pill">Zero Cold Drops</span></div>
-    <div class="feature-card"><div class="feature-icon">🔁</div><h3>Replacement Guarantee</h3><p>If any transfer doesn't meet our agreed criteria, we replace it — no questions, no delays.</p><span class="feature-pill">Risk-Free</span></div>
-    <div class="feature-card"><div class="feature-icon">🎙️</div><h3>Full Call Recordings</h3><p>Every pre-screen call is recorded. Review exactly how we qualified your prospect.</p><span class="feature-pill">Full Transparency</span></div>
-    <div class="feature-card"><div class="feature-icon">📍</div><h3>State-Matched Transfers</h3><p>We only send prospects in states you're licensed in. No wasted calls, no compliance headaches.</p><span class="feature-pill">All 50 States</span></div>
-    <div class="feature-card"><div class="feature-icon">⚡</div><h3>High Volume Capacity</h3><p>Whether you need 10 or 500 transfers a month, we scale with your team seamlessly.</p><span class="feature-pill">Scalable</span></div>
-    <div class="feature-card"><div class="feature-icon">🤝</div><h3>Low-Risk Trial First</h3><p>We earn your trust before asking for commitment. Start with a small trial batch.</p><span class="feature-pill">Try Before You Buy</span></div>
-  </div>
-</section>
-
-<!-- RESULTS -->
-<section class="results" id="results">
-  <div class="section-tag">Client Results</div>
-  <h2 class="section-title">Agents love what happens when leads are actually warm</h2>
-  <div class="results-grid">
-    <div class="result-card featured"><div class="result-metric">★★★★★</div><p class="result-quote">"Skyline Acquisition Group changed how I run my agency. Every transfer that comes in, the person already knows why they're talking to me. My close rate went up dramatically in the first month."</p><div class="result-author"><div class="result-avatar">JM</div><div><div class="result-name">James Mitchell</div><div class="result-role">Independent Agent — Texas</div></div></div></div>
-    <div class="result-card"><div class="result-metric">★★★★★</div><p class="result-quote">"I was skeptical after getting burned by other vendors. The team personally walked me through the trial and the quality spoke for itself. We're now on a high-volume plan."</p><div class="result-author"><div class="result-avatar">SR</div><div><div class="result-name">Sandra Rivera</div><div class="result-role">Agency Owner — Florida</div></div></div></div>
-    <div class="result-card"><div class="result-metric">★★★★★</div><p class="result-quote">"The warm handoff is the difference maker. The consumer is already relaxed and ready. It's the closest thing to a referral you can get from a lead vendor."</p><div class="result-author"><div class="result-avatar">DK</div><div><div class="result-name">David Kim</div><div class="result-role">Licensed Agent — Georgia</div></div></div></div>
-    <div class="result-card"><div class="result-metric">★★★★★</div><p class="result-quote">"The replacement guarantee alone sold me. No other vendor offers that. Skyline actually stands behind their product and it shows in every call we receive."</p><div class="result-author"><div class="result-avatar">AL</div><div><div class="result-name">Amanda Lewis</div><div class="result-role">Team Lead — Ohio</div></div></div></div>
-  </div>
-</section>
-
-<!-- PRICING -->
-<section class="pricing" id="pricing">
-  <div class="section-tag">Pricing</div>
-  <h2 class="section-title">Simple, transparent pricing</h2>
-  <p class="section-sub">Contract-based plans built for serious agents. Transparent pricing, scalable volume, and guaranteed quality — every transfer, every time.</p>
-  <div class="plans">
-    <div class="plan">
-      <div class="plan-name">Starter</div>
-      <div class="plan-price"><span class="currency">$</span>20</div>
-      <div class="plan-per">per live transfer</div>
-      <ul class="plan-features">
-        <li><span class="check">✓</span> 10–30 transfers/month</li>
-        <li><span class="check">✓</span> Triple pre-screening</li>
-        <li><span class="check">✓</span> Call recordings included</li>
-        <li><span class="check">✓</span> Replacement guarantee</li>
-        <li><span class="check">✓</span> 1–3 states</li>
-      </ul>
-      <button class="plan-btn" onclick="showPage('landing')">Get Started</button>
-    </div>
-    <div class="plan popular">
-      <div class="popular-badge">Most Popular</div>
-      <div class="plan-name">Growth</div>
-      <div class="plan-price"><span class="currency">$</span>30</div>
-      <div class="plan-per">per live transfer</div>
-      <ul class="plan-features">
-        <li><span class="check">✓</span> 30–100 transfers/month</li>
-        <li><span class="check">✓</span> Triple pre-screening</li>
-        <li><span class="check">✓</span> Call recordings included</li>
-        <li><span class="check">✓</span> Replacement guarantee</li>
-        <li><span class="check">✓</span> Up to 10 states</li>
-        <li><span class="check">✓</span> Dedicated account manager</li>
-      </ul>
-      <button class="plan-btn" onclick="showPage('landing')">Start Trial</button>
-    </div>
-    <div class="plan">
-      <div class="plan-name">Enterprise</div>
-      <div class="plan-price"><span class="currency">$</span>45</div>
-      <div class="plan-per">per live transfer</div>
-      <ul class="plan-features">
-        <li><span class="check">✓</span> 100+ transfers/month</li>
-        <li><span class="check">✓</span> Triple pre-screening</li>
-        <li><span class="check">✓</span> Call recordings included</li>
-        <li><span class="check">✓</span> Replacement guarantee</li>
-        <li><span class="check">✓</span> All 50 states</li>
-        <li><span class="check">✓</span> Priority support 24/7</li>
-        <li><span class="check">✓</span> Custom criteria filters</li>
-      </ul>
-      <button class="plan-btn" onclick="showPage('landing')">Contact Us</button>
+<!-- ============================================================
+     VERTICALS
+     ============================================================ -->
+<section id="verticals">
+  <div class="container">
+    <span class="section-eyebrow">Verticals We Support</span>
+    <h2 class="section-title">Built for High-Value U.S. Consumer Markets</h2>
+    <p class="section-sub">Dedicated funnel architecture, compliance frameworks, and qualified transfer pipelines across 8 regulated U.S. verticals.</p>
+    <div class="verticals-grid">
+      <div class="vert-card">
+        <span class="vert-icon">🚗</span>
+        <div class="vert-name">Auto Insurance</div>
+        <div class="vert-desc">High-intent shoppers actively comparing rates. Live transfers to licensed P&C agents in all 50 states.</div>
+      </div>
+      <div class="vert-card">
+        <span class="vert-icon">🏥</span>
+        <div class="vert-name">ACA / Health Insurance</div>
+        <div class="vert-desc">Open enrollment and SEP campaigns. Compliant consent architecture for ACA marketplace plans.</div>
+      </div>
+      <div class="vert-card">
+        <span class="vert-icon">💊</span>
+        <div class="vert-name">Medicare</div>
+        <div class="vert-desc">T65 and dual-eligible targeting. CMS-compliant outreach with TPMO-ready transfer protocols.</div>
+      </div>
+      <div class="vert-card">
+        <span class="vert-icon">🛡️</span>
+        <div class="vert-name">Final Expense</div>
+        <div class="vert-desc">Senior-focused acquisition funnels with empathetic scripting and warm transfer protocols designed for the demographic.</div>
+      </div>
+      <div class="vert-card">
+        <span class="vert-icon">☀️</span>
+        <div class="vert-name">Solar</div>
+        <div class="vert-desc">Homeowner targeting with utility bill and property ownership qualification layers baked into every funnel.</div>
+      </div>
+      <div class="vert-card">
+        <span class="vert-icon">🏠</span>
+        <div class="vert-name">Home Services</div>
+        <div class="vert-desc">Roofing, HVAC, remodeling. Geo-targeted inbound funnels with contractor and territory-based routing.</div>
+      </div>
+      <div class="vert-card">
+        <span class="vert-icon">⚖️</span>
+        <div class="vert-name">Legal / Mass Tort</div>
+        <div class="vert-desc">Case-type qualification and attorney intake. Structured intake transfer protocols for litigation campaigns.</div>
+      </div>
+      <div class="vert-card">
+        <span class="vert-icon">💳</span>
+        <div class="vert-name">Debt Relief</div>
+        <div class="vert-desc">Debt amount and hardship qualification pre-screening. Compliant transfers to certified credit counselors.</div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section class="about" id="about">
-  <div>
-    <div class="about-label">About Us</div>
-    <h2>Skyline Acquisition Group — Built for Agents Who Want Results</h2>
-    <p>Skyline Acquisition Group was built out of frustration. We watched agents waste thousands of dollars on leads that went nowhere — cold lists, form fills from people who had no idea why they were being called, and vendors who disappeared when quality complaints came in.</p>
-    <p>So we built something different. A call center focused entirely on one thing: getting warm, real, ready-to-quote prospects on the phone with agents who can actually help them.</p>
-    <p>Every transfer that leaves Skyline Acquisition Group has our reputation behind it. That's not a slogan — it's how we run this business.</p>
-  </div>
-  <div class="about-card">
-    <div class="about-name">Skyline Acquisition Group</div>
-    <div class="about-title">Live Transfer Specialists — USA Insurance</div>
-    <div class="about-items">
-      <div class="about-item"><div class="about-item-icon">🇺🇸</div><div class="about-item-text"><strong>USA-based call center</strong> operating across all 50 states with trained pre-screen agents</div></div>
-      <div class="about-item"><div class="about-item-icon">📋</div><div class="about-item-text"><strong>Insurance specialists</strong> — we don't spread thin across verticals, we perfect one</div></div>
-      <div class="about-item"><div class="about-item-icon">🤝</div><div class="about-item-text"><strong>Agent-first philosophy</strong> — your success is our success, every single transfer</div></div>
-      <div class="about-item"><div class="about-item-icon">📞</div><div class="about-item-text"><strong>Direct access to our team</strong> — not a support ticket, a real conversation every time</div></div>
+<div class="divider"></div>
+
+<!-- ============================================================
+     HOW IT WORKS
+     ============================================================ -->
+<section id="how">
+  <div class="container">
+    <span class="section-eyebrow">How It Works</span>
+    <h2 class="section-title">The Acquisition System, End to End</h2>
+    <p class="section-sub">A full-stack customer acquisition loop — from paid media to qualified live transfer — engineered for scale, compliance, and performance.</p>
+    <div class="how-grid">
+      <div class="how-steps">
+        <div class="how-step">
+          <div class="how-num">01</div>
+          <div class="how-content">
+            <h4>Paid Media Acquisition</h4>
+            <p>Campaigns deployed across Meta Ads, Google Ads, and native platforms targeting high-intent audiences by vertical, geography, and demographic signals.</p>
+          </div>
+        </div>
+        <div class="how-step">
+          <div class="how-num">02</div>
+          <div class="how-content">
+            <h4>Landing Page Funnels</h4>
+            <p>Proprietary funnel architecture with A/B-tested landing pages capturing explicit consumer intent and documented consent before any outreach occurs.</p>
+          </div>
+        </div>
+        <div class="how-step">
+          <div class="how-num">03</div>
+          <div class="how-content">
+            <h4>Real-Time Lead Qualification</h4>
+            <p>Every inquiry is scored for intent, verified against DNC registries, and processed through our compliance stack before a human agent engages.</p>
+          </div>
+        </div>
+        <div class="how-step">
+          <div class="how-num">04</div>
+          <div class="how-content">
+            <h4>Live Transfer &amp; CRM Routing</h4>
+            <p>Qualified consumers are transferred live to your licensed agents with full call recording, CRM data push, and replacement guarantees on every non-conforming transfer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="how-diagram">
+        <div class="diagram-label">System Flow Diagram</div>
+        <div class="df-node">
+          <span class="df-badge db-blue">Media</span>
+          <div>
+            <div class="df-text">Ad Impression &amp; Click</div>
+            <div class="df-sub">Meta · Google · Native · Programmatic</div>
+          </div>
+        </div>
+        <div class="df-arrow">↓</div>
+        <div class="df-node">
+          <span class="df-badge db-blue">Funnel</span>
+          <div>
+            <div class="df-text">Landing Page + Consent Capture</div>
+            <div class="df-sub">Timestamp · IP address · Explicit opt-in logged</div>
+          </div>
+        </div>
+        <div class="df-arrow">↓</div>
+        <div class="df-node">
+          <span class="df-badge db-amber">Qualify</span>
+          <div>
+            <div class="df-text">Lead Scoring + DNC Check</div>
+            <div class="df-sub">Real-time qualification engine</div>
+          </div>
+        </div>
+        <div class="df-arrow">↓</div>
+        <div class="df-node">
+          <span class="df-badge db-amber">Route</span>
+          <div>
+            <div class="df-text">CRM Routing Logic</div>
+            <div class="df-sub">Geography · License match · Agent capacity</div>
+          </div>
+        </div>
+        <div class="df-arrow">↓</div>
+        <div class="df-node accent-node">
+          <span class="df-badge db-teal">Transfer</span>
+          <div>
+            <div class="df-text">Live Transfer to Licensed Agent</div>
+            <div class="df-sub">Warm handoff · QA recorded · Replacement guarantee</div>
+          </div>
+        </div>
+        <div class="platform-tags">
+          <span class="ptag">Meta Ads</span>
+          <span class="ptag">Google Ads</span>
+          <span class="ptag">Taboola</span>
+          <span class="ptag">Ringba</span>
+          <span class="ptag">HubSpot</span>
+          <span class="ptag">Salesforce</span>
+          <span class="ptag">Twilio</span>
+          <span class="ptag">Boberdoo</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
-<section class="cta-section">
-  <h2>Ready to talk to buyers,<br>not just leads?</h2>
-  <p>Start with a low-risk trial. Flexible contract options with no large upfront commitment — just quality transfers you can evaluate yourself.</p>
-  <div class="cta-btns">
-    <button class="btn-white" onclick="showPage('landing')">Claim Your Free Trial</button>
-    <button class="btn-outline-white" onclick="go('pricing')">View Pricing</button>
+<!-- ============================================================
+     METRICS
+     ============================================================ -->
+<section id="metrics">
+  <div class="container">
+    <span class="section-eyebrow">Campaign Performance Data</span>
+    <h2 class="section-title">System Performance Benchmarks</h2>
+    <p class="section-sub">Sample performance metrics across active vertical campaigns. Figures represent typical performance ranges across our acquisition infrastructure.</p>
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <div class="metric-val">1,000<sup>+</sup></div>
+        <div class="metric-lbl">Consumer Inquiries / Month</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-val">250–400</div>
+        <div class="metric-lbl">Qualified Live Transfers</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-val">25–40<sup>%</sup></div>
+        <div class="metric-lbl">Transfer Rate</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-val">2–4<sup>m</sup></div>
+        <div class="metric-lbl">Avg Engagement Duration</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-val">90<sup>%+</sup></div>
+        <div class="metric-lbl">QA Pass Rate</div>
+      </div>
+    </div>
+    <p class="metric-disclaimer">* Sample performance metrics shown for demonstration purposes only. Results vary by vertical, campaign configuration, and geography.</p>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section class="contact" id="contact">
-  <div>
-    <h2>Let's talk about your pipeline</h2>
-    <p>Fill out the form and our team will personally reach out within a few hours to discuss your states, volume, and how Skyline Acquisition Group can fit your agency.</p>
-    <div class="contact-info">
-      <div class="contact-item"><div class="contact-icon">📧</div><div class="contact-text"><strong>Email</strong>Info@SkylineacquisitionGroup.com</div></div>
-      <div class="contact-item"><div class="contact-icon">📞</div><div class="contact-text"><strong>Phone</strong>+1 (307) 622-4901</div></div>
-      <div class="contact-item"><div class="contact-icon">⏰</div><div class="contact-text"><strong>Hours</strong>Mon–Sat, 9am–6pm PST</div></div>
-      <div class="contact-item"><div class="contact-icon">📍</div><div class="contact-text"><strong>Based in</strong>USA — serving all 50 states</div></div>
+<div class="divider"></div>
+
+<!-- ============================================================
+     COMPLIANCE
+     ============================================================ -->
+<section id="compliance">
+  <div class="container">
+    <span class="section-eyebrow">Compliance Framework</span>
+    <h2 class="section-title">Compliance &amp; Consumer Consent Infrastructure</h2>
+    <p class="section-sub">Every consumer in our acquisition system passes through a multi-layer compliance architecture built around explicit consent, regulatory standards, and complete audit trails.</p>
+    <div class="compliance-header-badge">
+      🛡️ TCPA-Conscious Outreach Systems &nbsp;·&nbsp; CMS-Compliant Medicare Protocols &nbsp;·&nbsp; Full DNC Filtering
+    </div>
+    <div class="compliance-grid">
+      <div class="comp-card">
+        <div class="comp-icon">📝</div>
+        <h4>Explicit Opt-In Systems</h4>
+        <p>Every consumer provides prior express written consent before entering our transfer pipeline. Consent language is vertically specific and legally reviewed.</p>
+      </div>
+      <div class="comp-card">
+        <div class="comp-icon">🕒</div>
+        <h4>Timestamp + IP Logging</h4>
+        <p>All consent events are logged with timestamp, IP address, user agent, and session ID — creating a complete, exportable audit trail per consumer record.</p>
+      </div>
+      <div class="comp-card">
+        <div class="comp-icon">🎙️</div>
+        <h4>100% Recorded Call QA</h4>
+        <p>Every pre-screen and transfer call is recorded and available for client review. QA scoring ensures consistent compliance and quality across all agents.</p>
+      </div>
+      <div class="comp-card">
+        <div class="comp-icon">🚫</div>
+        <h4>DNC Registry Filtering</h4>
+        <p>Real-time scrubbing against federal and state Do-Not-Call registries on every single lead before any outreach is initiated.</p>
+      </div>
+      <div class="comp-card">
+        <div class="comp-icon">📋</div>
+        <h4>TCPA-Conscious Outreach</h4>
+        <p>All contact attempts are structured around TCPA guidelines — timing windows, consent verification, and documented revocation handling protocols.</p>
+      </div>
+      <div class="comp-card">
+        <div class="comp-icon">🔐</div>
+        <h4>Consent-Based Data Routing</h4>
+        <p>Consumer data is only routed to partners whose consent language specifically covers that consumer. No cross-vertical sharing without explicit authorization.</p>
+      </div>
     </div>
   </div>
-  <div>
-    <form class="form" id="contactForm" onsubmit="submitForm(event,'contactForm')">
-      <input type="hidden" name="access_key" value="d6c3bd4d-2a56-466a-8656-3f338b03e91c"/>
-      <input type="hidden" name="subject" value="New Contact Form — Skyline Website"/>
-      <input type="hidden" name="from_name" value="Skyline Website Contact"/>
-      <input type="checkbox" name="botcheck" style="display:none;"/>
-      <div class="form-row"><input type="text" name="Name" placeholder="Your name" required/><input type="text" name="Agency" placeholder="Agency name" required/></div>
-      <div class="form-row"><input type="email" name="Email" placeholder="Email address" required/><input type="tel" name="Phone" placeholder="Phone number" required/></div>
-      <select name="States Licensed" required><option value="" disabled selected>States you're licensed in</option><option>Texas</option><option>Florida</option><option>Georgia</option><option>California</option><option>New York</option><option>Ohio</option><option>Multiple states</option><option>All 50 states</option></select>
-      <select name="Transfers Per Month" required><option value="" disabled selected>Transfers needed per month</option><option>5–10 (Trial)</option><option>10–30 (Starter)</option><option>30–100 (Growth)</option><option>100+ (Enterprise)</option></select>
-      <textarea name="Message" placeholder="Anything else you'd like our team to know before the call?"></textarea>
-      <button type="submit" class="form-submit">Send Message — Let's Talk</button>
-      <div class="form-status"></div>
-    </form>
+</section>
+
+<!-- ============================================================
+     TECH STACK
+     ============================================================ -->
+<section id="tech">
+  <div class="container">
+    <span class="section-eyebrow">Technology Stack</span>
+    <h2 class="section-title">Operational Infrastructure</h2>
+    <p class="section-sub">The platforms and systems powering our acquisition, routing, QA, and performance reporting infrastructure.</p>
+    <div class="tech-grid">
+      <div class="tech-card">
+        <div class="tech-category">CRM Systems</div>
+        <div class="tech-pills">
+          <span class="tech-pill">Salesforce</span>
+          <span class="tech-pill">HubSpot</span>
+          <span class="tech-pill">GoHighLevel</span>
+        </div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-category">Call Tracking</div>
+        <div class="tech-pills">
+          <span class="tech-pill">Ringba</span>
+          <span class="tech-pill">CallRail</span>
+          <span class="tech-pill">Retreaver</span>
+        </div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-category">Funnel Builders</div>
+        <div class="tech-pills">
+          <span class="tech-pill">ClickFunnels</span>
+          <span class="tech-pill">Unbounce</span>
+          <span class="tech-pill">Custom Landing Pages</span>
+        </div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-category">QA &amp; Recording</div>
+        <div class="tech-pills">
+          <span class="tech-pill">Gong</span>
+          <span class="tech-pill">Twilio</span>
+          <span class="tech-pill">CallMiner</span>
+        </div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-category">Lead Routing</div>
+        <div class="tech-pills">
+          <span class="tech-pill">Boberdoo</span>
+          <span class="tech-pill">Ringba Routing</span>
+          <span class="tech-pill">Custom API</span>
+        </div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-category">Paid Media</div>
+        <div class="tech-pills">
+          <span class="tech-pill">Meta Ads</span>
+          <span class="tech-pill">Google Ads</span>
+          <span class="tech-pill">Taboola</span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
+<div class="divider"></div>
+
+<!-- ============================================================
+     PARTNERSHIP
+     ============================================================ -->
+<section id="partnership">
+  <div class="container">
+    <span class="section-eyebrow">Partnership Models</span>
+    <h2 class="section-title">How We Work With Partners</h2>
+    <p class="partner-intro">We partner with agencies, brands, aggregators, and service providers through scalable acquisition systems tailored to your model, volume, and vertical requirements.</p>
+    <div class="partner-grid">
+      <div class="partner-card">
+        <span class="partner-icon">📞</span>
+        <h4>Pay-Per-Call</h4>
+        <p>Inbound calls from consumers actively seeking your product. Billed per qualified call meeting agreed screening criteria.</p>
+      </div>
+      <div class="partner-card">
+        <span class="partner-icon">📋</span>
+        <h4>CPL Campaigns</h4>
+        <p>Cost-per-lead delivery via web form or inbound inquiry. Volume-based pricing with quality guarantees and replacement policies.</p>
+      </div>
+      <div class="partner-card">
+        <span class="partner-icon">🔄</span>
+        <h4>Live Transfers</h4>
+        <p>Pre-screened consumers transferred live to your licensed agents. Replacement guarantee on every non-conforming transfer.</p>
+      </div>
+      <div class="partner-card">
+        <span class="partner-icon">📅</span>
+        <h4>Appointment Setting</h4>
+        <p>Qualified consumers booked directly into your CRM or calendar system. Ideal for longer-cycle sales verticals and licensed professionals.</p>
+      </div>
+      <div class="partner-card">
+        <span class="partner-icon">🧪</span>
+        <h4>Pilot Campaigns</h4>
+        <p>Low-risk 30-day pilot programs to validate quality, volume, and fit before full-scale infrastructure deployment.</p>
+      </div>
+      <div class="partner-card">
+        <span class="partner-icon">🏷️</span>
+        <h4>White-Label Support</h4>
+        <p>Full white-label acquisition infrastructure for agencies running branded campaigns on behalf of their own clients.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHY US
+     ============================================================ -->
+<section id="why">
+  <div class="container">
+    <span class="section-eyebrow">Why Skyline</span>
+    <h2 class="section-title">What Sets Our Infrastructure Apart</h2>
+    <p class="section-sub">Built for enterprise-scale deployment. Engineered for compliance. Optimized continuously for performance across every vertical.</p>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-bg-num">01</div>
+        <h4>Multi-Vertical Expertise</h4>
+        <p>Dedicated funnel architecture, compliance layers, and qualification scripts per vertical — not a generic, one-size-fits-all system.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-bg-num">02</div>
+        <h4>Compliance-First Systems</h4>
+        <p>TCPA-conscious infrastructure with documented consent, DNC filtering, and a full audit trail on every consumer record.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-bg-num">03</div>
+        <h4>Scalable Infrastructure</h4>
+        <p>From 250 to 10,000+ transfers per month — our systems scale without degrading quality, compliance, or reporting accuracy.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-bg-num">04</div>
+        <h4>High-Intent Funnel Design</h4>
+        <p>Acquisition funnels engineered to attract purchase-intent consumers — not passive browsers or survey-bait respondents.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-bg-num">05</div>
+        <h4>Real-Time Optimization</h4>
+        <p>Live campaign dashboards, bid adjustments, funnel testing, and routing updates — continuously improving CPL and transfer quality.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-bg-num">06</div>
+        <h4>Transparent Reporting</h4>
+        <p>Full campaign reporting with source attribution, transfer recordings, QA scores, and CRM delivery confirmation on every record.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================
+     CTA SECTION
+     ============================================================ -->
+<section id="cta">
+  <div class="container">
+    <span class="section-eyebrow" style="display:block;text-align:center;">Get Started</span>
+    <h2>Ready to Build a Scalable<br>Acquisition System?</h2>
+    <p>Tell us your vertical, volume targets, and geographic scope. We'll map out an acquisition infrastructure built for your operation.</p>
+    <div class="cta-btns">
+      <a href="#contact" class="btn-primary">Request a Proposal →</a>
+      <a href="#how" class="btn-ghost">View Our System</a>
+    </div>
+    <div class="cta-trust">
+      <div class="cta-trust-item">Pay-Per-Call &amp; CPL</div>
+      <div class="cta-trust-item">Live Transfers</div>
+      <div class="cta-trust-item">White-Label Available</div>
+      <div class="cta-trust-item">30-Day Pilot Programs</div>
+      <div class="cta-trust-item">Enterprise SLA</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+     ============================================================ -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <!-- Left: Info -->
+      <div class="contact-info">
+        <span class="section-eyebrow">Contact</span>
+        <h3>Let's Discuss Your Pipeline</h3>
+        <p>Fill out the form and our team will personally reach out within a few hours to discuss your verticals, volume requirements, and how Skyline Acquisition Group can serve as your acquisition infrastructure partner.</p>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📧</div>
+          <div>
+            <div class="contact-detail-label">Email</div>
+            <div class="contact-detail-val">Info@SkylineAcquisitionGroup.com</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📞</div>
+          <div>
+            <div class="contact-detail-label">Phone</div>
+            <div class="contact-detail-val">+1 (307) 622-4901</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">⏰</div>
+          <div>
+            <div class="contact-detail-label">Hours</div>
+            <div class="contact-detail-val">Mon–Sat, 9am–6pm PST</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📍</div>
+          <div>
+            <div class="contact-detail-label">Coverage</div>
+            <div class="contact-detail-val">USA — All 50 States</div>
+          </div>
+        </div>
+      </div>
+      <!-- Right: Form -->
+      <div class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" placeholder="John">
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" placeholder="Smith">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="company">Company / Agency Name</label>
+          <input type="text" id="company" placeholder="Your company">
+        </div>
+        <div class="form-group">
+          <label for="email">Business Email</label>
+          <input type="email" id="email" placeholder="you@company.com">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="+1 (000) 000-0000">
+        </div>
+        <div class="form-group">
+          <label for="vertical">Primary Vertical</label>
+          <select id="vertical">
+            <option value="" disabled selected>Select vertical</option>
+            <option>Auto Insurance</option>
+            <option>ACA / Health Insurance</option>
+            <option>Medicare</option>
+            <option>Final Expense</option>
+            <option>Solar</option>
+            <option>Home Services</option>
+            <option>Legal / Mass Tort</option>
+            <option>Debt Relief</option>
+            <option>Multiple Verticals</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="volume">Monthly Volume Target</label>
+          <select id="volume">
+            <option value="" disabled selected>Select volume range</option>
+            <option>Under 250 transfers/month</option>
+            <option>250–500 transfers/month</option>
+            <option>500–1,000 transfers/month</option>
+            <option>1,000–5,000 transfers/month</option>
+            <option>5,000+ transfers/month</option>
+            <option>Let's discuss</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Additional Details (optional)</label>
+          <textarea id="message" placeholder="Tell us about your states, partner model, or any specific requirements..."></textarea>
+        </div>
+        <button class="btn-primary form-submit" type="button" onclick="handleSubmit()">Send Inquiry →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
 <footer>
-  <div class="footer-logo" onclick="showPage('home')">
-    <div class="fl-icon">🏙️</div>
-    <span>Skyline</span>&nbsp;Acquisition Group
-  </div>
-  <div class="footer-copy">© 2026 Skyline Acquisition Group. All rights reserved.</div>
-  <div class="footer-links">
-    <a onclick="go('how')">How It Works</a>
-    <a onclick="go('pricing')">Pricing</a>
-    <a onclick="showPage('landing')">Get Leads</a>
-    <a onclick="showPage('privacy')">Privacy</a>
-    <a onclick="showPage('terms')">Terms</a>
+  <div class="footer-inner">
+    <div class="footer-logo">SKYLINE <span>ACQUISITION</span> GROUP</div>
+    <nav>
+      <ul class="footer-links">
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#verticals">Verticals</a></li>
+        <li><a href="#compliance">Compliance</a></li>
+        <li><a href="#partnership">Partners</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="/privacy">Privacy</a></li>
+        <li><a href="/terms">Terms</a></li>
+      </ul>
+    </nav>
+    <div class="footer-copy">© 2026 Skyline Acquisition Group. All rights reserved.</div>
   </div>
 </footer>
 
-</div><!-- /home -->
-
-<!-- ======================== LANDING PAGE ======================== -->
-<div id="page-landing" class="page">
-
-<section class="lp-hero">
-  <div class="lp-hero-bg"></div>
-  <div class="lp-hero-grid"></div>
-  <div class="lp-left">
-    <div class="lp-urgency">⚡ Limited Trial Spots Available This Month</div>
-    <h1>Get <em>Warm, Live</em> Insurance Transfers Sent Directly to You</h1>
-    <p>Stop chasing cold leads. Skyline Acquisition Group pre-screens every consumer for active buying intent and genuine need — then transfers them live to your phone. You just quote and close.</p>
-    <ul class="lp-bullets">
-      <li><div class="lp-check">✓</div> Pre-screened for active buying intent</li>
-      <li><div class="lp-check">✓</div> Actively shopping for insurance right now</li>
-      <li><div class="lp-check">✓</div> Warm handoff — they know your name before you speak</li>
-      <li><div class="lp-check">✓</div> Replacement guarantee on every transfer</li>
-      <li><div class="lp-check">✓</div> Available in all 50 states — matched to your license</li>
-      <li><div class="lp-check">✓</div> Flexible contract plans — trial, growth, and enterprise options</li>
-    </ul>
-    <div class="lp-social-proof">
-      <div class="lp-avatars">
-        <div class="lp-avatar" style="background:#1a5fb4;">JM</div>
-        <div class="lp-avatar" style="background:#0ea5e9;">SR</div>
-        <div class="lp-avatar" style="background:#2070cc;">DK</div>
-        <div class="lp-avatar" style="background:#1a5fb4;">AL</div>
-      </div>
-      <div>
-        <div class="lp-stars">★★★★★</div>
-        <div class="lp-proof-text"><strong>50+ licensed agents</strong> trust Skyline for live transfers</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="lp-right">
-    <form class="lp-form-card" id="trialForm" onsubmit="submitForm(event,'trialForm')">
-      <input type="hidden" name="access_key" value="d6c3bd4d-2a56-466a-8656-3f338b03e91c"/>
-      <input type="hidden" name="subject" value="New Trial Request — Skyline Landing Page"/>
-      <input type="hidden" name="from_name" value="Skyline Trial Request"/>
-      <input type="checkbox" name="botcheck" style="display:none;"/>
-      <div class="lp-form-title">Claim Your Free Trial</div>
-      <div class="lp-form-sub">Fill out the form and our team will call you personally within a few hours. <span>Flexible contracts. Zero risk.</span></div>
-      <div class="lp-field-row">
-        <div class="lp-field"><label>First Name</label><input type="text" name="First Name" placeholder="First name" required/></div>
-        <div class="lp-field"><label>Last Name</label><input type="text" name="Last Name" placeholder="Last name" required/></div>
-      </div>
-      <div class="lp-field"><label>Agency Name</label><input type="text" name="Agency Name" placeholder="Your agency name" required/></div>
-      <div class="lp-field"><label>Phone Number</label><input type="tel" name="Phone" placeholder="+1 (555) 000-0000" required/></div>
-      <div class="lp-field"><label>Email Address</label><input type="email" name="Email" placeholder="you@agency.com" required/></div>
-      <div class="lp-field">
-        <label>States Licensed In</label>
-        <select name="States Licensed" required><option value="" disabled selected>Select your states</option><option>Texas</option><option>Florida</option><option>Georgia</option><option>California</option><option>New York</option><option>Ohio</option><option>Multiple states</option><option>All 50 states</option></select>
-      </div>
-      <div class="lp-field">
-        <label>Transfers Needed / Month</label>
-        <select name="Transfers Per Month" required><option value="" disabled selected>Select volume</option><option>5–10 (Trial)</option><option>10–30 (Starter)</option><option>30–100 (Growth)</option><option>100+ (Enterprise)</option></select>
-      </div>
-      <button type="submit" class="lp-submit">Get My Free Trial Transfers →</button>
-      <div class="form-status"></div>
-      <div class="lp-submit-sub"><span>✓ Contract-based plans</span> &nbsp;·&nbsp; <span>✓ Replacement guarantee</span> &nbsp;·&nbsp; <span>✓ Cancel anytime</span></div>
-      <div class="lp-form-guarantee">
-        <div style="font-size:1.4rem;">🔒</div>
-        <p><strong>Our guarantee:</strong> If your trial transfers don't meet our screening criteria, we replace them free — no questions asked.</p>
-      </div>
-    </form>
-  </div>
-</section>
-
-<div class="lp-strip">
-  <div class="lp-strip-item"><div class="lp-strip-num">98<span>%</span></div><div class="lp-strip-label">Transfer quality rate</div></div>
-  <div class="lp-strip-item"><div class="lp-strip-num">3<span>min</span></div><div class="lp-strip-label">Avg. pre-screen time</div></div>
-  <div class="lp-strip-item"><div class="lp-strip-num">50<span>+</span></div><div class="lp-strip-label">States covered</div></div>
-  <div class="lp-strip-item"><div class="lp-strip-num">24<span>/7</span></div><div class="lp-strip-label">Live transfer hours</div></div>
-</div>
-
-<div class="lp-how">
-  <div class="lp-how-title">How Skyline Acquisition Group Works</div>
-  <div class="lp-how-sub">Three simple steps from signup to receiving your first warm live transfer</div>
-  <div class="lp-steps">
-    <div class="lp-step"><div class="lp-step-num">STEP 01</div><div class="lp-step-icon">📋</div><h3>You Sign Up & Tell Us Your States</h3><p>Tell us what states you're licensed in, your daily call capacity, and any custom screening criteria you need.</p></div>
-    <div class="lp-step"><div class="lp-step-num">STEP 02</div><div class="lp-step-icon">🔍</div><h3>We Find, Call & Screen Consumers</h3><p>Our team contacts consumers actively shopping for insurance and triple-verifies them before any transfer.</p></div>
-    <div class="lp-step"><div class="lp-step-num">STEP 03</div><div class="lp-step-icon">📞</div><h3>You Receive the Warm Live Call</h3><p>Our agent introduces you by name and hands the qualified consumer directly to your line — ready to get a quote.</p></div>
-  </div>
-</div>
-
-<div class="lp-testimonials">
-  <div class="lp-test-title">What Agents Say About Skyline</div>
-  <div class="lp-test-grid">
-    <div class="lp-test-card"><div class="lp-test-stars">★★★★★</div><div class="lp-test-quote">"Skyline changed how I run my agency. Every transfer that comes in, the person already knows why they're talking to me. My close rate went up dramatically."</div><div class="lp-test-name">James Mitchell</div><div class="lp-test-role">Independent Agent — Texas</div></div>
-    <div class="lp-test-card"><div class="lp-test-stars">★★★★★</div><div class="lp-test-quote">"The team personally walked me through the trial. The quality spoke for itself. I've tried five lead vendors — Skyline is the only one where people actually pick up ready to talk."</div><div class="lp-test-name">Sandra Rivera</div><div class="lp-test-role">Agency Owner — Florida</div></div>
-    <div class="lp-test-card"><div class="lp-test-stars">★★★★★</div><div class="lp-test-quote">"The replacement guarantee alone sold me. No other vendor offers that. Skyline Acquisition Group stands behind every transfer — and the warm handoff makes closing so much easier."</div><div class="lp-test-name">Amanda Lewis</div><div class="lp-test-role">Team Lead — Ohio</div></div>
-  </div>
-</div>
-
-<div class="lp-final">
-  <h2>Start Receiving Warm<br>Live Transfers Today</h2>
-  <p>Join licensed agents across the USA who trust Skyline Acquisition Group to fill their pipeline with ready-to-quote prospects.</p>
-  <div class="lp-final-btns">
-    <button class="btn-white" onclick="window.scrollTo({top:0,behavior:'smooth'})">Claim My Free Trial →</button>
-    <button class="btn-outline-white" onclick="showPage('home');go('contact')">Talk to Our Team First</button>
-  </div>
-</div>
-
-<footer>
-  <div class="footer-logo" onclick="showPage('home')">
-    <div class="fl-icon">🏙️</div>
-    <span>Skyline</span>&nbsp;Acquisition Group
-  </div>
-  <div class="footer-copy">© 2026 Skyline Acquisition Group. All rights reserved.</div>
-  <div class="footer-links">
-    <a onclick="showPage('home')">Home</a>
-    <a onclick="showPage('home');go('pricing')">Pricing</a>
-    <a onclick="showPage('home');go('contact')">Contact</a>
-    <a onclick="showPage('privacy')">Privacy Policy</a>
-    <a onclick="showPage('terms')">Terms</a>
-  </div>
-</footer>
-
-</div><!-- /landing -->
-
-<!-- ======================== PRIVACY PAGE ======================== -->
-<div id="page-privacy" class="page">
-<div style="padding:8rem 3rem 5rem;max-width:860px;margin:0 auto;min-height:100vh;">
-  <div style="font-size:0.72rem;font-weight:700;color:var(--sky);letter-spacing:0.14em;text-transform:uppercase;margin-bottom:1rem;display:flex;align-items:center;gap:8px;"><span style="width:20px;height:2px;background:var(--sky);border-radius:2px;display:inline-block;"></span>Legal</div>
-  <h1 style="font-family:'Fraunces',serif;font-size:clamp(2rem,4vw,3rem);font-weight:600;letter-spacing:-0.015em;margin-bottom:0.5rem;">Privacy Policy</h1>
-  <p style="color:rgba(255,255,255,0.38);font-size:0.82rem;margin-bottom:3rem;">Last updated: January 1, 2025 &nbsp;·&nbsp; Effective immediately</p>
-
-  <div style="display:flex;flex-direction:column;gap:2.5rem;">
-    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
-      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">1. Introduction</h2>
-      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;">Skyline Acquisition Group ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services. Please read this policy carefully. If you disagree with its terms, please discontinue use of our site.</p>
-    </div>
-
-    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
-      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">2. Information We Collect</h2>
-      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;margin-bottom:1rem;"><strong style="color:var(--white);">Personal Information You Provide:</strong> When you fill out our contact or trial request forms, we may collect your name, agency name, email address, phone number, and business details.</p>
-      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;margin-bottom:1rem;"><strong style="color:var(--white);">Automatically Collected Information:</strong> We may automatically collect device information, browser type, IP address, pages visited, and time spent on our website through cookies and similar tracking technologies.</p>
-      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;"><strong style="color:var(--white);">Call Recording Data:</strong> All pre-screen calls conducted as part of our lead generation service are recorded for quality assurance and compliance purposes.</p>
-    </div>
-
-    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
-      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">3. How We Use Your Information</h2>
-      <ul style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;padding-left:1.2rem;display:flex;flex-direction:column;gap:0.5rem;">
-        <li>To provide, operate, and improve our lead generation and live transfer services</li>
-        <li>To contact you regarding your inquiry, contract, or account</li>
-        <li>To send service-related communications and updates</li>
-        <li>To comply with legal obligations and regulatory requirements</li>
-        <li>To analyze website usage and improve user experience</li>
-        <li>To prevent fraudulent or unauthorized activity</li>
-      </ul>
-    </div>
-
-    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
-      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">4. Information Sharing & Disclosure</h2>
-      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;margin-bottom:1rem;">We do not sell, trade, or rent your personal information to third parties. We may share information in the following limited circumstances:</p>
-      <ul style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;padding-left:1.2rem;display:flex;flex-direction:column;gap:0.5rem;">
-        <li><strong style="color:var(--white);">Service Providers:</strong> Trusted third-party vendors who assist in operating our website and services, subject to confidentiality agreements</li>
-        <li><strong style="color:var(--white);">Legal Requirements:</strong> When required by law, court order, or governmental authority</li>
-        <li><strong style="color:var(--white);">Business Transfers:</strong> In connection with a merger, acquisition, or sale of assets, with prior notice to affected users</li>
-        <li><strong style="color:var(--white);">Protection of Rights:</strong> To protect the rights, property, or safety of Skyline Acquisition Group, our clients, or others</li>
-      </ul>
-    </div>
-
-    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
-      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">5. Cookies & Tracking Technologies</h2>
-      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;margin-bottom:1rem;">We use cookies and similar tracking technologies to enhance your browsing experience and analyze website traffic. Types of cookies we use:</p>
-      <ul style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;padding-left:1.2rem;display:flex;flex-direction:column;gap:0.5rem;">
-        <li><strong style="color:var(--white);">Essential Cookies:</strong> Necessary for the website to function properly</li>
-        <li><strong style="color:var(--white);">Analytics Cookies:</strong> Help us understand how visitors interact with our website (e.g., Google Analytics)</li>
-        <li><strong style="color:var(--white);">Marketing Cookies:</strong> Used to track visitors across websites for advertising purposes</li>
-      </ul>
-      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;margin-top:1rem;">You may disable cookies through your browser settings, though this may affect website functionality.</p>
-    </div>
-
-    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
-      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">6. Data Security</h2>
-      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;">We implement appropriate technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the Internet or electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
-    </div>
-
-    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
-      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">7. Your Rights</h2>
-      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;margin-bottom:1rem;">Depending on your location, you may have the following rights regarding your personal data:</p>
-      <ul style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;padding-left:1.2rem;display:flex;flex-direction:column;gap:0.5rem;">
-        <li><strong style="color:var(--white);">Access:</strong> Request a copy of the personal data we hold about you</li>
-        <li><strong style="color:var(--white);">Correction:</strong> Request correction of inaccurate or incomplete data</li>
-        <li><strong style="color:var(--white);">Deletion:</strong> Request deletion of your personal data ("right to be forgotten")</li>
-        <li><strong style="color:var(--white);">Opt-Out:</strong> Opt out of marketing communications at any time</li>
-        <li><strong style="color:var(--white);">Data Portability:</strong> Request your data in a structured, machine-readable format</li>
-      </ul>
-      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;margin-top:1rem;">To exercise any of these rights, contact us at <a href="mailto:Info@SkylineacquisitionGroup.com" style="color:var(--sky);">Info@SkylineacquisitionGroup.com</a>.</p>
-    </div>
-
-    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
-      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">8. TCPA Compliance</h2>
-      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;">Skyline Acquisition Group complies with the Telephone Consumer Protection Act (TCPA). All prospects in our live transfer pipeline have provided prior express written consent to be contacted by insurance agents. We maintain records of all consent documentation as required by applicable law.</p>
-    </div>
-
-    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
-      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">9. Children's Privacy</h2>
-      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;">Our services are not directed to individuals under the age of 18. We do not knowingly collect personal information from children. If you believe we have inadvertently collected such information, please contact us immediately at <a href="mailto:Info@SkylineacquisitionGroup.com" style="color:var(--sky);">Info@SkylineacquisitionGroup.com</a>.</p>
-    </div>
-
-    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
-      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">10. Changes to This Policy</h2>
-      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;">We may update this Privacy Policy from time to time. We will notify you of any significant changes by updating the "Last updated" date at the top of this page. Your continued use of our website after changes are posted constitutes your acceptance of the updated policy.</p>
-    </div>
-
-    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
-      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">11. Contact Us</h2>
-      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;margin-bottom:1rem;">If you have any questions about this Privacy Policy or our data practices, please contact us:</p>
-      <div style="display:flex;flex-direction:column;gap:0.6rem;">
-        <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;">📧 <a href="mailto:Info@SkylineacquisitionGroup.com" style="color:var(--sky);">Info@SkylineacquisitionGroup.com</a></p>
-        <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;">📞 +1 (307) 622-4901</p>
-        <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;">🌐 Skyline Acquisition Group — United States</p>
-      </div>
-    </div>
-  </div>
-
-  <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(14,165,233,0.15);display:flex;gap:1rem;flex-wrap:wrap;">
-    <button onclick="showPage('home')" style="background:linear-gradient(135deg,#1a5fb4,#0ea5e9);color:white;border:none;padding:0.8rem 2rem;border-radius:8px;font-family:inherit;font-size:0.9rem;font-weight:600;cursor:pointer;">← Back to Home</button>
-    <button onclick="showPage('terms')" style="background:transparent;color:rgba(255,255,255,0.6);border:1px solid rgba(255,255,255,0.2);padding:0.8rem 2rem;border-radius:8px;font-family:inherit;font-size:0.9rem;cursor:pointer;">Terms of Service →</button>
-  </div>
-</div>
-
-<footer>
-  <div class="footer-logo" onclick="showPage('home')"><div class="fl-icon">🏙️</div><span>Skyline</span>&nbsp;Acquisition Group</div>
-  <div class="footer-copy">© 2026 Skyline Acquisition Group. All rights reserved.</div>
-  <div class="footer-links">
-    <a onclick="showPage('home')">Home</a>
-    <a onclick="showPage('privacy')">Privacy Policy</a>
-    <a onclick="showPage('terms')">Terms of Service</a>
-  </div>
-</footer>
-</div>
-
-<!-- ======================== TERMS PAGE ======================== -->
-<div id="page-terms" class="page">
-<div style="padding:8rem 3rem 5rem;max-width:860px;margin:0 auto;min-height:100vh;">
-  <div style="font-size:0.72rem;font-weight:700;color:var(--sky);letter-spacing:0.14em;text-transform:uppercase;margin-bottom:1rem;display:flex;align-items:center;gap:8px;"><span style="width:20px;height:2px;background:var(--sky);border-radius:2px;display:inline-block;"></span>Legal</div>
-  <h1 style="font-family:'Fraunces',serif;font-size:clamp(2rem,4vw,3rem);font-weight:600;letter-spacing:-0.015em;margin-bottom:0.5rem;">Terms of Service</h1>
-  <p style="color:rgba(255,255,255,0.38);font-size:0.82rem;margin-bottom:3rem;">Last updated: January 1, 2025 &nbsp;·&nbsp; Effective immediately</p>
-
-  <div style="display:flex;flex-direction:column;gap:2.5rem;">
-    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
-      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">1. Acceptance of Terms</h2>
-      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;">By accessing or using the services of Skyline Acquisition Group ("Company," "we," "us"), you agree to be bound by these Terms of Service. If you do not agree to these terms, you may not use our services.</p>
-    </div>
-
-    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
-      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">2. Services Description</h2>
-      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;">Skyline Acquisition Group provides live transfer lead generation services to licensed insurance agents and agencies. Our services include prospect pre-screening, live call transfers, call recording, and account management as specified in your contract plan.</p>
-    </div>
-
-    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
-      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">3. Contract Plans & Payment</h2>
-      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;">All services are provided on a contract basis as outlined in your signed service agreement. Payment terms, transfer volumes, pricing, and contract duration are specified in your individual contract. Payments are due as specified in your agreement. Late payments may result in service suspension.</p>
-    </div>
-
-    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
-      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">4. Replacement Guarantee</h2>
-      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;">If a live transfer does not meet the mutually agreed screening criteria as defined in your contract, Skyline Acquisition Group will provide a replacement transfer at no additional charge. Replacement requests must be submitted within 24 hours of the transfer with documented justification.</p>
-    </div>
-
-    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
-      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">5. Client Responsibilities</h2>
-      <ul style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;padding-left:1.2rem;display:flex;flex-direction:column;gap:0.5rem;">
-        <li>Maintain all required professional licenses and regulatory compliance in states where you receive transfers</li>
-        <li>Ensure agents are available to receive transfers during agreed hours</li>
-        <li>Handle all transferred prospects in compliance with applicable laws and regulations</li>
-        <li>Not record or share call recordings without proper consent as required by law</li>
-        <li>Keep contract terms and pricing confidential</li>
-      </ul>
-    </div>
-
-    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
-      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">6. TCPA & Regulatory Compliance</h2>
-      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;">Skyline Acquisition Group operates in compliance with the Telephone Consumer Protection Act (TCPA), CAN-SPAM Act, and all applicable federal and state regulations. Clients are responsible for their own compliance with regulations governing the solicitation and sale of insurance products in their licensed states.</p>
-    </div>
-
-    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
-      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">7. Limitation of Liability</h2>
-      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;">Skyline Acquisition Group shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of our services. Our total liability shall not exceed the amount paid by you for services in the 30 days preceding the claim. We do not guarantee specific conversion rates or sales outcomes from live transfers.</p>
-    </div>
-
-    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
-      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">8. Termination</h2>
-      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;">Either party may terminate services as specified in your signed contract agreement. Skyline Acquisition Group reserves the right to immediately suspend services for violation of these terms, non-payment, or any activity that jeopardizes regulatory compliance.</p>
-    </div>
-
-    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
-      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">9. Governing Law</h2>
-      <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.8;">These Terms of Service shall be governed by and construed in accordance with the laws of the United States and the State of Wyoming, without regard to conflict of law provisions. Any disputes shall be resolved through binding arbitration in Wyoming.</p>
-    </div>
-
-    <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.15);border-radius:12px;padding:2rem;">
-      <h2 style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--sky);">10. Contact</h2>
-      <div style="display:flex;flex-direction:column;gap:0.6rem;">
-        <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;">📧 <a href="mailto:Info@SkylineacquisitionGroup.com" style="color:var(--sky);">Info@SkylineacquisitionGroup.com</a></p>
-        <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;">📞 +1 (307) 622-4901</p>
-        <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;">🌐 Skyline Acquisition Group — United States</p>
-      </div>
-    </div>
-  </div>
-
-  <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(14,165,233,0.15);display:flex;gap:1rem;flex-wrap:wrap;">
-    <button onclick="showPage('home')" style="background:linear-gradient(135deg,#1a5fb4,#0ea5e9);color:white;border:none;padding:0.8rem 2rem;border-radius:8px;font-family:inherit;font-size:0.9rem;font-weight:600;cursor:pointer;">← Back to Home</button>
-    <button onclick="showPage('privacy')" style="background:transparent;color:rgba(255,255,255,0.6);border:1px solid rgba(255,255,255,0.2);padding:0.8rem 2rem;border-radius:8px;font-family:inherit;font-size:0.9rem;cursor:pointer;">Privacy Policy →</button>
-  </div>
-</div>
-
-<footer>
-  <div class="footer-logo" onclick="showPage('home')"><div class="fl-icon">🏙️</div><span>Skyline</span>&nbsp;Acquisition Group</div>
-  <div class="footer-copy">© 2026 Skyline Acquisition Group. All rights reserved.</div>
-  <div class="footer-links">
-    <a onclick="showPage('home')">Home</a>
-    <a onclick="showPage('privacy')">Privacy Policy</a>
-    <a onclick="showPage('terms')">Terms of Service</a>
-  </div>
-</footer>
-</div>
-
-<!-- ======================== COOKIE CONSENT BANNER ======================== -->
-<div id="cookie-banner" style="position:fixed;bottom:0;left:0;right:0;z-index:9999;background:rgba(8,24,40,0.97);backdrop-filter:blur(16px);border-top:1px solid rgba(14,165,233,0.2);padding:1.2rem 3rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;">
-  <div style="display:flex;align-items:center;gap:12px;flex:1;min-width:260px;">
-    <span style="font-size:1.3rem;">🍪</span>
-    <p style="font-size:0.82rem;color:rgba(255,255,255,0.65);line-height:1.5;">We use cookies to improve your experience and analyze site traffic. By continuing, you agree to our <a onclick="showPage('privacy')" style="color:#0ea5e9;cursor:pointer;text-decoration:underline;">Privacy Policy</a>.</p>
-  </div>
-  <div style="display:flex;gap:0.75rem;flex-shrink:0;">
-    <button onclick="acceptCookies()" style="background:linear-gradient(135deg,#1a5fb4,#0ea5e9);color:white;border:none;padding:0.6rem 1.4rem;border-radius:6px;font-family:inherit;font-size:0.82rem;font-weight:700;cursor:pointer;">Accept All</button>
-    <button onclick="declineCookies()" style="background:transparent;color:rgba(255,255,255,0.5);border:1px solid rgba(255,255,255,0.18);padding:0.6rem 1.4rem;border-radius:6px;font-family:inherit;font-size:0.82rem;cursor:pointer;">Decline</button>
-  </div>
-</div>
-
+<!-- ============================================================
+     SCRIPTS
+     ============================================================ -->
 <script>
-async function submitForm(event,formId){
-  event.preventDefault();
-  var form=document.getElementById(formId);
-  var btn=form.querySelector('button[type="submit"]');
-  var status=form.querySelector('.form-status');
-  var originalText=btn.textContent;
-  btn.disabled=true;
-  btn.textContent='Sending...';
-  status.className='form-status';
-  status.innerHTML='';
-  try{
-    var formData=new FormData(form);
-    var response=await fetch('https://api.web3forms.com/submit',{
-      method:'POST',
-      body:formData
-    });
-    var result=await response.json();
-    if(result.success){
-      // Hide all form children except the status, then show success
-      Array.prototype.forEach.call(form.children,function(child){
-        if(!child.classList.contains('form-status')){
-          child.style.display='none';
-        }
-      });
-      status.className='form-status success';
-      status.innerHTML='<strong>✓ Thank you!</strong>The Skyline Acquisition Group team will reach out within a few hours.';
-    }else{
-      throw new Error(result.message||'Submission failed');
-    }
-  }catch(err){
-    btn.disabled=false;
-    btn.textContent=originalText;
-    status.className='form-status error';
-    status.innerHTML='Something went wrong. Please try again or email Info@SkylineacquisitionGroup.com directly.';
-  }
-}
-function showPage(n){
-  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
-  var target=document.getElementById('page-'+n);
-  if(target)target.classList.add('active');
-  window.scrollTo({top:0,behavior:'smooth'});
-}
-function acceptCookies(){
-  try{localStorage.setItem('cookies','accepted');}catch(e){}
-  document.getElementById('cookie-banner').style.display='none';
-}
-function declineCookies(){
-  try{localStorage.setItem('cookies','declined');}catch(e){}
-  document.getElementById('cookie-banner').style.display='none';
-}
-window.addEventListener('load',function(){
-  try{
-    if(localStorage.getItem('cookies')){
-      document.getElementById('cookie-banner').style.display='none';
-    }
-  }catch(e){}
-});
-function go(id){
-  setTimeout(function(){
-    var el=document.getElementById(id);
-    if(el)el.scrollIntoView({behavior:'smooth'});
-  },80);
-}
-// scroll reveal
-var obs=new IntersectionObserver(function(entries){
-  entries.forEach(function(e){
-    if(e.isIntersecting){
-      e.target.style.opacity='1';
-      e.target.style.transform='translateY(0)';
-    }
+  // Mobile nav toggle
+  const btn = document.getElementById('mobileBtn');
+  const menu = document.getElementById('mobileMenu');
+  btn.addEventListener('click', function() {
+    const open = menu.classList.toggle('open');
+    menu.style.display = open ? 'flex' : 'none';
   });
-},{threshold:0.1});
-document.querySelectorAll('.step,.feature-card,.result-card,.plan,.lp-test-card,.lp-step,.about-item,.contact-item').forEach(function(el){
-  el.style.opacity='0';
-  el.style.transform='translateY(18px)';
-  el.style.transition='opacity 0.5s ease, transform 0.5s ease';
-  obs.observe(el);
-});
-</script>
+  function closeMobile() {
+    menu.classList.remove('open');
+    menu.style.display = 'none';
+  }
 
+  // Smooth scroll for all anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  // Animate metric values on scroll into view
+  function animateValue(el, start, end, duration, suffix) {
+    let startTime = null;
+    function step(timestamp) {
+      if (!startTime) startTime = timestamp;
+      const progress = Math.min((timestamp - startTime) / duration, 1);
+      const val = Math.floor(progress * (end - start) + start);
+      el.textContent = val.toLocaleString() + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  // Intersection Observer for fade-in
+  const observerOptions = { threshold: 0.12, rootMargin: '0px 0px -40px 0px' };
+  const fadeEls = document.querySelectorAll('.vert-card, .comp-card, .why-card, .partner-card, .metric-card, .tech-card, .how-step, .funnel-step');
+  fadeEls.forEach(function(el, i) {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(18px)';
+    el.style.transition = 'opacity 0.45s ease ' + (i % 8 * 0.06) + 's, transform 0.45s ease ' + (i % 8 * 0.06) + 's';
+  });
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+  fadeEls.forEach(function(el) { observer.observe(el); });
+
+  // Form submission handler
+  function handleSubmit() {
+    var fname = document.getElementById('fname').value;
+    var email = document.getElementById('email').value;
+    var vertical = document.getElementById('vertical').value;
+    if (!fname || !email || !vertical) {
+      alert('Please fill in your name, email, and primary vertical to continue.');
+      return;
+    }
+    var btn = document.querySelector('.form-submit');
+    btn.textContent = '✓ Inquiry Sent — We\'ll be in touch shortly';
+    btn.style.background = '#0F9E7A';
+    btn.disabled = true;
+  }
+</script>
 </body>
 </html>
